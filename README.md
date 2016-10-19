@@ -1,2 +1,2 @@
 # DS2-OCS
-Desenvolvimento de Software II - OpenCarShop!!
+Desenvolvimento de Software II - OpenCarShop
