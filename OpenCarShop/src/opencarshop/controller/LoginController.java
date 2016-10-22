@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controller;
+package opencarshop.controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -69,11 +69,13 @@ public class LoginController implements Initializable {
         Parent root = null;
         try 
         {
-            root = FXMLLoader.load(getClass().getResource("/view/Cadastro.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/opencarshop/view/Cadastro.fxml"));
             Scene scene = new Scene(root);
             Stage nStage = new Stage();
             nStage.setScene(scene);
             //nStage.setMaximized(true);
+            nStage.setMaxHeight(768);
+            nStage.setMaxWidth(1024);
             nStage.setTitle("Cadastro - OpenCarShop");
             nStage.show();
             Stage stage = (Stage) cadastroLink.getScene().getWindow();
@@ -91,11 +93,13 @@ public class LoginController implements Initializable {
         Parent root = null;
         try 
         {
-            root = FXMLLoader.load(getClass().getResource("/view/Sistema.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/opencarshop/view/Sistema.fxml"));
             Scene scene = new Scene(root);
             Stage nStage = new Stage();
             nStage.setScene(scene);
             //nStage.setMaximized(true);
+            nStage.setMaxHeight(768);
+            nStage.setMaxWidth(1024);
             nStage.setTitle("OpenCarShop");
             nStage.show();
             Stage stage = (Stage) cadastroLink.getScene().getWindow();

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.SistemaController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="opencarshop.controller.SistemaController">
    <children>
       <Label layoutX="187.0" layoutY="75.0" text="Sistema" />
    </children>

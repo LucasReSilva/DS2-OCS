@@ -8,34 +8,30 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.controller.LoginController">
    <children>
-      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="775.0" fitWidth="1035.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../recursos/imagens/login.jpg" />
+            <Image url="@../../recursos/imagens/wall.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="216.0" layoutY="234.0" prefHeight="300.0" prefWidth="337.0">
+      <Pane layoutX="72.0" layoutY="164.0" prefHeight="440.0" prefWidth="400.0">
          <children>
-            <Pane opacity="0.98" prefHeight="300.0" prefWidth="337.0" style="-fx-background-color: bdc3c7;">
-               <children>
-                  <TextField id="login" fx:id="login" layoutX="45.0" layoutY="52.0" prefHeight="40.0" prefWidth="250.0" />
-                  <Label layoutX="42.0" layoutY="26.0" text="CPF">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="46.0" layoutY="108.0" text="Senha">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <PasswordField id="senha" fx:id="senha" layoutX="45.0" layoutY="134.0" prefHeight="40.0" prefWidth="250.0" />
-                  <Button layoutX="109.0" layoutY="185.0" mnemonicParsing="false" onAction="#enviar" prefHeight="35.0" prefWidth="120.0" text="Entrar" />
-               </children></Pane>
+            <Pane opacity="0.8" prefHeight="440.0" prefWidth="400.0" style="-fx-background-color: e8e8e8;" />
+            <TextField id="login" fx:id="login" layoutX="78.0" layoutY="101.0" prefHeight="40.0" prefWidth="250.0" />
+            <Label layoutX="78.0" layoutY="75.0" text="CPF">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="79.0" layoutY="154.0" text="Senha">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <PasswordField id="senha" fx:id="senha" layoutX="78.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" />
             <Label id="labelErro" fx:id="labelErro" alignment="CENTER" layoutX="78.0" layoutY="237.0" prefHeight="17.0" prefWidth="250.0" textFill="RED" />
-            <Hyperlink fx:id="cadastroLink" layoutX="224.0" layoutY="243.0" onAction="#criarNovaConta" text="Cadastre-se" />
-            <Label layoutX="39.0" layoutY="246.0" text="Ainda não possui login? " />
+            <Button layoutX="143.0" layoutY="271.0" mnemonicParsing="false" onAction="#enviar" prefHeight="35.0" prefWidth="120.0" text="Entrar" />
+            <Hyperlink fx:id="cadastroLink" layoutX="209.0" layoutY="334.0" onAction="#criarNovaConta" text="Cadastre-se" />
+            <Label layoutX="79.0" layoutY="337.0" text="Ainda não possui login? " />
          </children>
       </Pane>
    </children>
