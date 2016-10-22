@@ -18,6 +18,7 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -69,7 +70,6 @@ public class LoginController implements Initializable {
         Parent root = null;
         try 
         {
-
             root = FXMLLoader.load(getClass().getResource("/opencarshop/view/Cadastro.fxml"));
             Scene scene = new Scene(root);
             Stage nStage = new Stage();
@@ -103,8 +103,15 @@ public class LoginController implements Initializable {
             //nStage.setMaximized(true);
             nStage.setMaxHeight(768);
             nStage.setMaxWidth(1024);
-            nStage.setTitle("OpenCarShop");
+            nStage.setTitle("OpenCarShop"); 
+            
+            // Icone
+            nStage.getIcons().add(new Image(getClass().getResourceAsStream("/recursos/icones/car-white.png")));
+        
+            // Desabilita maximizar
             nStage.setResizable(false);
+            
+            nStage.setTitle("OpenCarShop");
             nStage.show();
             Stage stage = (Stage) cadastroLink.getScene().getWindow();
             stage.close();
