@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroController">
+   <children>
+      <Pane layoutX="212.0" layoutY="84.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: e8e8e8;">
+         <children>
+            <TextField layoutX="150.0" layoutY="135.0" prefHeight="35.0" prefWidth="300.0" />
+            <TextField layoutX="150.0" layoutY="187.0" prefHeight="35.0" prefWidth="300.0" />
+            <TextField layoutX="151.0" layoutY="291.0" prefHeight="35.0" prefWidth="300.0" />
+            <DatePicker layoutX="151.0" layoutY="239.0" prefHeight="35.0" prefWidth="300.0" />
+            <Label layoutX="150.0" layoutY="170.0" text="Email" />
+            <Label layoutX="150.0" layoutY="118.0" text="Nome" />
+            <Label layoutX="150.0" layoutY="222.0" text="Data de Nascimento" />
+            <Label layoutX="150.0" layoutY="274.0" text="Telefone 1" />
+            <Label layoutX="150.0" layoutY="326.0" text="Telefone 2" />
+            <TextField layoutX="150.0" layoutY="343.0" prefHeight="35.0" prefWidth="300.0" />
+            <TextField layoutX="151.0" layoutY="395.0" prefHeight="35.0" prefWidth="300.0" />
+            <PasswordField layoutX="150.0" layoutY="447.0" prefHeight="35.0" prefWidth="300.0" />
+            <Label layoutX="150.0" layoutY="378.0" text="CPF" />
+            <Label layoutX="150.0" layoutY="430.0" text="Senha" />
+            <Label layoutX="150.0" layoutY="63.0" text="Cadastro">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="225.0" layoutY="501.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" text="Avançar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
