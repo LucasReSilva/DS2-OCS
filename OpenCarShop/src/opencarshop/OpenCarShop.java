@@ -9,6 +9,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -21,9 +22,15 @@ public class OpenCarShop extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("view/Login.fxml"));        
         
-        Scene scene = new Scene(root);     
+        Scene scene = new Scene(root); 
+        // Icone
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/recursos/icones/account-circle-white.png")));
         
+        // Desabilita maximizar
         stage.setResizable(false);
+        
+        // Titulo da janela
+        stage.setTitle("Login");
         
         stage.setScene(scene);
         stage.show();
