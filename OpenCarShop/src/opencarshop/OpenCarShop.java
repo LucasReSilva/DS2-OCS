@@ -19,9 +19,11 @@ public class OpenCarShop extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("view/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/Login.fxml"));        
         
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root);     
+        
+        stage.setResizable(false);
         
         stage.setScene(scene);
         stage.show();
