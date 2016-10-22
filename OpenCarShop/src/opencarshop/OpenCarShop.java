@@ -24,8 +24,9 @@ public class OpenCarShop extends Application {
         Scene scene = new Scene(root);     
         
         stage.setResizable(false);
-        
         stage.setScene(scene);
+        stage.setMaxHeight(768);
+        stage.setMaxWidth(1024);
         stage.show();
     }
 
