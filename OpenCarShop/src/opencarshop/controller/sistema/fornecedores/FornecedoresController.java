@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package opencarshop.controller.sistema;
+package opencarshop.controller.sistema.fornecedores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author tharlysson breno
  */
-public class HomeController implements Initializable {
+public class FornecedoresController implements Initializable {
 
     /**
      * Initializes the controller class.
