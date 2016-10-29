@@ -63,7 +63,11 @@ public class FuncionarioController implements Initializable {
                     Scene scene = new Scene(root);
                     Stage nStage = new Stage();
                     nStage.setScene(scene);
-                    nStage.setTitle("Cadastro - OpenCarShop");
+                    //nStage.setMaximized(true);
+                    nStage.setMaxHeight(768);
+                    nStage.setMaxWidth(1024);
+                    nStage.setTitle("Principal - OpenCarShop");
+                    nStage.setResizable(false);
                     nStage.show();
                     Stage stage = (Stage) cadastroLink.getScene().getWindow();
                     stage.close();
