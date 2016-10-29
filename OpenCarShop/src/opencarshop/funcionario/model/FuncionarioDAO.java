@@ -9,7 +9,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import opencarshop.util.ConexaoMySQL;
-import opencarshop.util.Endereco;
+import opencarshop.Endereco;
 
 /**
  *

@@ -27,7 +27,7 @@ import javafx.stage.Stage;
 import opencarshop.funcionario.model.Contrato;
 import opencarshop.funcionario.model.Funcionario;
 import opencarshop.funcionario.model.FuncionarioDAO;
-import opencarshop.util.Endereco;
+import opencarshop.Endereco;
 
 /**
  * FXML Controller class
@@ -116,7 +116,7 @@ public class FuncionarioController implements Initializable {
                     //nStage.setMaximized(true);
                     nStage.setMaxHeight(768);
                     nStage.setMaxWidth(1024);
-                    nStage.setTitle("Principal - OpenCarShop");
+                    nStage.setTitle("OpenCarShop");
                     nStage.setResizable(false);
                     nStage.show();
                     Stage stage = (Stage) cadastroLink.getScene().getWindow();

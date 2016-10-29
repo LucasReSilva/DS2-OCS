@@ -25,6 +25,7 @@ public class TelaPrincipalController implements Initializable {
     private StackPane acContent;       
     @FXML
     private void cadastrarFuncionario(ActionEvent event) {
+        System.out.println("Cadastrar Funcionario");
         FXMLLoader fxmlLoader = new FXMLLoader();
         try {
             fxmlLoader.load(getClass().getResource("/opencarshop/funcionario/view/Cadastrar.fxml").openStream());
@@ -38,7 +39,16 @@ public class TelaPrincipalController implements Initializable {
     
     @FXML
     private void listarFuncionario(ActionEvent event) {
-        System.out.println("listgem de funcionario");
+        System.out.println("Buscar Funcionario");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/funcionario/view/Buscar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
     }
     
     @Override

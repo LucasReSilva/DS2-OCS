@@ -14,12 +14,44 @@
                <top>
                   <MenuBar prefWidth="25.0" BorderPane.alignment="CENTER">
                     <menus>
+                        <Menu mnemonicParsing="false" text="Cliente">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Cadastrar" />
+                              <MenuItem mnemonicParsing="false" text="Listar" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Serviço">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Cadastrar" />
+                              <MenuItem mnemonicParsing="false" text="Listar" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Peça">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Vender" />
+                              <MenuItem mnemonicParsing="false" text="Casdastrar" />
+                              <MenuItem mnemonicParsing="false" text="Listar" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Veiculo">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Vender" />
+                              <MenuItem mnemonicParsing="false" text="Casdastrar" />
+                              <MenuItem mnemonicParsing="false" text="Listar" />
+                           </items>
+                        </Menu>
                       <Menu mnemonicParsing="false" text="Funcionário">
                         <items>
                           <MenuItem mnemonicParsing="false" onAction="#cadastrarFuncionario" text="Cadastrar" />
-                              <MenuItem mnemonicParsing="false" text="Listar" />
+                              <MenuItem mnemonicParsing="false" onAction="#listarFuncionario" text="Listar" />
                         </items>
                       </Menu>
+                        <Menu mnemonicParsing="false" text="Fornecedor">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Cadastrar" />
+                              <MenuItem mnemonicParsing="false" text="Listar" />
+                           </items>
+                        </Menu>
                     </menus>
                   </MenuBar>
                </top>
