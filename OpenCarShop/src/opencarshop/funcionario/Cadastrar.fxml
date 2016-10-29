@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.funcionario.FuncionarioController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Identificação">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField id="btn_cpf" layoutX="14.0" layoutY="14.0" promptText="CPF" />
+                        <PasswordField id="btn_senha" layoutX="14.0" layoutY="86.0" promptText="Senha" />
+                        <TextField id="btn_nome" layoutX="14.0" layoutY="52.0" promptText="Nome completo" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Contato">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField id="btn_email" layoutX="14.0" layoutY="14.0" promptText="Email" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Contrato">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField id="tf_salario" layoutX="14.0" layoutY="14.0" promptText="Salario" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button id="btn_cadastrar" layoutX="519.0" layoutY="361.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+   </children>
+</AnchorPane>

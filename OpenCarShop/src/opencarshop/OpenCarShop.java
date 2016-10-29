@@ -19,11 +19,12 @@ public class OpenCarShop extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("TelaPrincipal.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Autenticacao.fxml"));
         
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
+        stage.setTitle("Autenticação");
         stage.show();
     }
 
