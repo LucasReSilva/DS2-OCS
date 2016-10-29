@@ -27,7 +27,7 @@ public class FuncionarioController implements Initializable {
     }  
     
     @FXML
-    private void autenticacao(ActionEvent event) {
+    private void autenticar(ActionEvent event) {
         System.out.println("Clicou em entrar");
     }
     
