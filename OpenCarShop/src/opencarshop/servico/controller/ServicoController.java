@@ -3,12 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package opencarshop.funcionario;
+package opencarshop.servico.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -16,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author lucas
  */
-public class FuncionarioController implements Initializable {
+public class ServicoController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -24,16 +22,6 @@ public class FuncionarioController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }  
-    
-    @FXML
-    private void autenticar(ActionEvent event) {
-        System.out.println("Clicou em entrar");
-    }
-    
-    @FXML
-    private void cadastrar(ActionEvent event) {
-        System.out.println("Clicou em cadastrar");
-    }
+    }    
     
 }
