@@ -16,8 +16,8 @@
                     <menus>
                         <Menu mnemonicParsing="false" text="Cliente">
                           <items>
-                            <MenuItem mnemonicParsing="false" text="Cadastrar" />
-                              <MenuItem mnemonicParsing="false" text="Listar" />
+                            <MenuItem mnemonicParsing="false" onAction="#cadastrarCliente" text="Cadastrar" />
+                              <MenuItem mnemonicParsing="false" onAction="#listarCliente" text="Listar" />
                           </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Serviço">
@@ -48,8 +48,8 @@
                       </Menu>
                         <Menu mnemonicParsing="false" text="Fornecedor">
                            <items>
-                              <MenuItem mnemonicParsing="false" text="Cadastrar" />
-                              <MenuItem mnemonicParsing="false" text="Listar" />
+                              <MenuItem mnemonicParsing="false" onAction="#cadastrarFornecedor" text="Cadastrar" />
+                              <MenuItem mnemonicParsing="false" onAction="#listarFornecedor" text="Listar" />
                            </items>
                         </Menu>
                     </menus>

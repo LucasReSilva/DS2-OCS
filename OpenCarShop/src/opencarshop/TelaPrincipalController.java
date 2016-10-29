@@ -21,8 +21,10 @@ import javafx.scene.layout.StackPane;
  * @author lucas
  */
 public class TelaPrincipalController implements Initializable {
+    
     @FXML
-    private StackPane acContent;       
+    private StackPane acContent;     
+    
     @FXML
     private void cadastrarFuncionario(ActionEvent event) {
         System.out.println("Cadastrar Funcionario");
@@ -43,6 +45,62 @@ public class TelaPrincipalController implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader();
         try {
             fxmlLoader.load(getClass().getResource("/opencarshop/funcionario/view/Buscar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+    @FXML
+    private void cadastrarFornecedor(ActionEvent event) {
+        System.out.println("Cadastrar Fornecedor");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/fornecedor/view/Cadastrar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+    @FXML
+    private void listarFornecedor(ActionEvent event) {
+        System.out.println("Buscar Fornecedor");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/fornecedor/view/Buscar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+    @FXML
+    private void cadastrarCliente(ActionEvent event) {
+        System.out.println("Cadastrar Cliente");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/cliente/view/Cadastrar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+    @FXML
+    private void listarCliente(ActionEvent event) {
+        System.out.println("Buscar Cliente");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/cliente/view/Buscar.fxml").openStream());
         } catch (IOException e) {
             
         }

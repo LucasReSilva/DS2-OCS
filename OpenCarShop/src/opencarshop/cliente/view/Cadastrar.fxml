@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.cliente.controller.ClienteController">
-    
+<AnchorPane id="AnchorPane" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.cliente.controller.ClienteController">
+   <children>
+      <TabPane prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Identificacao">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1024.0">
+                     <children>
+                        <TextField fx:id="tf_cpfCadastro" layoutX="14.0" layoutY="90.0" prefHeight="25.0" prefWidth="170.0" promptText="CPF" />
+                        <PasswordField fx:id="pf_senhaCadastro" layoutX="194.0" layoutY="90.0" prefHeight="25.0" prefWidth="170.0" promptText="Senha" />
+                        <TextField fx:id="tf_nomeCadastro" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="350.0" promptText="Nome completo" />
+                        <DatePicker fx:id="dp_dataNascimentoCadastro" layoutX="14.0" layoutY="50.0" prefHeight="25.0" prefWidth="350.0" promptText="Data Nascimento" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Contato">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="1024.0">
+                     <children>
+                        <TextField fx:id="tf_emailCadastro" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="350.0" promptText="Email" />
+                        <TextField fx:id="tf_telefone1Cadastro" layoutX="14.0" layoutY="50.0" prefWidth="170.0" promptText="Telefone 1" />
+                        <TextField fx:id="tf_telefone2Cadastro" layoutX="194.0" layoutY="50.0" prefWidth="170.0" promptText="Telefone 2" />
+                        <TextField fx:id="tf_ruaCadastro" layoutX="14.0" layoutY="86.0" prefWidth="350.0" promptText="Rua" />
+                        <TextField fx:id="tf_cidadeCadastro" layoutX="14.0" layoutY="157.0" prefWidth="350.0" promptText="Cidade" />
+                        <TextField fx:id="tf_estadoCadastro" layoutX="14.0" layoutY="192.0" prefWidth="170.0" promptText="UF" />
+                        <TextField fx:id="tf_bairroCadastro" layoutX="194.0" layoutY="192.0" prefWidth="170.0" promptText="Bairro" />
+                        <TextField fx:id="tf_cepCadastro" layoutX="14.0" layoutY="226.0" prefWidth="170.0" promptText="CEP" />
+                        <TextField fx:id="tf_numeroCadastro" layoutX="194.0" layoutY="226.0" prefWidth="170.0" promptText="Número" />
+                        <TextField fx:id="tf_complementoCadastro" layoutX="14.0" layoutY="121.0" prefWidth="350.0" promptText="Complemento" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button id="btn_cadastrar" layoutX="152.0" layoutY="295.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+   </children>
 </AnchorPane>
