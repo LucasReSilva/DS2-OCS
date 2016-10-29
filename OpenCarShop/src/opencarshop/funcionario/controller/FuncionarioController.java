@@ -7,6 +7,10 @@ package opencarshop.funcionario.controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,13 +18,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import opencarshop.funcionario.model.Contrato;
 import opencarshop.funcionario.model.Funcionario;
 import opencarshop.funcionario.model.FuncionarioDAO;
+import opencarshop.util.Endereco;
 
 /**
  * FXML Controller class
@@ -37,6 +44,7 @@ public class FuncionarioController implements Initializable {
         // TODO
     }
     
+    // TELA DE AUTENTICACAO
     @FXML
     private Label labelErro;
     @FXML
@@ -45,6 +53,48 @@ public class FuncionarioController implements Initializable {
     private PasswordField pf_senha;
     @FXML
     private Hyperlink cadastroLink;
+    
+    // TELA DE CADASTRO
+    @FXML
+    private TextField tf_cpfCadastro;
+    @FXML
+    private PasswordField pf_senhaCadastro;
+    @FXML
+    private TextField tf_nomeCadastro;
+    @FXML
+    private DatePicker dp_dataNascimentoCadastro;
+    
+    @FXML
+    private TextField tf_emailCadastro;
+    @FXML
+    private TextField tf_telefone1Cadastro;   
+    @FXML
+    private TextField tf_telefone2Cadastro;
+    @FXML
+    private TextField tf_ruaCadastro;
+    @FXML
+    private TextField tf_cidadeCadastro;
+    @FXML
+    private TextField tf_estadoCadastro;
+    @FXML
+    private TextField tf_bairroCadastro;
+    @FXML
+    private TextField tf_cepCadastro;
+    @FXML
+    private TextField tf_numeroCadastro;
+    @FXML
+    private TextField tf_complementoCadastro;
+    
+    @FXML
+    private TextField tf_salarioCadastro;
+    @FXML
+    private TextField tf_cargoCadastro;
+    @FXML
+    private DatePicker dp_dataInicioCadastro;
+    @FXML
+    private DatePicker dp_dataTerminoCadastro;
+    
+    
     @FXML
     private void autenticar(ActionEvent event) 
     {
@@ -89,8 +139,44 @@ public class FuncionarioController implements Initializable {
     }
     
     @FXML
-    private void cadastrar(ActionEvent event) {
-        System.out.println("Clicou em cadastrar");
+    private void cadastrar(ActionEvent event) throws ParseException {
+        Funcionario  func    = new Funcionario();
+        Endereco     end     = new Endereco();
+        Contrato     contr   = new Contrato();
+        FuncionarioDAO f     = new FuncionarioDAO();
+        
+        
+//        SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
+//        Date data = formato.parse("2013-10-10");
+ 
+        
+
+       
+//        // OBJETO FUNCIONARIO
+//        func.setCpf(tf_cpfCadastro.getText());
+//        func.setNome(tf_nomeCadastro.getText());
+//        func.setSenha(pf_senhaCadastro.getText());
+//        //func.setDataNascimento((Date)formatter.parse(u.converteDataUStoBR(String.valueOf(dp_dataNascimentoCadastro.getValue()))));
+//        func.setDataNascimento((Date)formatter.parse("1900-12-12"));
+//        func.setEmail(tf_emailCadastro.getText());
+//        func.setTelefone1(tf_telefone1Cadastro.getText());
+//        func.setTelefone2(tf_telefone2Cadastro.getText());
+//
+//        // OBJETO ENDERECO
+//        end.setCEP(tf_cepCadastro.getText());
+//        end.setEstado(tf_estadoCadastro.getText());
+//        end.setCidade(tf_cidadeCadastro.getText());
+//        end.setBairro(tf_bairroCadastro.getText());
+//        end.setRua(tf_ruaCadastro.getText());
+//        end.setNumero(Integer.parseInt(tf_numeroCadastro.getText()));
+//        end.setComplemento(tf_complementoCadastro.getText());
+
+        // OBJETO CONTRATO
+//        contr.setCargo(tf_cargoCadastro.getText().charAt(0));
+//        contr.setSalario(DecimalFormat.getInstance().parse(tf_salarioCadastro.getText()).doubleValue());
+//        contr.setDataInicio(data);
+//        //contr.setDataTermino((Date)formatter.parse("2017-12-12"));
+//	f.cadastraFuncionario(contr);
     }
     
     @FXML

@@ -16,10 +16,10 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1024.0">
                      <children>
-                        <TextField id="btn_cpf" layoutX="14.0" layoutY="90.0" prefHeight="25.0" prefWidth="170.0" promptText="CPF" />
-                        <PasswordField id="btn_senha" layoutX="194.0" layoutY="90.0" prefHeight="25.0" prefWidth="170.0" promptText="Senha" />
-                        <TextField id="btn_nome" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="350.0" promptText="Nome completo" />
-                        <DatePicker layoutX="14.0" layoutY="50.0" prefHeight="25.0" prefWidth="350.0" promptText="Data Nascimento" />
+                        <TextField fx:id="tf_cpfCadastro" layoutX="14.0" layoutY="90.0" prefHeight="25.0" prefWidth="170.0" promptText="CPF" />
+                        <PasswordField fx:id="pf_senhaCadastro" layoutX="194.0" layoutY="90.0" prefHeight="25.0" prefWidth="170.0" promptText="Senha" />
+                        <TextField fx:id="tf_nomeCadastro" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="350.0" promptText="Nome completo" />
+                        <DatePicker fx:id="dp_dataNascimentoCadastro" layoutX="14.0" layoutY="50.0" prefHeight="25.0" prefWidth="350.0" promptText="Data Nascimento" />
                      </children>
                   </AnchorPane>
             </content>
@@ -28,16 +28,16 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="1024.0">
                      <children>
-                        <TextField id="btn_email" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="350.0" promptText="Email" />
-                        <TextField layoutX="14.0" layoutY="50.0" prefWidth="170.0" promptText="Telefone 1" />
-                        <TextField layoutX="194.0" layoutY="50.0" prefWidth="170.0" promptText="Telefone 2" />
-                        <TextField layoutX="14.0" layoutY="86.0" prefWidth="350.0" promptText="Rua" />
-                        <TextField layoutX="14.0" layoutY="157.0" prefWidth="350.0" promptText="Cidade" />
-                        <TextField layoutX="14.0" layoutY="192.0" prefWidth="170.0" promptText="UF" />
-                        <TextField layoutX="194.0" layoutY="192.0" prefWidth="170.0" promptText="Bairro" />
-                        <TextField layoutX="14.0" layoutY="226.0" prefWidth="170.0" promptText="CEP" />
-                        <TextField layoutX="194.0" layoutY="226.0" prefWidth="170.0" promptText="Número" />
-                        <TextField layoutX="14.0" layoutY="121.0" prefWidth="350.0" promptText="Complemento" />
+                        <TextField fx:id="tf_emailCadastro" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="350.0" promptText="Email" />
+                        <TextField fx:id="tf_telefone1Cadastro" layoutX="14.0" layoutY="50.0" prefWidth="170.0" promptText="Telefone 1" />
+                        <TextField fx:id="tf_telefone2Cadastro" layoutX="194.0" layoutY="50.0" prefWidth="170.0" promptText="Telefone 2" />
+                        <TextField fx:id="tf_ruaCadastro" layoutX="14.0" layoutY="86.0" prefWidth="350.0" promptText="Rua" />
+                        <TextField fx:id="tf_cidadeCadastro" layoutX="14.0" layoutY="157.0" prefWidth="350.0" promptText="Cidade" />
+                        <TextField fx:id="tf_estadoCadastro" layoutX="14.0" layoutY="192.0" prefWidth="170.0" promptText="UF" />
+                        <TextField fx:id="tf_bairroCadastro" layoutX="194.0" layoutY="192.0" prefWidth="170.0" promptText="Bairro" />
+                        <TextField fx:id="tf_cepCadastro" layoutX="14.0" layoutY="226.0" prefWidth="170.0" promptText="CEP" />
+                        <TextField fx:id="tf_numeroCadastro" layoutX="194.0" layoutY="226.0" prefWidth="170.0" promptText="Número" />
+                        <TextField fx:id="tf_complementoCadastro" layoutX="14.0" layoutY="121.0" prefWidth="350.0" promptText="Complemento" />
                      </children>
                   </AnchorPane>
             </content>
@@ -46,10 +46,10 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField id="tf_salario" layoutX="14.0" layoutY="49.0" prefWidth="350.0" promptText="Salario" />
-                        <TextField layoutX="14.0" layoutY="14.0" prefWidth="350.0" promptText="Cargo" />
-                        <DatePicker layoutX="14.0" layoutY="84.0" prefWidth="350.0" promptText="Data de inicio" />
-                        <DatePicker layoutX="14.0" layoutY="119.0" prefWidth="350.0" promptText="Data de termino" />
+                        <TextField fx:id="tf_salarioCadastro" layoutX="14.0" layoutY="49.0" prefWidth="350.0" promptText="Salario" />
+                        <TextField fx:id="tf_cargoCadastro" layoutX="14.0" layoutY="14.0" prefWidth="350.0" promptText="Cargo" />
+                        <DatePicker fx:id="dp_dataInicioCadastro" layoutX="14.0" layoutY="84.0" prefWidth="350.0" promptText="Data de inicio" />
+                        <DatePicker fx:id="dp_dataTerminoCadastro" layoutX="14.0" layoutY="119.0" prefWidth="350.0" promptText="Data de termino" />
                      </children>
                   </AnchorPane>
                </content>

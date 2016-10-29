@@ -5,7 +5,6 @@
  */
 package opencarshop.funcionario.model;
 
-import java.util.Currency;
 import java.util.Date;
 
 /**
@@ -14,7 +13,7 @@ import java.util.Date;
  */
 public class Contrato {
     private Character cargo;
-    private Currency salario;
+    private Double  salario;
     private Date dataInicio;
     private Date dataTermino;
 
@@ -26,11 +25,11 @@ public class Contrato {
         this.cargo = cargo;
     }
 
-    public Currency getSalario() {
+    public Double  getSalario() {
         return salario;
     }
 
-    public void setSalario(Currency salario) {
+    public void setSalario(Double  salario) {
         this.salario = salario;
     }
 

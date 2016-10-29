@@ -54,9 +54,9 @@ public class FuncionarioDAO {
         return funcionario;
     }
     
-    public boolean cadastraFuncionario(Funcionario func, Endereco end, Contrato cont)
+    public boolean cadastraFuncionario( Contrato cont)
     {
-        
+        //System.out.println(cont.getDataInicio());
         return true;
     }
 }
