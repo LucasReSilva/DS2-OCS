@@ -40,9 +40,9 @@ public class FuncionarioController implements Initializable {
     @FXML
     private Label labelErro;
     @FXML
-    private TextField cpf;
+    private TextField tf_cpf;
     @FXML
-    private PasswordField senha;
+    private PasswordField pf_senha;
     @FXML
     private Hyperlink cadastroLink;
     @FXML
@@ -50,11 +50,11 @@ public class FuncionarioController implements Initializable {
     {
         Funcionario funcionario;
         FuncionarioDAO func = new FuncionarioDAO();
-        funcionario = func.getFuncionario(cpf.getText());
+        funcionario = func.getFuncionario(tf_cpf.getText());
         
         if(funcionario != null)
         {
-            if(funcionario.getSenha().equals(senha.getText()))
+            if(funcionario.getSenha().equals(pf_senha.getText()))
             {
                 Parent root = null;
                 try 
