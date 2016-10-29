@@ -20,7 +20,7 @@ public class OpenCarShop extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("funcionario/view/Buscar.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("funcionario/view/Autenticar.fxml"));
         
         Scene scene = new Scene(root);
         
