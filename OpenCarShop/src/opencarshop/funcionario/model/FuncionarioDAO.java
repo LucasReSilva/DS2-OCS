@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import opencarshop.util.ConexaoMySQL;
+import opencarshop.util.Endereco;
 
 /**
  *
@@ -53,4 +54,9 @@ public class FuncionarioDAO {
         return funcionario;
     }
     
+    public boolean cadastraFuncionario(Funcionario func, Endereco end, Contrato cont)
+    {
+        
+        return true;
+    }
 }
