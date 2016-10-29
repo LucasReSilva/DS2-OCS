@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.funcionario.controller.FuncionarioController">
+   <children>
+      <TableView prefHeight="774.0" prefWidth="637.0">
+        <columns>
+          <TableColumn id="col_nome" prefWidth="75.0" text="Nome" />
+          <TableColumn id="col_cargo" prefWidth="75.0" text="Cargo" />
+            <TableColumn id="col_telefone" prefWidth="75.0" text="Telefone" />
+            <TableColumn id="col_email" prefWidth="75.0" text="Email" />
+        </columns>
+      </TableView>
+      <TextField id="tf_nome" layoutX="656.0" layoutY="29.0" prefHeight="25.0" prefWidth="286.0" promptText="Nome" />
+      <Button id="btn_buscar" layoutX="958.0" layoutY="29.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+   </children>
+</AnchorPane>

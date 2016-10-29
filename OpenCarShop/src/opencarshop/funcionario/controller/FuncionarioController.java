@@ -36,4 +36,9 @@ public class FuncionarioController implements Initializable {
         System.out.println("Clicou em cadastrar");
     }
     
+    @FXML
+    private void buscar(ActionEvent event) {
+        System.out.println("Filtrando Busca");
+    }
+    
 }
