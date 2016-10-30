@@ -18,7 +18,7 @@ import opencarshop.Endereco;
  */
 public class VeiculoDA {
     
-    public Funcionario getFuncionario(String cpf)
+   /* public Funcionario getFuncionario(String cpf)
     {
         ConexaoMySQL c = new ConexaoMySQL();
         Connection conn = null;
@@ -53,7 +53,7 @@ public class VeiculoDA {
             e.printStackTrace();
         }
         return funcionario;
-    }
+    }*/
     
     public boolean cadastraFuncionario( Contrato cont)
     {
