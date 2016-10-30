@@ -9,7 +9,6 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import opencarshop.util.ConexaoMySQL;
 import opencarshop.Endereco;
 import opencarshop.util.Utilidades;
@@ -62,15 +61,15 @@ public class FuncionarioDAO {
     {
         ConexaoMySQL c = new ConexaoMySQL();
         Connection conn = null;
-        Utilidades u = new Utilidades();
         
         PreparedStatement stmtEnd = null;
         PreparedStatement stmtCon = null;
         PreparedStatement stmtFun = null;
         
-        String queryEnd = "INSERT INTO Endereco (cep, estado, cidade, bairro, rua, numero, complemento) VALUES (?,?,?,?,?,?,?)";
-        String queryCon = "INSERT INTO Contrato (cargo, salario, dataInicio, dataTermino) VALUES (?,?,?,?)";
-        String queryFun = "INSERT INTO Funcionario (cpf, nome, senha, dataNascimento, email, telefone1, telefone2, endereco, contrato) VALUES (?,?,?,?,?,?,?,(select LAST_INSERT_ID()),(select LAST_INSERT_ID()))";
+        String queryEnd = "INSERT INTO Endereco (cep, estado, cidade, bairro, rua, numero, complemento,tipo) VALUES (?,?,?,?,?,?,?,?)";
+        String queryFun = "INSERT INTO Funcionario (cpf, nome, senha, dataNascimento, email, telefone1, telefone2, endereco) VALUES (?,?,?,?,?,?,?,(select LAST_INSERT_ID()))";
+        String queryCon = "INSERT INTO Contrato (cargo, salario, dataInicio, dataTermino,funcionario) VALUES (?,?,?,?,?)";
+        
        
         try
         {
@@ -78,8 +77,9 @@ public class FuncionarioDAO {
             conn.setAutoCommit(false);
             
             stmtEnd = conn.prepareStatement(queryEnd);
-            stmtCon = conn.prepareStatement(queryCon);
             stmtFun = conn.prepareStatement(queryFun);
+            stmtCon = conn.prepareStatement(queryCon);
+            
             
             stmtEnd.setString(1, end.getCEP());
             stmtEnd.setString(2, end.getEstado());
@@ -88,11 +88,7 @@ public class FuncionarioDAO {
             stmtEnd.setString(5, end.getRua());
             stmtEnd.setInt(6, end.getNumero());
             stmtEnd.setString(7, end.getComplemento());
-            
-            stmtCon.setString(1, Character.toString(cont.getCargo()));
-            stmtCon.setDouble(2, cont.getSalario());
-            stmtCon.setDate(3, Date.valueOf(cont.getDataInicio()));
-            stmtCon.setDate(4, Date.valueOf(cont.getDataInicio()));
+            stmtEnd.setString(8, Character.toString(end.getTipo()));
             
             stmtFun.setString(1, func.getCpf());
             stmtFun.setString(2, func.getNome());
@@ -101,11 +97,18 @@ public class FuncionarioDAO {
             stmtFun.setString(5, func.getEmail());
             stmtFun.setString(6, func.getTelefone1());
             stmtFun.setString(7, func.getTelefone2());
+            
+            stmtCon.setString(1, Character.toString(cont.getCargo()));
+            stmtCon.setDouble(2, cont.getSalario());
+            stmtCon.setDate(3, Date.valueOf(cont.getDataInicio()));
+            stmtCon.setDate(4, Date.valueOf(cont.getDataInicio()));
+            stmtCon.setString(5, func.getCpf());
+
           
             
             stmtEnd.execute();
-            stmtCon.execute();
             stmtFun.execute();
+            stmtCon.execute();
             
             conn.commit();
             

@@ -7,10 +7,11 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
 
 <AnchorPane id="AnchorPane" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.funcionario.controller.FuncionarioController">
    <children>
-      <TabPane prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="328.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Identificacao">
             <content>
@@ -26,18 +27,26 @@
           </Tab>
           <Tab text="Contato">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="1024.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="316.0" prefWidth="1024.0">
                      <children>
                         <TextField fx:id="tf_emailCadastro" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="350.0" promptText="Email" />
                         <TextField fx:id="tf_telefone1Cadastro" layoutX="14.0" layoutY="50.0" prefWidth="170.0" promptText="Telefone 1" />
                         <TextField fx:id="tf_telefone2Cadastro" layoutX="194.0" layoutY="50.0" prefWidth="170.0" promptText="Telefone 2" />
-                        <TextField fx:id="tf_ruaCadastro" layoutX="14.0" layoutY="86.0" prefWidth="350.0" promptText="Rua" />
-                        <TextField fx:id="tf_cidadeCadastro" layoutX="14.0" layoutY="157.0" prefWidth="350.0" promptText="Cidade" />
-                        <TextField fx:id="tf_estadoCadastro" layoutX="14.0" layoutY="192.0" prefWidth="170.0" promptText="UF" />
-                        <TextField fx:id="tf_bairroCadastro" layoutX="194.0" layoutY="192.0" prefWidth="170.0" promptText="Bairro" />
-                        <TextField fx:id="tf_cepCadastro" layoutX="14.0" layoutY="226.0" prefWidth="170.0" promptText="CEP" />
-                        <TextField fx:id="tf_numeroCadastro" layoutX="194.0" layoutY="226.0" prefWidth="170.0" promptText="Número" />
-                        <TextField fx:id="tf_complementoCadastro" layoutX="14.0" layoutY="121.0" prefWidth="350.0" promptText="Complemento" />
+                        <TextField fx:id="tf_ruaCadastro" layoutX="14.0" layoutY="116.0" prefWidth="350.0" promptText="Rua" />
+                        <TextField fx:id="tf_cidadeCadastro" layoutX="14.0" layoutY="187.0" prefWidth="350.0" promptText="Cidade" />
+                        <TextField fx:id="tf_estadoCadastro" layoutX="14.0" layoutY="222.0" prefWidth="170.0" promptText="UF" />
+                        <TextField fx:id="tf_bairroCadastro" layoutX="194.0" layoutY="222.0" prefWidth="170.0" promptText="Bairro" />
+                        <TextField fx:id="tf_cepCadastro" layoutX="14.0" layoutY="256.0" prefWidth="170.0" promptText="CEP" />
+                        <TextField fx:id="tf_numeroCadastro" layoutX="194.0" layoutY="256.0" prefWidth="170.0" promptText="Número" />
+                        <TextField fx:id="tf_complementoCadastro" layoutX="14.0" layoutY="151.0" prefWidth="350.0" promptText="Complemento" />
+                        <ComboBox fx:id="cb_tipoCadastro" layoutX="14.0" layoutY="83.0" prefWidth="350.0" promptText="Tipo de Endereço">
+                            <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Residencial" />
+                                <String fx:value="Comercial" />
+                            </FXCollections>
+                          </items>
+                          </ComboBox>
                      </children>
                   </AnchorPane>
             </content>
@@ -47,16 +56,24 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="tf_salarioCadastro" layoutX="14.0" layoutY="49.0" prefWidth="350.0" promptText="Salario" />
-                        <TextField fx:id="tf_cargoCadastro" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="67.0" promptText="Cargo" />
                         <DatePicker fx:id="dp_dataInicioCadastro" layoutX="14.0" layoutY="84.0" prefWidth="350.0" promptText="Data de inicio" />
                         <DatePicker fx:id="dp_dataTerminoCadastro" layoutX="14.0" layoutY="119.0" prefWidth="350.0" promptText="Data de termino" />
-                        <ComboBox id="cb_cargo" fx:id="cb_cargo" layoutX="105.0" layoutY="14.0" prefWidth="150.0" promptText="Cargo" />
+                        <ComboBox fx:id="cb_cargoCadastro" layoutX="14.0" layoutY="14.0" prefWidth="350.0" promptText="Cargo">
+                         <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Funcionario" />
+                                <String fx:value="Gerente" />
+                                <String fx:value="Mecanico" />
+                            </FXCollections>
+                          </items>
+                          </ComboBox>
                      </children>
                   </AnchorPane>
                </content>
             </Tab>
         </tabs>
       </TabPane>
-      <Button id="btn_cadastrar" layoutX="152.0" layoutY="295.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+      <Button id="btn_cadastrar" layoutX="151.0" layoutY="367.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+      <Label fx:id="resultadoCadastro" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="328.0" prefHeight="17.0" prefWidth="346.0" textAlignment="CENTER" />
    </children>
 </AnchorPane>

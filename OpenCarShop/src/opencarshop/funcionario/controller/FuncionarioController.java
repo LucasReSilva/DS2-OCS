@@ -9,8 +9,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,6 +16,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
@@ -40,10 +39,7 @@ public class FuncionarioController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
+   
     
     // TELA DE AUTENTICACAO
     @FXML
@@ -65,6 +61,8 @@ public class FuncionarioController implements Initializable {
     @FXML
     private DatePicker dp_dataNascimentoCadastro;
     
+    @FXML
+    private ComboBox<String> cb_tipoCadastro;
     @FXML
     private TextField tf_emailCadastro;
     @FXML
@@ -89,11 +87,14 @@ public class FuncionarioController implements Initializable {
     @FXML
     private TextField tf_salarioCadastro;
     @FXML
-    private TextField tf_cargoCadastro;
+    private ComboBox<String> cb_cargoCadastro;
     @FXML
     private DatePicker dp_dataInicioCadastro;
     @FXML
     private DatePicker dp_dataTerminoCadastro;
+   
+    @FXML
+    private Label resultadoCadastro;
     
     
     @FXML
@@ -141,6 +142,7 @@ public class FuncionarioController implements Initializable {
     
     @FXML
     private void cadastrar(ActionEvent event) throws ParseException {
+        //cb_cargoCadastro.setItems(cargos);
         Funcionario  func    = new Funcionario();
         Endereco     end     = new Endereco();
         Contrato     contr   = new Contrato();
@@ -165,20 +167,35 @@ public class FuncionarioController implements Initializable {
         end.setRua(tf_ruaCadastro.getText());
         end.setNumero(Integer.parseInt(tf_numeroCadastro.getText()));
         end.setComplemento(tf_complementoCadastro.getText());
+        end.setTipo(cb_tipoCadastro.getValue().charAt(0));
 
         // OBJETO CONTRATO
-        contr.setCargo(tf_cargoCadastro.getText().charAt(0));
+        contr.setCargo( cb_cargoCadastro.getValue().charAt(0));
         contr.setSalario(DecimalFormat.getInstance().parse(tf_salarioCadastro.getText()).doubleValue());
         contr.setDataInicio(dp_dataInicioCadastro.getValue());
         contr.setDataTermino(dp_dataTerminoCadastro.getValue());
 	
         
-        f.cadastraFuncionario(func, end, contr);   
+        if(f.cadastraFuncionario(func, end, contr))
+        {
+            resultadoCadastro.setText("Cadastrado com sucesso!!");
+        }
+        else
+        {
+            resultadoCadastro.setText("Erro ao cadastrar!! Tente novamente.");
+        }
     }
     
     @FXML
     private void buscar(ActionEvent event) {
         System.out.println("Filtrando Busca");
+    }
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+        //cb_cargoCadastro.setItems(cargos);
+        
     }
     
 }

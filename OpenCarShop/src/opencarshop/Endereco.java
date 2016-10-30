@@ -17,9 +17,18 @@ public class Endereco {
     private String rua;
     private int numero;
     private String complemento;
+    private Character tipo;
 
     public String getCEP() {
         return CEP;
+    }
+
+    public Character getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Character tipo) {
+        this.tipo = tipo;
     }
 
     public void setCEP(String CEP) {
