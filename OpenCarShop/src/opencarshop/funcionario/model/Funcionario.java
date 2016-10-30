@@ -5,6 +5,7 @@
  */
 package opencarshop.funcionario.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -15,7 +16,7 @@ public class Funcionario {
     private String cpf;
     private String nome;
     private String senha;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
     private String email;
     private String telefone1;
     private String telefone2;
@@ -44,11 +45,11 @@ public class Funcionario {
         this.senha = senha;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

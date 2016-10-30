@@ -28,6 +28,7 @@ import opencarshop.funcionario.model.Contrato;
 import opencarshop.funcionario.model.Funcionario;
 import opencarshop.funcionario.model.FuncionarioDAO;
 import opencarshop.Endereco;
+import opencarshop.util.Utilidades;
 
 /**
  * FXML Controller class
@@ -144,39 +145,35 @@ public class FuncionarioController implements Initializable {
         Endereco     end     = new Endereco();
         Contrato     contr   = new Contrato();
         FuncionarioDAO f     = new FuncionarioDAO();
-        
-        
-//        SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
-//        Date data = formato.parse("2013-10-10");
- 
-        
+        Utilidades u = new Utilidades();
+      
+        // OBJETO FUNCIONARIO
+        func.setCpf(tf_cpfCadastro.getText());
+        func.setNome(tf_nomeCadastro.getText());
+        func.setSenha(pf_senhaCadastro.getText());
+        func.setDataNascimento(dp_dataNascimentoCadastro.getValue());
+        func.setDataNascimento(dp_dataNascimentoCadastro.getValue());
+        func.setEmail(tf_emailCadastro.getText());
+        func.setTelefone1(tf_telefone1Cadastro.getText());
+        func.setTelefone2(tf_telefone2Cadastro.getText());
 
-       
-//        // OBJETO FUNCIONARIO
-//        func.setCpf(tf_cpfCadastro.getText());
-//        func.setNome(tf_nomeCadastro.getText());
-//        func.setSenha(pf_senhaCadastro.getText());
-//        //func.setDataNascimento((Date)formatter.parse(u.converteDataUStoBR(String.valueOf(dp_dataNascimentoCadastro.getValue()))));
-//        func.setDataNascimento((Date)formatter.parse("1900-12-12"));
-//        func.setEmail(tf_emailCadastro.getText());
-//        func.setTelefone1(tf_telefone1Cadastro.getText());
-//        func.setTelefone2(tf_telefone2Cadastro.getText());
-//
-//        // OBJETO ENDERECO
-//        end.setCEP(tf_cepCadastro.getText());
-//        end.setEstado(tf_estadoCadastro.getText());
-//        end.setCidade(tf_cidadeCadastro.getText());
-//        end.setBairro(tf_bairroCadastro.getText());
-//        end.setRua(tf_ruaCadastro.getText());
-//        end.setNumero(Integer.parseInt(tf_numeroCadastro.getText()));
-//        end.setComplemento(tf_complementoCadastro.getText());
+        // OBJETO ENDERECO
+        end.setCEP(tf_cepCadastro.getText());
+        end.setEstado(tf_estadoCadastro.getText());
+        end.setCidade(tf_cidadeCadastro.getText());
+        end.setBairro(tf_bairroCadastro.getText());
+        end.setRua(tf_ruaCadastro.getText());
+        end.setNumero(Integer.parseInt(tf_numeroCadastro.getText()));
+        end.setComplemento(tf_complementoCadastro.getText());
 
         // OBJETO CONTRATO
-//        contr.setCargo(tf_cargoCadastro.getText().charAt(0));
-//        contr.setSalario(DecimalFormat.getInstance().parse(tf_salarioCadastro.getText()).doubleValue());
-//        contr.setDataInicio(data);
-//        //contr.setDataTermino((Date)formatter.parse("2017-12-12"));
-//	f.cadastraFuncionario(contr);
+        contr.setCargo(tf_cargoCadastro.getText().charAt(0));
+        contr.setSalario(DecimalFormat.getInstance().parse(tf_salarioCadastro.getText()).doubleValue());
+        contr.setDataInicio(dp_dataInicioCadastro.getValue());
+        contr.setDataTermino(dp_dataTerminoCadastro.getValue());
+	
+        
+        f.cadastraFuncionario(func, end, contr);   
     }
     
     @FXML
