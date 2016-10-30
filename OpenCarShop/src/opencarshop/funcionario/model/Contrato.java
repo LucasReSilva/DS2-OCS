@@ -5,6 +5,7 @@
  */
 package opencarshop.funcionario.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -14,8 +15,8 @@ import java.util.Date;
 public class Contrato {
     private Character cargo;
     private Double  salario;
-    private Date dataInicio;
-    private Date dataTermino;
+    private LocalDate dataInicio;
+    private LocalDate dataTermino;
 
     public Character getCargo() {
         return cargo;
@@ -33,19 +34,19 @@ public class Contrato {
         this.salario = salario;
     }
 
-    public Date getDataInicio() {
+    public LocalDate getDataInicio() {
         return dataInicio;
     }
 
-    public void setDataInicio(Date dataInicio) {
+    public void setDataInicio(LocalDate dataInicio) {
         this.dataInicio = dataInicio;
     }
 
-    public Date getDataTermino() {
+    public LocalDate getDataTermino() {
         return dataTermino;
     }
 
-    public void setDataTermino(Date dataTermino) {
+    public void setDataTermino(LocalDate dataTermino) {
         this.dataTermino = dataTermino;
     }
     
