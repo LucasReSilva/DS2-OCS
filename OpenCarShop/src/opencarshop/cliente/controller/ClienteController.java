@@ -3,21 +3,25 @@ package opencarshop.cliente.controller;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.text.ParseException;
+import java.util.List;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import opencarshop.Endereco;
 import opencarshop.cliente.model.Cliente;
 import opencarshop.cliente.model.ClienteDAO;
-import opencarshop.funcionario.model.Contrato;
-import opencarshop.funcionario.model.Funcionario;
-import opencarshop.funcionario.model.FuncionarioDAO;
 import opencarshop.util.Utilidades;
 
 public class ClienteController implements Initializable {
@@ -58,6 +62,31 @@ public class ClienteController implements Initializable {
     private Label resultadoCadastro;
     
     
+    // TABELA CLIENTE
+    @FXML
+    private TableColumn<Cliente, String> col_nome;
+    @FXML
+    private TableColumn<Cliente, String> col_cpf;
+    @FXML
+    private TableColumn<Cliente, String> col_telefone1;
+    @FXML
+    private TableColumn<Cliente, String> col_telefone2;
+    @FXML
+    private TableColumn<Cliente, String> col_email;
+    
+    @FXML
+    private TableView<Cliente> tbl_cliente;
+    
+    
+
+    
+    @FXML
+    private CheckBox cb_ativo;
+    
+    @FXML
+    private Label confirmaAlteracao;
+    
+    
     @FXML
     private void cadastrar(ActionEvent event) throws ParseException {
         //cb_cargoCadastro.setItems(cargos);
@@ -94,14 +123,63 @@ public class ClienteController implements Initializable {
             resultadoCadastro.setText("Erro ao cadastrar!! Tente novamente.");
         }
     }
-    
-    
-    /**
-     * Initializes the controller class.
-     */
+    @FXML
+    private void alterarCadastro(ActionEvent event) throws Exception {
+        Cliente  cli    = new Cliente();
+        cli.setCpf(tf_cpfCadastro.getText());
+        cli.setNome(tf_nomeCadastro.getText());
+        cli.setDataNascimento(dp_dataNascimentoCadastro.getValue());
+        cli.setEmail(tf_emailCadastro.getText());
+        cli.setTelefone1(tf_telefone1Cadastro.getText());
+        cli.setTelefone2(tf_telefone2Cadastro.getText());
+        cli.setAtivo(cb_ativo.isSelected());
+        
+        ClienteDAO f     = new ClienteDAO();
+        if(f.alteraCliente(cli))
+        {
+            confirmaAlteracao.setText("Alteração realizada com sucesso!!");
+        }else
+        {
+            confirmaAlteracao.setText("Erro ao realizar a alteração!!");
+        }
+    }
+
+    private void carregaTabelaCliente() throws Exception
+    {
+        col_nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        col_cpf.setCellValueFactory(new PropertyValueFactory<>("cpf"));
+        col_telefone1.setCellValueFactory(new PropertyValueFactory<>("telefone1"));
+        col_telefone2.setCellValueFactory(new PropertyValueFactory<>("telefone2"));
+        col_email.setCellValueFactory(new PropertyValueFactory<>("email"));
+
+        ClienteDAO f = new ClienteDAO();
+        List<Cliente> listaCliente = f.getAllCliente();
+        ObservableList<Cliente> observableListFuncionatio;
+
+        observableListFuncionatio = FXCollections.observableArrayList(listaCliente);
+        tbl_cliente.setItems(observableListFuncionatio);
+    }
+    public void selecionarItemTablelaCliente(Cliente cliente){
+        if (cliente.getCpf() != null) {
+              tf_cpfCadastro.setText(cliente.getCpf());
+              tf_nomeCadastro.setText(cliente.getNome());
+              tf_emailCadastro.setText(cliente.getEmail());
+              tf_telefone1Cadastro.setText(cliente.getTelefone1());
+              tf_telefone2Cadastro.setText(cliente.getTelefone2());
+              dp_dataNascimentoCadastro.setValue(cliente.getDataNascimento());
+              cb_ativo.setSelected(cliente.getAtivo());
+              
+        } 
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+        try {
+            carregaTabelaCliente();
+            tbl_cliente.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> selecionarItemTablelaCliente(newValue));
+        } catch (Exception ex) {
+            //Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    } 
     
 }

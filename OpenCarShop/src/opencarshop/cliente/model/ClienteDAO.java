@@ -11,9 +11,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import opencarshop.Endereco;
 import opencarshop.cliente.model.Cliente;
-import opencarshop.funcionario.model.Contrato;
-import opencarshop.funcionario.model.Funcionario;
 import opencarshop.util.ConexaoMySQL;
+import opencarshop.util.Utilidades;
 
 public class ClienteDAO {
  
@@ -67,6 +66,65 @@ public class ClienteDAO {
         catch(Exception e)
         {
             e.printStackTrace();
+            return false;
+        }
+    }    
+    
+    public List<Cliente> getAllCliente() throws Exception
+    {
+        String query = "SELECT * FROM Cliente";
+        List<Cliente> retorno = new ArrayList<>();
+        Utilidades u = new Utilidades();
+        ConexaoMySQL c = new ConexaoMySQL();
+        Connection conn = null;
+        conn = c.conectar();
+        try {
+            PreparedStatement stmt = conn.prepareStatement(query);
+            ResultSet resultado = stmt.executeQuery();
+            while (resultado.next()) {
+                Cliente cliente = new Cliente();
+                cliente.setCpf(resultado.getString("cpf"));
+                cliente.setNome(resultado.getString("nome"));
+                cliente.setDataNascimento(u.toLocalDate(resultado.getDate("dataNascimento")));
+                cliente.setEmail(resultado.getString("email"));
+                cliente.setTelefone1(resultado.getString("telefone1"));
+                cliente.setTelefone2(resultado.getString("telefone2"));
+                cliente.setAtivo(resultado.getBoolean("ativo"));
+                
+                retorno.add(cliente);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        conn.close();
+        return retorno;
+    }
+    
+    
+    public Boolean alteraCliente(Cliente cli) throws SQLException
+    {
+        String query = "UPDATE Cliente SET nome=?, dataNascimento=?, email=?, telefone1=?, telefone2=?, ativo=? WHERE cpf=?";
+        
+        ConexaoMySQL c = new ConexaoMySQL();
+        Connection conn = null;
+        try {
+            conn = c.conectar();
+            PreparedStatement stmt = conn.prepareStatement(query);
+        
+     
+            stmt.setString(1, cli.getNome());
+            stmt.setDate(2, Date.valueOf(cli.getDataNascimento()));
+            stmt.setString(3, cli.getEmail());
+            stmt.setString(4, cli.getTelefone1());
+            stmt.setString(5, cli.getTelefone2());
+            stmt.setBoolean(6, cli.getAtivo());
+            stmt.setString(7, cli.getCpf());
+            stmt.execute();
+            conn.close();
+            return true;
+        } catch (Exception ex) {
+            
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
     }    
