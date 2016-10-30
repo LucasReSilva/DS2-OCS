@@ -103,7 +103,7 @@ public class FuncionarioController implements Initializable {
         FuncionarioDA func = new FuncionarioDA();
         funcionario = func.getFuncionario(tf_cpf.getText());
         
-        if(funcionario != null)
+        if(funcionario.getCpf() != null)
         {
             if(funcionario.getSenha().equals(pf_senha.getText()))
             {

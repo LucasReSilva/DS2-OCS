@@ -5,7 +5,58 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.servico.controller.ServicoController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.servico.controller.ServicoController">
+    <children>
+      <BorderPane layoutX="242.0" layoutY="94.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane maxHeight="383.0" maxWidth="1000.0" minHeight="200.0" minWidth="350.0" prefHeight="383.0" prefWidth="457.0">
+                     <children>
+                        <TextField fx:id="tfdescricao" alignment="TOP_LEFT" depthTest="ENABLE" layoutX="100.0" layoutY="83.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="61.0" prefWidth="235.0" promptText="45 caracteres">
+                           <tooltip>
+                              <Tooltip text="User Name will need to Login" />
+                           </tooltip>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor></TextField>
+                        <TextField fx:id="tfvalor" layoutX="100.0" layoutY="163.0" prefHeight="32.0" prefWidth="105.0" promptText="ex: 50,00">
+                           <font>
+                              <Font size="11.0" />
+                           </font></TextField>
+                        <Button fx:id="btnSignUp" layoutX="264.0" layoutY="299.0" mnemonicParsing="false" onAction="#cadastraServico" text="cadastrar" />
+                        <Text layoutX="54.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Serviço">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="16.0" layoutY="83.0" text="Desccrição:" />
+                        <Label layoutX="16.0" layoutY="164.0" text="Valor:" />
+                        <CheckBox fx:id="chkValue" layoutX="108.0" layoutY="212.0" mnemonicParsing="false" text="Valor Fixo" />
+                        <Label fx:id="labelErroServ" layoutX="108.0" layoutY="245.0" textFill="#ee0303">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+    
     
 </AnchorPane>
