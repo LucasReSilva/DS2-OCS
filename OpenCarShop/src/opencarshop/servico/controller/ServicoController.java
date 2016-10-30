@@ -1,14 +1,20 @@
 package opencarshop.servico.controller;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import opencarshop.servico.model.Servico;
 import opencarshop.servico.model.ServicoDAO;
 
@@ -17,10 +23,7 @@ public class ServicoController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+        
 
    //Variavéis  
     @FXML
@@ -34,6 +37,18 @@ public class ServicoController implements Initializable {
     
     @FXML
     private Label  labelErroServ;
+
+//Colunas da tabela listar serviços
+    
+    @FXML
+    private TableColumn<Servico, String> col_descricao;
+    @FXML
+    private TableColumn<Servico, Double> col_valor;
+    @FXML
+    private TableColumn<Servico, String> col_tpvalor;
+    @FXML
+    private TableView<Servico> tbl_servico;
+
     
   //metodos
     
@@ -73,14 +88,43 @@ public class ServicoController implements Initializable {
     
     
     
+    
+    
 
   }
  
 
+@FXML
+private void carregaTabelaServico() throws Exception{
+    
+    col_descricao.setCellValueFactory(new PropertyValueFactory<>("descrição"));
+    col_valor.setCellValueFactory(new PropertyValueFactory<>("valorP"));
+    col_tpvalor.setCellValueFactory(new PropertyValueFactory<>("valorF"));    
 
+        ServicoDAO serv = new ServicoDAO();
+        List<Servico> listaServico = serv.getAllServicos();
+        ObservableList<Servico> observableListServico;
 
+        observableListServico = FXCollections.observableArrayList(listaServico);
+        tbl_servico.setItems(observableListServico);
+        
 
+}
 
+@FXML
+    public void buscar(){
+    }
+
+@Override
+    public void initialize(URL url, ResourceBundle rb) {
+        try {
+            System.out.println("Chamou");
+            carregaTabelaServico();
+        } catch (Exception ex) {
+            
+        }
+        
+    }
 
 
 
