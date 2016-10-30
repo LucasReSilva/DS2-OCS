@@ -12,8 +12,7 @@ import javafx.stage.Stage;
 import opencarshop.fornecedor.model.Fornecedor;
 
 public class FornecedorController implements Initializable {
-
-
+    
     @FXML
     private TextField textFieldRazaoSocial;
     @FXML
@@ -73,37 +72,30 @@ public class FornecedorController implements Initializable {
     @FXML
     public void handleButtonConfirmar() {
 
-        //if (validarEntradaDeDados()) {
-
-            //fornecedor.setNome(textFieldClienteNome.getText());
-            ///fornecedor.setCpf(textFieldClienteCPF.getText());
-            //fornecedor.setTelefone(textFieldClienteTelefone.getText());
-            //fornecedor.setEmail(textFieldClienteEmail.getText());
-            //fornecedor.setData_nascimento(textFieldClienteDataNascimento.getText());
+        if (validarEntradaDeDados()) {
+            fornecedor.setCnpj(textFieldCNPJ.getText());
+            fornecedor.setRazaoSocial(textFieldRazaoSocial.getText());
+            fornecedor.setEmail(textFieldFornecedorEmail.getText());
+            fornecedor.setDescricao(textFieldFornecedorDescricao.getText());
+            fornecedor.setTelefone1(textFieldFornecedorTelefone1.getText());
+            fornecedor.setTelefone2(textFieldFornecedorTelefone2.getText());
             
-            //buttonConfirmarClicked = true;
-            //dialogStage.close();
-        //}
-
+            buttonConfirmarClicked = true;
+            dialogStage.close();
+        }
     }
 
-    //@FXML
-    //public void handleButtonCancelar() {
-        //dialogStage.close();
-    //}
+    @FXML
+    public void handleButtonCancelar() {
+        dialogStage.close();
+    }
 
-    /*Validar entrada de dados para o cadastro
+    //Validar entrada de dados para o cadastro
     private boolean validarEntradaDeDados() {
         String errorMessage = "";
 
-        if (textFieldClienteNome.getText() == null || textFieldClienteNome.getText().length() == 0) {
+        if (textFieldCNPJ.getText() == null || textFieldRazaoSocial.getText().length() == 0) {
             errorMessage += "Nome inválido!\n";
-        }
-        if (textFieldClienteCPF.getText() == null || textFieldClienteCPF.getText().length() == 0) {
-            errorMessage += "CPF inválido!\n";
-        }
-        if (textFieldClienteTelefone.getText() == null || textFieldClienteTelefone.getText().length() == 0) {
-            errorMessage += "Telefone inválido!\n";
         }
 
         if (errorMessage.length() == 0) {
@@ -118,7 +110,4 @@ public class FornecedorController implements Initializable {
             return false;
         }
     }
-    */
-     
-  
 }

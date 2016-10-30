@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -26,21 +25,20 @@
         </rowConstraints>
          <children>
             <Label fx:id="labelClienteNome" text="CNPJ" />
-            <Label fx:id="labelClienteCPF" text="Razao Social" GridPane.rowIndex="1" />
+            <Label fx:id="labelClienteCPF" text="Razão Social" GridPane.rowIndex="1" />
             <Label fx:id="labelClienteTelefone" text="Email" GridPane.rowIndex="2" />
             <TextField fx:id="textFieldRazaoSocial" GridPane.columnIndex="1" />
             <TextField fx:id="textFieldCNPJ" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField fx:id="textFieldFornecedorEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="labelClienteEmail" text="Descricao" GridPane.rowIndex="3" />
-            <Label fx:id="labelClienteDataNascimento" prefHeight="26.0" prefWidth="97.0" text="Telefone1" GridPane.rowIndex="4" />
+            <Label fx:id="labelClienteEmail" text="Descrição" GridPane.rowIndex="3" />
+            <Label fx:id="labelClienteDataNascimento" prefHeight="26.0" prefWidth="97.0" text="Telefone 1" GridPane.rowIndex="4" />
             <TextField fx:id="textFieldFornecedorDescricao" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <TextField fx:id="textFieldFornecedorTelefone1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label text="Telefone2" GridPane.rowIndex="5" />
+            <Label text="Telefone 2" GridPane.rowIndex="5" />
             <TextField fx:id="textFieldFornecedorTelefone2" prefHeight="62.0" prefWidth="224.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
-      <Group layoutX="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
       <Button fx:id="buttonConfirmar" layoutX="10.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
-      <Button fx:id="buttonCancelar" layoutX="109.0" layoutY="203.0" mnemonicParsing="false" onAction="" text="Cancelar" />
+      <Button fx:id="buttonCancelar" cancelButton="true" layoutX="107.0" layoutY="201.0" mnemonicParsing="false" onAction="" text="Cancelar" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="201.0" />
    </children>
 </AnchorPane>

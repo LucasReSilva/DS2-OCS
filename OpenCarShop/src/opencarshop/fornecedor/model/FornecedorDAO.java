@@ -40,14 +40,14 @@ public class FornecedorDAO {
         }
     }
     /*
-    public boolean alterar(Fornecedor cliente) {
-        String sql = "UPDATE cliente SET nome=?, cpf=?, telefone=? WHERE cdCliente=?";
+    public boolean alterar(Fornecedor fornecedor) {
+        String sql = "UPDATE fornecedor SET cnpj=?, razaosocial=?, telefone1=? WHERE cnpj=?";
         try {
             PreparedStatement stmt = connection.prepareStatement(sql);
-            stmt.setString(1, cliente.getNome());
-            stmt.setString(2, cliente.getCpf());
-            stmt.setString(3, cliente.getTelefone());
-            stmt.setInt(4, cliente.getCdCliente());
+            stmt.setString(1, fornecedor.getNome());
+            stmt.setString(2, fornecedor.getCpf());
+            stmt.setString(3, fornecedor.getTelefone());
+            stmt.setInt(4, fornecedor.getCdCliente());
             stmt.execute();
             return true;
         } catch (SQLException ex) {
