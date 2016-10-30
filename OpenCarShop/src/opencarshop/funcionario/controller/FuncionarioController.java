@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package opencarshop.funcionario.controller;
 
 import java.io.IOException;
@@ -29,11 +24,6 @@ import opencarshop.funcionario.model.FuncionarioDAO;
 import opencarshop.Endereco;
 import opencarshop.util.Utilidades;
 
-/**
- * FXML Controller class
- *
- * @author lucas
- */
 public class FuncionarioController implements Initializable {
 
     /**
