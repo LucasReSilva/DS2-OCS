@@ -4,7 +4,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.text.ParseException;
+import java.util.List;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +21,10 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import opencarshop.funcionario.model.Contrato;
 import opencarshop.funcionario.model.Funcionario;
@@ -85,6 +93,21 @@ public class FuncionarioController implements Initializable {
    
     @FXML
     private Label resultadoCadastro;
+    
+    // TABELA FUNCIONARIO
+    @FXML
+    private TableColumn<Funcionario, String> col_nome;
+    @FXML
+    private TableColumn<Funcionario, String> col_cpf;
+    @FXML
+    private TableColumn<Funcionario, String> col_telefone1;
+    @FXML
+    private TableColumn<Funcionario, String> col_telefone2;
+    @FXML
+    private TableColumn<Funcionario, String> col_email;
+    
+    @FXML
+    private TableView<Funcionario> tbl_funcionario;
     
     
     @FXML
@@ -177,14 +200,35 @@ public class FuncionarioController implements Initializable {
     }
     
     @FXML
-    private void buscar(ActionEvent event) {
-        System.out.println("Filtrando Busca");
+    private void buscar(ActionEvent event) throws Exception {
+
+        
+    }
+    
+    
+    private void carregaTabelaFuncionario() throws Exception
+    {
+        col_nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        col_cpf.setCellValueFactory(new PropertyValueFactory<>("cpf"));
+        col_telefone1.setCellValueFactory(new PropertyValueFactory<>("telefone1"));
+        col_telefone2.setCellValueFactory(new PropertyValueFactory<>("telefone2"));
+        col_email.setCellValueFactory(new PropertyValueFactory<>("email"));
+
+        FuncionarioDAO f = new FuncionarioDAO();
+        List<Funcionario> listaFuncionario = f.getAllFuncionario();
+        ObservableList<Funcionario> observableListFuncionatio;
+
+        observableListFuncionatio = FXCollections.observableArrayList(listaFuncionario);
+        tbl_funcionario.setItems(observableListFuncionatio);
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-        //cb_cargoCadastro.setItems(cargos);
+        try {
+            carregaTabelaFuncionario();
+        } catch (Exception ex) {
+            //Logger.getLogger(FuncionarioController.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
     

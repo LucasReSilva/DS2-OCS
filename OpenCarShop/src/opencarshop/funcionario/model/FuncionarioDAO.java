@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 import opencarshop.util.ConexaoMySQL;
 import opencarshop.Endereco;
 import opencarshop.util.Utilidades;
@@ -61,7 +63,6 @@ public class FuncionarioDAO {
         String queryFun = "INSERT INTO Funcionario (cpf, nome, senha, dataNascimento, email, telefone1, telefone2, endereco) VALUES (?,?,?,?,?,?,?,(select LAST_INSERT_ID()))";
         String queryCon = "INSERT INTO Contrato (cargo, salario, dataInicio, dataTermino,funcionario) VALUES (?,?,?,?,?)";
         
-       
         try
         {
             conn = c.conectar();
@@ -111,6 +112,35 @@ public class FuncionarioDAO {
             e.printStackTrace();
             return false;
         }
-        
+    }
+    
+    public List<Funcionario> getAllFuncionario() throws Exception
+    {
+        String query = "SELECT * FROM Funcionario";
+        List<Funcionario> retorno = new ArrayList<>();
+        Utilidades u = new Utilidades();
+        ConexaoMySQL c = new ConexaoMySQL();
+        Connection conn = null;
+        conn = c.conectar();
+        try {
+            PreparedStatement stmt = conn.prepareStatement(query);
+            ResultSet resultado = stmt.executeQuery();
+            while (resultado.next()) {
+                Funcionario funcionario = new Funcionario();
+                funcionario.setCpf(resultado.getString("cpf"));
+                funcionario.setNome(resultado.getString("nome"));
+                funcionario.setSenha(resultado.getString("senha"));
+                funcionario.setDataNascimento(u.toLocalDate(resultado.getDate("dataNascimento")));
+                funcionario.setEmail(resultado.getString("email"));
+                funcionario.setTelefone1(resultado.getString("telefone1"));
+                funcionario.setTelefone2(resultado.getString("telefone2"));
+                
+                retorno.add(funcionario);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        conn.close();
+        return retorno;
     }
 }
