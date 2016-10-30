@@ -16,6 +16,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Hyperlink;
@@ -111,6 +112,15 @@ public class FuncionarioController implements Initializable {
     
     
     @FXML
+    private Label label_nome;
+    
+    @FXML
+    private CheckBox cb_ativo;
+    
+    @FXML
+    private Label confirmaAlteracao;
+    
+    @FXML
     private void autenticar(ActionEvent event) 
     {
         Funcionario funcionario;
@@ -167,7 +177,6 @@ public class FuncionarioController implements Initializable {
         func.setNome(tf_nomeCadastro.getText());
         func.setSenha(pf_senhaCadastro.getText());
         func.setDataNascimento(dp_dataNascimentoCadastro.getValue());
-        func.setDataNascimento(dp_dataNascimentoCadastro.getValue());
         func.setEmail(tf_emailCadastro.getText());
         func.setTelefone1(tf_telefone1Cadastro.getText());
         func.setTelefone2(tf_telefone2Cadastro.getText());
@@ -201,9 +210,25 @@ public class FuncionarioController implements Initializable {
     }
     
     @FXML
-    private void buscar(ActionEvent event) throws Exception {
-
+    private void alterarCadastro(ActionEvent event) throws Exception {
+        Funcionario  func    = new Funcionario();
+        func.setCpf(tf_cpfCadastro.getText());
+        func.setNome(tf_nomeCadastro.getText());
+        func.setSenha(pf_senhaCadastro.getText());
+        func.setDataNascimento(dp_dataNascimentoCadastro.getValue());
+        func.setEmail(tf_emailCadastro.getText());
+        func.setTelefone1(tf_telefone1Cadastro.getText());
+        func.setTelefone2(tf_telefone2Cadastro.getText());
+        func.setAtivo(cb_ativo.isSelected());
         
+        FuncionarioDAO f     = new FuncionarioDAO();
+        if(f.alteraFuncionario(func))
+        {
+            confirmaAlteracao.setText("Alteração realizada com sucesso!!");
+        }else
+        {
+            confirmaAlteracao.setText("Erro ao realizar a alteração!!");
+        }
     }
     
     
@@ -222,15 +247,28 @@ public class FuncionarioController implements Initializable {
         observableListFuncionatio = FXCollections.observableArrayList(listaFuncionario);
         tbl_funcionario.setItems(observableListFuncionatio);
     }
-    
+    public void selecionarItemTablelaFuncionario(Funcionario funcionario){
+        if (funcionario.getCpf() != null) {
+              tf_cpfCadastro.setText(funcionario.getCpf());
+              tf_nomeCadastro.setText(funcionario.getNome());
+              pf_senhaCadastro.setText(funcionario.getSenha());
+              tf_emailCadastro.setText(funcionario.getEmail());
+              tf_telefone1Cadastro.setText(funcionario.getTelefone1());
+              tf_telefone2Cadastro.setText(funcionario.getTelefone2());
+              dp_dataNascimentoCadastro.setValue(funcionario.getDataNascimento());
+              cb_ativo.setSelected(funcionario.getAtivo());
+              
+        } 
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
             carregaTabelaFuncionario();
+            tbl_funcionario.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> selecionarItemTablelaFuncionario(newValue));
         } catch (Exception ex) {
             //Logger.getLogger(FuncionarioController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
     
 }

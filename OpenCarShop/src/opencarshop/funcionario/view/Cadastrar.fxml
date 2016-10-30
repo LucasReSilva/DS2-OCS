@@ -86,13 +86,13 @@
                         <Label layoutX="14.0" layoutY="60.0" text="Salario do tipo 100,00:" />
                         <Label layoutX="14.0" layoutY="102.0" text="Data de inicio do contrato:" />
                         <Label layoutX="14.0" layoutY="146.0" text="Data de termino do contrato:" />
+                        <Label fx:id="resultadoCadastro" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="304.0" prefHeight="17.0" prefWidth="346.0" textAlignment="CENTER" />
+                        <Button id="btn_cadastrar" layoutX="153.0" layoutY="321.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
                      </children>
                   </AnchorPane>
                </content>
             </Tab>
         </tabs>
       </TabPane>
-      <Button id="btn_cadastrar" layoutX="156.0" layoutY="471.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
-      <Label fx:id="resultadoCadastro" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="442.0" prefHeight="17.0" prefWidth="346.0" textAlignment="CENTER" />
    </children>
 </AnchorPane>
