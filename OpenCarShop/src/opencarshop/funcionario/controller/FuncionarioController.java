@@ -171,6 +171,7 @@ public class FuncionarioController implements Initializable {
         func.setEmail(tf_emailCadastro.getText());
         func.setTelefone1(tf_telefone1Cadastro.getText());
         func.setTelefone2(tf_telefone2Cadastro.getText());
+        func.setAtivo(true);
 
         // OBJETO ENDERECO
         end.setCEP(tf_cepCadastro.getText());

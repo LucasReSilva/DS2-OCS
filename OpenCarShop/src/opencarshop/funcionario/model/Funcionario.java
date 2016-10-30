@@ -1,7 +1,6 @@
 package opencarshop.funcionario.model;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Funcionario {
     private String cpf;
@@ -11,6 +10,15 @@ public class Funcionario {
     private String email;
     private String telefone1;
     private String telefone2;
+    private Boolean ativo;
+
+    public Boolean getAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
+    }
 
     public String getCpf() {
         return cpf;

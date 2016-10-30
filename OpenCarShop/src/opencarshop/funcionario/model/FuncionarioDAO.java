@@ -39,6 +39,7 @@ public class FuncionarioDAO {
                 funcionario.setEmail(resultado.getString("email"));
                 funcionario.setTelefone1(resultado.getString("telefone1"));
                 funcionario.setTelefone2(resultado.getString("telefone2"));
+                funcionario.setAtivo(resultado.getBoolean("ativo"));
             }
             
             conn.close();
@@ -60,7 +61,7 @@ public class FuncionarioDAO {
         PreparedStatement stmtFun = null;
         
         String queryEnd = "INSERT INTO Endereco (cep, estado, cidade, bairro, rua, numero, complemento,tipo) VALUES (?,?,?,?,?,?,?,?)";
-        String queryFun = "INSERT INTO Funcionario (cpf, nome, senha, dataNascimento, email, telefone1, telefone2, endereco) VALUES (?,?,?,?,?,?,?,(select LAST_INSERT_ID()))";
+        String queryFun = "INSERT INTO Funcionario (cpf, nome, senha, dataNascimento, email, telefone1, telefone2, endereco, ativo) VALUES (?,?,?,?,?,?,?,(select LAST_INSERT_ID()),?)";
         String queryCon = "INSERT INTO Contrato (cargo, salario, dataInicio, dataTermino,funcionario) VALUES (?,?,?,?,?)";
         
         try
@@ -89,6 +90,7 @@ public class FuncionarioDAO {
             stmtFun.setString(5, func.getEmail());
             stmtFun.setString(6, func.getTelefone1());
             stmtFun.setString(7, func.getTelefone2());
+            stmtFun.setBoolean(8, true);
             
             stmtCon.setString(1, Character.toString(cont.getCargo()));
             stmtCon.setDouble(2, cont.getSalario());
@@ -134,6 +136,7 @@ public class FuncionarioDAO {
                 funcionario.setEmail(resultado.getString("email"));
                 funcionario.setTelefone1(resultado.getString("telefone1"));
                 funcionario.setTelefone2(resultado.getString("telefone2"));
+                funcionario.setAtivo(resultado.getBoolean("ativo"));
                 
                 retorno.add(funcionario);
             }
