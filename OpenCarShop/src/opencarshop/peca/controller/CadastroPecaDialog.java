@@ -62,7 +62,7 @@ public class CadastroPecaDialog implements Initializable {
     public void setPeca(Peca peca) {
         this.peca = peca;
         this.textFieldPecaNome.setText(peca.getNome());
-        String preco = String.valueOf(peca.getPreco());
+        String preco = String.valueOf(peca.getValor());
         this.textFieldPecaPreco.setText(preco);
         String quantidade = String.valueOf(peca.getQuantidade());
         this.textFieldPecaQuantidade.setText(quantidade);
@@ -72,7 +72,7 @@ public class CadastroPecaDialog implements Initializable {
     public void handleButtonConfirmar() {
         peca.setNome(textFieldPecaNome.getText());
         Double preco = Double.parseDouble(textFieldPecaPreco.getText());
-        peca.setPreco(preco);
+        peca.setValor(preco);
         int quantidade = Integer.parseInt(textFieldPecaQuantidade.getText());
         peca.setQuantidade(quantidade);
  

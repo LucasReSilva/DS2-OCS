@@ -32,15 +32,14 @@
                           <items>
                             <MenuItem mnemonicParsing="false" text="Vender" />
                               <SeparatorMenuItem mnemonicParsing="false" />
-                              <MenuItem mnemonicParsing="false" onAction="#cadastrarPeca" text="Casdastrar" />
-                              <MenuItem mnemonicParsing="false" onAction="#listarPeca" text="Listar" />
+                              <MenuItem mnemonicParsing="false" onAction="#cadastrarPeca" text="Cadastrar" />
                           </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Veiculo">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Vender" />
                               <SeparatorMenuItem mnemonicParsing="false" />
-                              <MenuItem mnemonicParsing="false" onAction="#cadastrarVeiculo" text="Casdastrar" />
+                              <MenuItem mnemonicParsing="false" onAction="#cadastrarVeiculo" text="Cadastrar" />
                               <MenuItem mnemonicParsing="false" onAction="#listarVeiculo" text="Listar" />
                            </items>
                         </Menu>
