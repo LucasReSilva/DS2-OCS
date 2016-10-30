@@ -7,9 +7,37 @@ import java.sql.ResultSet;
 import opencarshop.util.ConexaoMySQL;
 import opencarshop.Endereco;
 
-public class VeiculoDA {
+public class VeiculoDAO {
     
-   /* public Funcionario getFuncionario(String cpf)
+    public boolean insertServico(Veiculo veiculo){
+    
+    ConexaoMySQL c = new ConexaoMySQL();
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        boolean retorno=true; 
+        String query = "INSERT INTO `opencarshop`.`Veiculo` (`modelo`, `ano`, `versao`, ) VALUES (?, ?, ?)";
+        
+        try{
+            conn = c.conectar();
+            stmt = conn.prepareStatement(query);
+            //stmt.setString(1,servico.getDescrição());
+            //stmt.setDouble(2,servico.getValorPadrão());
+            //stmt.setBoolean(3,servico.isValorFixo());
+            
+            
+            retorno = stmt.execute();
+        
+        
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        
+        
+        return retorno;
+    }
+   /*public Funcionario getFuncionario(String cpf)
     {
         ConexaoMySQL c = new ConexaoMySQL();
         Connection conn = null;
