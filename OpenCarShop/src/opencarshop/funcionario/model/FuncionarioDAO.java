@@ -18,7 +18,7 @@ import opencarshop.util.Utilidades;
  *
  * @author tharlysson breno
  */
-public class FuncionarioDA {
+public class FuncionarioDAO {
     
     public Funcionario getFuncionario(String cpf)
     {

@@ -15,7 +15,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import opencarshop.servico.model.Servico;
-import opencarshop.servico.model.ServicoDA;
+import opencarshop.servico.model.ServicoDAO;
 
 /**
  * FXML Controller class
@@ -52,7 +52,7 @@ public class ServicoController implements Initializable {
     //istancia objeto serviço para configuraçao de atributos
     Servico servico; 
     //instacia objeto para inserção de objeto cadasrtado no banco
-    ServicoDA servDao = new ServicoDA();
+    ServicoDAO servDao = new ServicoDAO();
     
     String descri=tfdescricao.getText();
     String valor = tfvalor.getText();

@@ -14,7 +14,7 @@ import opencarshop.util.ConexaoMySQL;
  *
  * @author keomas
  */
-public class ServicoDA {
+public class ServicoDAO {
  
     
     
