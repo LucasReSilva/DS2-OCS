@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.funcionario.controller.FuncionarioController">
+   <children>
+      <TableView fx:id="tbl_funcionario" prefHeight="650.0" prefWidth="650.0">
+        <columns>
+          <TableColumn fx:id="col_cpf" prefWidth="100.0" text="CPF" />
+          <TableColumn fx:id="col_nome" prefWidth="155.0" text="Nome" />
+            <TableColumn id="col_telefone" fx:id="col_telefone1" minWidth="0.0" prefWidth="103.0" text="Telefone 1" />
+            <TableColumn id="col_telefone" fx:id="col_telefone2" prefWidth="98.0" text="Telefone 2" />
+            <TableColumn id="col_email" fx:id="col_email" prefWidth="193.0" text="Email" />
+        </columns>
+      </TableView>
+      <TextField id="tf_nome" layoutX="656.0" layoutY="29.0" prefHeight="25.0" prefWidth="286.0" promptText="Nome" />
+      <Button id="btn_buscar" layoutX="958.0" layoutY="29.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.funcionario.controller.FuncionarioController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../recursos/imagens/wall.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="72.0" layoutY="164.0" prefHeight="440.0" prefWidth="400.0">
+         <children>
+            <Pane opacity="0.8" prefHeight="440.0" prefWidth="400.0" style="-fx-background-color: e8e8e8;" />
+            <TextField id="tf_cpf" fx:id="tf_cpf" layoutX="78.0" layoutY="101.0" prefHeight="40.0" prefWidth="250.0" />
+            <Label layoutX="78.0" layoutY="75.0" text="CPF">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="79.0" layoutY="154.0" text="Senha">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <PasswordField id="pf_senha" fx:id="pf_senha" layoutX="78.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" />
+            <Label id="labelErro" fx:id="labelErro" alignment="CENTER" layoutX="78.0" layoutY="237.0" prefHeight="17.0" prefWidth="250.0" textFill="RED" />
+            <Button id="btn_entrar" layoutX="143.0" layoutY="271.0" mnemonicParsing="false" onAction="#autenticar" prefHeight="35.0" prefWidth="120.0" text="Entrar" />
+            <Hyperlink fx:id="cadastroLink" layoutX="209.0" layoutY="334.0" onAction="#cadastrar" text="Cadastre-se" />
+            <Label layoutX="79.0" layoutY="337.0" text="Ainda não possui login? " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

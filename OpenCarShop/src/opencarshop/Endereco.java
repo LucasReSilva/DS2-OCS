@@ -1,21 +1,78 @@
 package opencarshop;
 
 public class Endereco {
+    private String CEP;
+    private String estado;
+    private String cidade;
+    private String bairro;
+    private String rua;
+    private int numero;
+    private String complemento;
+    private Character tipo;
 
-	private String CEP;
+    public String getCEP() {
+        return CEP;
+    }
 
-	private String Estado;
+    public Character getTipo() {
+        return tipo;
+    }
 
-	private String Cidade;
+    public void setTipo(Character tipo) {
+        this.tipo = tipo;
+    }
 
-	private String Bairro;
+    public void setCEP(String CEP) {
+        this.CEP = CEP;
+    }
 
-	private String Rua;
+    public String getEstado() {
+        return estado;
+    }
 
-	private int Numero;
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 
-	private String Complemento;
+    public String getCidade() {
+        return cidade;
+    }
 
-	private Character Tipo;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
 
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
+    }
+  
+    
 }

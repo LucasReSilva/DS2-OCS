@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package opencarshop;
 
 import javafx.application.Application;
@@ -12,29 +7,17 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-/**
- *
- * @author lucas
- */
 public class OpenCarShop extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/opencarshop/view/Login.fxml"));        
+        Parent root = FXMLLoader.load(getClass().getResource("funcionario/view/Autenticar.fxml"));
         
-        Scene scene = new Scene(root); 
-        // Icone
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("/recursos/icones/account-circle-white.png")));
+        Scene scene = new Scene(root);
         
-        // Desabilita maximizar
-        stage.setResizable(false);
-
-        // Titulo da janela
-        stage.setTitle("Login");
-
         stage.setScene(scene);
-        stage.setMaxHeight(768);
-        stage.setMaxWidth(1024);
+        stage.getIcons().add(new Image("recursos/icones/account-circle-white.png"));
+        stage.setTitle("Autenticação");
         stage.show();
     }
 
