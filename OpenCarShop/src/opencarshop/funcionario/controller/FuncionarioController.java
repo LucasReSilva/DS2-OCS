@@ -26,7 +26,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import opencarshop.funcionario.model.Contrato;
 import opencarshop.funcionario.model.Funcionario;
-import opencarshop.funcionario.model.FuncionarioDAO;
+import opencarshop.funcionario.model.FuncionarioDA;
 import opencarshop.Endereco;
 import opencarshop.util.Utilidades;
 
@@ -100,7 +100,7 @@ public class FuncionarioController implements Initializable {
     private void autenticar(ActionEvent event) 
     {
         Funcionario funcionario;
-        FuncionarioDAO func = new FuncionarioDAO();
+        FuncionarioDA func = new FuncionarioDA();
         funcionario = func.getFuncionario(tf_cpf.getText());
         
         if(funcionario != null)
@@ -144,7 +144,7 @@ public class FuncionarioController implements Initializable {
         Funcionario  func    = new Funcionario();
         Endereco     end     = new Endereco();
         Contrato     contr   = new Contrato();
-        FuncionarioDAO f     = new FuncionarioDAO();
+        FuncionarioDA f     = new FuncionarioDA();
         Utilidades u = new Utilidades();
       
         // OBJETO FUNCIONARIO
