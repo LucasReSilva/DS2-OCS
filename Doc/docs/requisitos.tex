@@ -10,11 +10,11 @@ O objetivo deste documento é detalhar a descrição de requisitos do software O
 
 \subsection{Escopo do Produto}
 \par
-O OpenCarShop é um sistema de gestão que controlará os setores de venda de veículos, estoque, realização de orçamentos de serviços de uma concessionária de veículos de única marca.
+O OpenCarShop é um sistema de gestão que controlará os setores de venda de veículos, estoque, realização de orçamentos de serviços de uma concessionária de veículos de única marca. 
 \par
-Uma base de dados de veículos, pecas, serviços, clientes e funcionários deve ser produzida e atualizada a medida que os usuários do sistema, os funcionários, alterem e adicionem tais dados durante a utilização do sistema.
+Uma base de dados de veiculos, pecas, servicos, clientes e funcionários deve ser produzida e atualizada a medida que os usuários do sistema, os funcionários, alterem e adicionem tais dados durante a utilização do sistema.
 \par
-Os funcionários que irão interagir com o software o farão através de seus desktops. O software necessita de conexão com o servidor de dados para que os funcionários se autentiquem no sistema e manipularem os dados. 
+Os funcionários que irão interagir com o software o farão através de seus desktops. O software necessita de conexão com o servidor de dados para que os funcionários se autentiquem no sistema e manipularem os dados.
 
 
 
@@ -24,7 +24,7 @@ Os funcionários que irão interagir com o software o farão através de seus de
 	
 	\begin{itemize}
 		\item Funcionário: Ator principal do sistema.
-		\item Orçamento: Levantamento de preços de venda de peças e realizações de serviços.
+		\item Orçamento: Levantamento de preços  de serviços e peças atreladas a esses serviços.
 		\item Peça: Peça mecânica ou acessório veicular.
 		\item Serviço: Serviço veicular, reparo, manutenção, instalação de peça.
 	\end{itemize}
@@ -48,22 +48,24 @@ Os funcionários que irão interagir com o software o farão através de seus de
 
 \subsection{Visão Geral do Restante do Documento}
 
-O restante deste documento inclui três capítulos e um apêndice. O Segundo capítulo apresenta uma  descrição geral do sistema, ou seja, apresenta uma visão geral do sistema, perspectiva e objetivos do mesmo, descrição de seus usuários,   restrições e dependências  para utilização e desenvolvimento do sistema. 
-O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funcionais e não funcionais que devem  ser implementado.
-O apêndice no final do documento apresenta os resultados obtidos no detalhamento dos requisitos.
+\par
+O restante deste documento inclui dois capítulos e um apêndice. O Segundo capítulo apresenta uma  descrição geral do sistema, ou seja,  uma  perspectiva funcional e objetivos do mesmo, descrição de seus usuários,   restrições e dependências  para utilização e desenvolvimento do sistema. 
+\par
+O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funcionais e não funcionais que devem  ser implementados.
+
 
 \subsection{Descrição Geral}
 
 	\subsubsection{Perspectiva do Produto}
 	\par
-	O sistema consistirá em aplicação em desktop. A aplicação em desktop será usada para gerenciar vendas de peças e veículos, orçamentos de diversos serviços,  controlar estoque de acessórios e veículos, gerir clientes e funcionários, e exibição de relatórios. As funcionalidades devem estar disponíveis em uma interface gráfica, responsável pela intermediação do funcionário com a manipulação dos dados. 
+	O sistema consistirá em uma aplicação  desktop. A aplicação  será usada para gerenciar vendas de peças e veículos, orçamentos de diversos serviços,  controlar estoque de peças e veículos, gerir clientes e funcionários, e exibir  relatórios. As funcionalidades devem estar disponíveis em uma interface gráfica, responsável pela intermediação do funcionário com a manipulação dos dados. 
 	\par
-	Os dados devem persistidos, em um banco de dados. Isso dizer que o sistema será capaz de salvar dados e recuperar dados do banco de dados para as views. Por exemplo, a funcionalidade de venda deverá requisitar ao banco se a quantidade de peças é suficiente, antes de concretizar uma venda.
-	\par
-	Os usuários devem ter um desktop conectado a rede, local ou internet, de modo que tenha acesso ao servidor de dados, o que torna o sistema restrito a conexão com servidor remoto para funcionar.
+	Os dados devem ser persistidos, em um banco de dados. Isso quer dizer que o sistema será capaz de salvar dados e recuperar dados do banco de dados. Os usuários devem ter um desktop conectado  ao servidor de dados local. 
+	
 	
 	\subsubsection{Funções do Produto}
-	\ldots
+	A seguir, detalha-se cinco das mais importantes funcionalidades do sistema. É apresentado os casos de usos de interação do ator principal, o Funcionário, e os fluxos principais e alternativos. Os demais casos de usos se encontram na seção de diagramas:
+	
 	
 	\subsubsection{Características do Usuário}
 	
