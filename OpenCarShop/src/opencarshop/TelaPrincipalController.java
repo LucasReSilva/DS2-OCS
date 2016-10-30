@@ -119,6 +119,96 @@ public class TelaPrincipalController implements Initializable {
         acContent.getChildren().add(root);
     }
     
+     @FXML
+    private void cadastrarServico(ActionEvent event) {
+        System.out.println("Cadastrar Servico");
+        tx_info.setText("Cadastrar Serviço");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/servico/view/Cadastrar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+    @FXML
+    private void listarServico(ActionEvent event) {
+        System.out.println("Buscar Servico");
+        tx_info.setText("Listar Servico");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/servico/view/Buscar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+     @FXML
+    private void cadastrarVeiculo(ActionEvent event) {
+        System.out.println("Cadastrar Veiculo");
+        tx_info.setText("Cadastrar Veiculo");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/veiculo/view/Cadastrar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+    @FXML
+    private void listarVeiculo(ActionEvent event) {
+        System.out.println("Buscar Veiculo");
+        tx_info.setText("Listar Veiculo");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/veiculo/view/Buscar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+     @FXML
+    private void cadastrarPeca(ActionEvent event) {
+        System.out.println("Cadastrar Peca");
+        tx_info.setText("Cadastrar Peca");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/peca/view/Cadastrar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
+    @FXML
+    private void listarPeca(ActionEvent event) {
+        System.out.println("Buscar Peca");
+        tx_info.setText("Listar Peça");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/peca/view/Buscar.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
