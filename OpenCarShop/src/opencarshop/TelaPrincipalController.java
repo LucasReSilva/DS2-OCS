@@ -176,7 +176,7 @@ public class TelaPrincipalController implements Initializable {
         tx_info.setText("Cadastrar Peca");
         FXMLLoader fxmlLoader = new FXMLLoader();
         try {
-            fxmlLoader.load(getClass().getResource("/opencarshop/peca/view/Cadastrar.fxml").openStream());
+            fxmlLoader.load(getClass().getResource("/opencarshop/peca/view/CadastroPeca.fxml").openStream());
         } catch (IOException e) {
             
         }

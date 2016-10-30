@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.CadastroPeca">
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.peca.controller.CadastroPeca">
    <children>
       <SplitPane dividerPositions="0.40635451505016723" layoutX="92.0" layoutY="53.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -57,7 +57,7 @@
                      <children>
                         <Button fx:id="buttonInserir" layoutX="97.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="25.0" prefWidth="64.0" text="Inserir" />
                         <Button fx:id="buttonAlterar" layoutX="169.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonAlterar" prefHeight="25.0" prefWidth="64.0" text="Alterar" />
-                        <Button fx:id="buttonRemover" layoutX="240.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
+                        <Button fx:id="buttonInativar" layoutX="240.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonInativar" text="Inativar" />
                      </children>
                   </Group>
                </children>
