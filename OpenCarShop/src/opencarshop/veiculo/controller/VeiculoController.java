@@ -16,7 +16,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import opencarshop.veiculo.model.Veiculo;
-import opencarshop.veiculo.model.VeiculoDA;
+import opencarshop.veiculo.model.VeiculoDAO;
 
 public class VeiculoController implements Initializable {
 
@@ -95,7 +95,7 @@ public class VeiculoController implements Initializable {
         //instanciando objeto
         Veiculo veiculo = new Veiculo();
         //instancia objeto para inserção de objeto cadastrado no banco
-        VeiculoDA veiculoDao = new VeiculoDA();
+        VeiculoDAO veiculoDao = new VeiculoDAO();
 
         veiculo.setModelo(tf_modelo.getText());
         veiculo.setAno(Integer.parseInt((tf_ano.getText())));
@@ -127,7 +127,7 @@ public class VeiculoController implements Initializable {
         col_farolNeblina.setCellValueFactory(new PropertyValueFactory<>("farolNeblina"));
         col_altoFalantes.setCellValueFactory(new PropertyValueFactory<>("altoFalantes"));
 
-        VeiculoDA veiculoDAO = new VeiculoDA();
+        VeiculoDAO veiculoDAO = new VeiculoDAO();
         List<Veiculo> listaVeiculo = veiculoDAO.getAllVeiculo();
         ObservableList<Veiculo> observableListVeiculo;
 

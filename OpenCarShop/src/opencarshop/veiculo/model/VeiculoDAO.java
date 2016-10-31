@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import opencarshop.util.ConexaoMySQL;
 
-public class VeiculoDA {
+public class VeiculoDAO {
 
     public List<Veiculo> getAllVeiculo() throws Exception {
         String query = "SELECT * FROM Veiculo";

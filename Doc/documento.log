@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.19)  31 OCT 2016 02:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.19)  31 OCT 2016 04:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1489,7 +1489,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout2 = `docs/capa.aux'.
 
 
-(./docs/capa.tex <./images/ufs.png, id=215, 120.45pt x 184.43906pt>
+(./docs/capa.tex <./images/ufs.png, id=211, 120.45pt x 184.43906pt>
 File: ./images/ufs.png Graphic file (type png)
 
 <use ./images/ufs.png>
@@ -1562,62 +1562,42 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 66.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 76.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 85.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 88.
  [6]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 317.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 317.
+(babel)             in language  on input line 94.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 147.
  [7]
-Underfull \hbox (badness 1342) in paragraph at lines 410--411
-[]|\T1/cmr/m/n/12 14 - Se-le-ci-ona op-��o ^^Pim-pri-mir co-
- []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 415.
-[8]
+(babel)             in language  on input line 189.
+ [8]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 496.
+(babel)             in language  on input line 247.
+ [9])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 496.
- [9]
+(babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 501.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 508.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 510.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 554.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 554.
+(babel)             in language  on input line 9.
  [10]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 598.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 598.
- [11]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 640.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 640.
- [12]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 652.
-)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 9.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 9.
- [13]
 \openout2 = `docs/plano.aux'.
 
  (./docs/plano.tex
@@ -1630,25 +1610,43 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
- [14
+ [11
 
 
 ]
 \openout2 = `docs/casosdeuso.aux'.
 
- (./docs/casosdeuso.tex
+
+(./docs/casosdeuso.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 11.
-
-[15
+(babel)             in language  on input line 138.
+ [12
 
 
 ]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 250.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 250.
+ [13]
+Underfull \hbox (badness 1342) in paragraph at lines 343--344
+[]|\T1/cmr/m/n/12 14 - Se-le-ci-ona op-��o ^^Pim-pri-mir co-
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 348.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 348.
+[14])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 11.
+ [15]
 \openout2 = `docs/arquitetura.aux'.
 
  (./docs/arquitetura.tex
@@ -1669,17 +1667,31 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 7.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 9.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 9.
+nput line 8.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 8.
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-(../OpenCarShop/src/opencarshop/fornecedor/model/Fornecedor.java)
+(../OpenCarShop/src/opencarshop/cliente/model/Cliente.java)
+(../OpenCarShop/src/opencarshop/cliente/model/ClienteDAO.java
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 11.
+ [17
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 102.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 102.
+ [18])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 11.
 
@@ -1689,15 +1701,12 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-(../OpenCarShop/src/opencarshop/fornecedor/view/Cadastrar.fxml
+(../OpenCarShop/src/opencarshop/cliente/view/Cadastrar.fxml
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
- [17
-
-
-]
+(babel)             in language  on input line 29.
+ [19]
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -1706,8 +1715,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16           <Tab text="Identificação"
-                                          >
+l.43 ....0" prefWidth="170.0" promptText="Número"
+                                                   />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1720,8 +1729,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16           <Tab text="Identificação"
-                                          >
+l.43 ....0" prefWidth="170.0" promptText="Número"
+                                                   />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -1733,8 +1742,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16           <Tab text="Identificação"
-                                          >
+l.46 ...dth="350.0" promptText="Tipo de Endereço"
+                                                  >
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1747,8 +1756,319 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16           <Tab text="Identificação"
-                                          >
+l.46 ...dth="350.0" promptText="Tipo de Endereço"
+                                                  >
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...tX="16.0" layoutY="95.0" text="Endereço:"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...tX="16.0" layoutY="95.0" text="Endereço:"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...tX="197.0" layoutY="318.0" text="Número:"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...tX="197.0" layoutY="318.0" text="Número:"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+) (../OpenCarShop/src/opencarshop/cliente/view/Buscar.fxml
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+ [20]
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...lterarCadastro" text="Salvar Alterações"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...lterarCadastro" text="Salvar Alterações"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...lterarCadastro" text="Salvar Alterações"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...lterarCadastro" text="Salvar Alterações"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+ (../OpenCarShop/src/opencarshop/cliente/controller/ClienteController.java
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 75.
+
+[21]
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 ...  confirmaAlteracao.setText("Alteração 
+                                                  realizada com sucesso!!");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 ...  confirmaAlteracao.setText("Alteração 
+                                                  realizada com sucesso!!");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 ...  confirmaAlteracao.setText("Alteração 
+                                                  realizada com sucesso!!");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 ...  confirmaAlteracao.setText("Alteração 
+                                                  realizada com sucesso!!");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 ....setText("Erro ao realizar a alteração!
+                                                  !");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 ....setText("Erro ao realizar a alteração!
+                                                  !");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 ....setText("Erro ao realizar a alteração!
+                                                  !");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 ....setText("Erro ao realizar a alteração!
+                                                  !");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 167.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 167.
+[22])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 22.
+ (../OpenCarShop/src/opencarshop/fornecedor/model/Fornecedor.java)
+(../OpenCarShop/src/opencarshop/fornecedor/model/FornecedorDAO.java
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+ [23]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 99.
+
+[24])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+ (../OpenCarShop/src/opencarshop/fornecedor/view/Cadastrar.fxml
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16                 <Tab text="Identificação"
+                                                >
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16                 <Tab text="Identificação"
+                                                >
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16                 <Tab text="Identificação"
+                                                >
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16                 <Tab text="Identificação"
+                                                >
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -1887,6 +2207,11 @@ l.25 ...X="15.0" layoutY="122.0" text="Descricão"
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 42.
+[25]
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -1996,44 +2321,52 @@ l.24 ...Column prefWidth="75.0" text="Descrição"
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
+)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
-[18])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 30.
 
 (../OpenCarShop/src/opencarshop/fornecedor/controller/FornecedorController.java
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
-[19]
+(babel)             in language  on input line 26.
+[26]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 174.
- [20])
+(babel)             in language  on input line 118.
+ [27])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 22.
- (../OpenCarShop/src/opencarshop/funcionario/model/Funcionario.java
+(babel)             in language  on input line 38.
+ (../OpenCarShop/src/opencarshop/funcionario/model/Contrato.java
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 3.
 
-[21])
+[28]) (../OpenCarShop/src/opencarshop/funcionario/model/Funcionario.java
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
- (../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
+(babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 46.
+
+[29]) (../OpenCarShop/src/opencarshop/funcionario/model/FuncionarioDAO.java
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
- [22]
+(babel)             in language  on input line 56.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 56.
+
+[30]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 146.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 146.
+ [31])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 43.
+ (../OpenCarShop/src/opencarshop/fornecedor/view/Cadastrar.fxml
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2042,7 +2375,61 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
+l.16                 <Tab text="Identificação"
+                                                >
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16                 <Tab text="Identificação"
+                                                >
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16                 <Tab text="Identificação"
+                                                >
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16                 <Tab text="Identificação"
+                                                >
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...prefWidth="170.0" promptText="Descrição"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2056,7 +2443,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
+l.21 ...prefWidth="170.0" promptText="Descrição"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2069,7 +2456,142 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
+l.21 ...prefWidth="170.0" promptText="Descrição"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...prefWidth="170.0" promptText="Descrição"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...5.0" prefWidth="350.0" promptText="Razão 
+                                                  Social" />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...5.0" prefWidth="350.0" promptText="Razão 
+                                                  Social" />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...layoutX="14.0" layoutY="6.0" text="Razão 
+                                                  Social" />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...layoutX="14.0" layoutY="6.0" text="Razão 
+                                                  Social" />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...X="15.0" layoutY="122.0" text="Descricão"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...X="15.0" layoutY="122.0" text="Descricão"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ....0" prefWidth="170.0" promptText="Número"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ....0" prefWidth="170.0" promptText="Número"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...dth="350.0" promptText="Tipo de Endereço"
                                                   >
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2083,98 +2605,16 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
+l.44 ...dth="350.0" promptText="Tipo de Endereço"
                                                   >
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-) (../OpenCarShop/src/opencarshop/funcionario/view/Buscar.fxml
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 18.
- [23]
+(babel)             in language  on input line 49.
+[32]) (../OpenCarShop/src/opencarshop/funcionario/view/Buscar.fxml
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2231,21 +2671,144 @@ or \DeclareInputMath before using this key.
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 47.
+
+(../OpenCarShop/src/opencarshop/funcionario/controller/FuncionarioController.ja
+va
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 21.
+ [33]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 114.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 114.
+ [34]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 208.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 208.
+ [35]
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 ...  confirmaAlteracao.setText("Alteração 
+                                                  realizada com sucesso!!");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 ...  confirmaAlteracao.setText("Alteração 
+                                                  realizada com sucesso!!");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 ...  confirmaAlteracao.setText("Alteração 
+                                                  realizada com sucesso!!");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 ...  confirmaAlteracao.setText("Alteração 
+                                                  realizada com sucesso!!");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ....setText("Erro ao realizar a alteração!
+                                                  !");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ....setText("Erro ao realizar a alteração!
+                                                  !");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ....setText("Erro ao realizar a alteração!
+                                                  !");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ....setText("Erro ao realizar a alteração!
+                                                  !");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 56.
+ (../OpenCarShop/src/opencarshop/servico/model/Servico.java
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
- (../OpenCarShop/src/opencarshop/funcionario/model/Funcionario.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
- [24])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 38.
-
-(../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
+(babel)             in language  on input line 33.
+ [36]
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2254,8 +2817,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
-                                                   />
+l.73             this.valorF = "Não"
+                                     ;
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2268,16 +2831,12 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
-                                                   />
+l.73             this.valorF = "Não"
+                                     ;
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-[25]
+) (../OpenCarShop/src/opencarshop/servico/model/ServicoDAO.java
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2286,8 +2845,9 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
-                                                  >
+l.23 ...query = "INSERT INTO Servico (descrição,
+                                                   valorPadrão, valorFixo) ...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2300,8 +2860,9 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
-                                                  >
+l.23 ...query = "INSERT INTO Servico (descrição,
+                                                   valorPadrão, valorFixo) ...
+
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -2313,8 +2874,9 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
-                                                   />
+l.23 ...query = "INSERT INTO Servico (descrição,
+                                                   valorPadrão, valorFixo) ...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2327,8 +2889,9 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
-                                                   />
+l.23 ...query = "INSERT INTO Servico (descrição,
+                                                   valorPadrão, valorFixo) ...
+
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -2340,8 +2903,9 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
-                                                   />
+l.23 ...T INTO Servico (descrição, valorPadrão,
+                                                   valorFixo) VALUES (?, ?, ...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2354,44 +2918,17 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
-                                                   />
+l.23 ...T INTO Servico (descrição, valorPadrão,
+                                                   valorFixo) VALUES (?, ?, ...
+
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-) (../OpenCarShop/src/opencarshop/funcionario/view/Buscar.fxml
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 28.
- [26]
+(babel)             in language  on input line 45.
+[37]
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2400,8 +2937,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
-                                                   />
+l.53 ...escricao(resultado.getString("descrição"
+                                                  ));
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2414,8 +2951,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
-                                                   />
+l.53 ...escricao(resultado.getString("descrição"
+                                                  ));
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -2427,8 +2964,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
-                                                   />
+l.53 ...escricao(resultado.getString("descrição"
+                                                  ));
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2441,28 +2978,154 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
-                                                   />
+l.53 ...escricao(resultado.getString("descrição"
+                                                  ));
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ...rPadrao(resultado.getDouble("valorPadrão"
+                                                  ));
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ...rPadrao(resultado.getDouble("valorPadrão"
+                                                  ));
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...tValorP(resultado.getDouble("valorPadrão"
+                                                  ));
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...tValorP(resultado.getDouble("valorPadrão"
+                                                  ));
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...g query = "UPDATE Servico SET descrição=
+                                                  ?, valorPadrão=?, valorFi...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...g query = "UPDATE Servico SET descrição=
+                                                  ?, valorPadrão=?, valorFi...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...g query = "UPDATE Servico SET descrição=
+                                                  ?, valorPadrão=?, valorFi...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...g query = "UPDATE Servico SET descrição=
+                                                  ?, valorPadrão=?, valorFi...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...E Servico SET descrição=?, valorPadrão=
+                                                  ?, valorFixo=? WHERE id=?";
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...E Servico SET descrição=?, valorPadrão=
+                                                  ?, valorFixo=? WHERE id=?";
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 48.
- (../OpenCarShop/src/opencarshop/funcionario/model/Funcionario.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 65.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 65.
- [27])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
-
-(../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
+(babel)             in language  on input line 60.
+ (../OpenCarShop/src/opencarshop/servico/view/Cadastrar.fxml
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2471,8 +3134,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
-                                                   />
+l.16 ...n="LEFT_TO_RIGHT" promptText="Descrição 
+                                                  do serviço">
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2485,8 +3148,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
-                                                   />
+l.16 ...n="LEFT_TO_RIGHT" promptText="Descrição 
+                                                  do serviço">
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -2498,7 +3161,34 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
+l.16 ...n="LEFT_TO_RIGHT" promptText="Descrição 
+                                                  do serviço">
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...n="LEFT_TO_RIGHT" promptText="Descrição 
+                                                  do serviço">
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...IGHT" promptText="Descrição do serviço"
                                                   >
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2512,16 +3202,16 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
+l.16 ...IGHT" promptText="Descrição do serviço"
                                                   >
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 54.
-[28]
+(babel)             in language  on input line 33.
+[38]
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2530,7 +3220,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
+l.33 ..."14.0" layoutY="14.0" text="Desccrição:"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2544,7 +3234,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
+l.33 ..."14.0" layoutY="14.0" text="Desccrição:"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2557,7 +3247,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
+l.33 ..."14.0" layoutY="14.0" text="Desccrição:"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2571,11 +3261,12 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
+l.33 ..."14.0" layoutY="14.0" text="Desccrição:"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
+) (../OpenCarShop/src/opencarshop/servico/view/Buscar.fxml
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2584,7 +3275,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
+l.14 ..."0.0" prefWidth="250.0" text="Descrição"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2598,12 +3289,11 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
+l.14 ..."0.0" prefWidth="250.0" text="Descrição"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-) (../OpenCarShop/src/opencarshop/funcionario/view/Buscar.fxml
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2612,7 +3302,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
+l.14 ..."0.0" prefWidth="250.0" text="Descrição"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2626,7 +3316,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
+l.14 ..."0.0" prefWidth="250.0" text="Descrição"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2639,7 +3329,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
+l.19 ...prefWidth="200.0" promptText="Descrição"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2653,32 +3343,231 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
+l.19 ...prefWidth="200.0" promptText="Descrição"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 36.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 36.
-[29])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 61.
- (../OpenCarShop/src/opencarshop/funcionario/model/Funcionario.java
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
 
-[30])
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...prefWidth="200.0" promptText="Descrição"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...prefWidth="200.0" promptText="Descrição"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...="#alterarServico" text="Alterar Serviço"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...="#alterarServico" text="Alterar Serviço"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...prefWidth="200.0" promptText="ID serviço"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...prefWidth="200.0" promptText="ID serviço"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...634.0" layoutY="186.0" text="ID Serviço:"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...634.0" layoutY="186.0" text="ID Serviço:"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ..."634.0" layoutY="234.0" text="Descrição 
+                                                  do serviço:" />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ..."634.0" layoutY="234.0" text="Descrição 
+                                                  do serviço:" />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ..."634.0" layoutY="234.0" text="Descrição 
+                                                  do serviço:" />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ..."634.0" layoutY="234.0" text="Descrição 
+                                                  do serviço:" />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...tY="234.0" text="Descrição do serviço:"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...tY="234.0" text="Descrição do serviço:"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ... layoutY="280.0" text="Valor do serviço:"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ... layoutY="280.0" text="Valor do serviço:"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
- (../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
+ (../OpenCarShop/src/opencarshop/servico/controller/ServicoController.java
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2687,8 +3576,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
-                                                   />
+l.27     //Variavéis
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2701,70 +3590,16 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
-                                                  >
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
-                                                  >
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
-                                                   />
+l.27     //Variavéis
+                     
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 63.
-[31]
+(babel)             in language  on input line 31.
+[39]
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2773,7 +3608,419 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
+l.46 //Colunas da tabela listar serviços
+                                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 //Colunas da tabela listar serviços
+                                         
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59         //istancia objeto serviço 
+                                        para configuraçao de atributos
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59         //istancia objeto serviço 
+                                        para configuraçao de atributos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 ...tancia objeto serviço para configuraçao 
+                                                  de atributos
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 ...tancia objeto serviço para configuraçao 
+                                                  de atributos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61         //instacia objeto para inserção 
+                                               de objeto cadasrtado no banco
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61         //instacia objeto para inserção 
+                                               de objeto cadasrtado no banco
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61         //instacia objeto para inserção 
+                                               de objeto cadasrtado no banco
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61         //instacia objeto para inserção 
+                                               de objeto cadasrtado no banco
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...       labelErroServ.setText("Descrição 
+                                                  deve ter até 45 caractere...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...       labelErroServ.setText("Descrição 
+                                                  deve ter até 45 caractere...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...       labelErroServ.setText("Descrição 
+                                                  deve ter até 45 caractere...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...       labelErroServ.setText("Descrição 
+                                                  deve ter até 45 caractere...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...roServ.setText("Descrição deve ter até 
+                                                  45 caracteres");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...roServ.setText("Descrição deve ter até 
+                                                  45 caracteres");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80         //Criando objeto serviço
+                                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80         //Criando objeto serviço
+                                      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85             labelErroServ.setText("Serviço 
+                                                 cadastrado...retornando ");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85             labelErroServ.setText("Serviço 
+                                                 cadastrado...retornando ");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...confirmaAtualizacao.setText("Alteração 
+                                                  realizada com sucesso!!");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...confirmaAtualizacao.setText("Alteração 
+                                                  realizada com sucesso!!");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...confirmaAtualizacao.setText("Alteração 
+                                                  realizada com sucesso!!");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...confirmaAtualizacao.setText("Alteração 
+                                                  realizada com sucesso!!");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ....setText("Erro ao realizar a alteração!
+                                                  !");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ....setText("Erro ao realizar a alteração!
+                                                  !");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ....setText("Erro ao realizar a alteração!
+                                                  !");
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ....setText("Erro ao realizar a alteração!
+                                                  !");
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 124.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 124.
+[40])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 71.
+ (../OpenCarShop/src/opencarshop/veiculo/model/Veiculo.java
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 58.
+ [41])
+(../OpenCarShop/src/opencarshop/veiculo/model/VeiculoDAO.java
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+ [42])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 75.
+
+(../OpenCarShop/src/opencarshop/veiculo/view/Cadastrar.fxml
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 5.
+ [43]
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ....0" prefWidth="170.0" promptText="Versão"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2787,7 +4034,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
+l.17 ....0" prefWidth="170.0" promptText="Versão"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2800,7 +4047,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
+l.21 ...icParsing="false" text="Vidros Elétricos"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2814,12 +4061,12 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
+l.21 ...icParsing="false" text="Vidros Elétricos"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-) (../OpenCarShop/src/opencarshop/funcionario/view/Buscar.fxml
+) (../OpenCarShop/src/opencarshop/veiculo/view/Buscar.fxml
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2828,7 +4075,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
+l.16 ...ol_versao" prefWidth="75.0" text="Versão"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2842,7 +4089,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
+l.16 ...ol_versao" prefWidth="75.0" text="Versão"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2855,7 +4102,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
+l.19 ...prefWidth="100.0" text="Vidros Elétricos"
                                                    />
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2869,31 +4116,47 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...lterarCadastro" text="Salvar Alterações"
+l.19 ...prefWidth="100.0" text="Vidros Elétricos"
+                                                   />
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...prefWidth="100.0" text="Travas Elétricas"
+                                                   />
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...prefWidth="100.0" text="Travas Elétricas"
                                                    />
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 68.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 74.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
- [32] (../OpenCarShop/src/opencarshop/funcionario/model/Funcionario.java)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 77.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 78.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 78.
-
-[33] (../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
+(babel)             in language  on input line 80.
+ [44]
+(../OpenCarShop/src/opencarshop/veiculo/controller/VeiculoController.java
 
 ! Package inputenc Error: Unicode char �\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2902,8 +4165,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
-                                                   />
+l.23     //Variavéis
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2916,8 +4179,40 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ....0" prefWidth="170.0" promptText="Número"
-                                                   />
+l.23     //Variavéis
+                     
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 93.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 93.
+[45]
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97         //instancia objeto para inserção 
+                                                de objeto cadastrado no banco
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97         //instancia objeto para inserção 
+                                                de objeto cadastrado no banco
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -2929,8 +4224,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
-                                                  >
+l.97         //instancia objeto para inserção 
+                                                de objeto cadastrado no banco
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2943,8 +4238,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...dth="350.0" promptText="Tipo de Endereço"
-                                                  >
+l.97         //instancia objeto para inserção 
+                                                de objeto cadastrado no banco
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -2956,8 +4251,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
-                                                   />
+l.112             lb_result.setText("Veículo 
+                                              cadastrado com sucesso");
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2970,143 +4265,261 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 ...tX="14.0" layoutY="93.0" text="Endereço:"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 ...tX="194.0" layoutY="309.0" text="Número:"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
-[34]
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 ...youtY="14.0" text="Cargo do funcionário:"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-) (../OpenCarShop/src/opencarshop/funcionario/view/Buscar.fxml
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 ...lterarCadastro" text="Salvar Alterações"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 ...lterarCadastro" text="Salvar Alterações"
-                                                   />
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Unicode char �\expandafter (U+4F1)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 ...lterarCadastro" text="Salvar Alterações"
-                                                   />
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 ...lterarCadastro" text="Salvar Alterações"
-                                                   />
+l.112             lb_result.setText("Veículo 
+                                              cadastrado com sucesso");
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 84.
+ (../OpenCarShop/src/opencarshop/util/ConexaoMySQL.java
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     //Nome do usuário 
+                           do mysql
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     //Nome do usuário 
+                           do mysql
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 12.
+[46]
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...o, porta e nome da base de dados que irá 
+                                                  ser feita a conexão
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...o, porta e nome da base de dados que irá 
+                                                  ser feita a conexão
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...ase de dados que irá ser feita a conexão
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...ase de dados que irá ser feita a conexão
+                                                  
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16      * Cria uma conexão 
+                              com o banco de dados MySQL utilizando o nome d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16      * Cria uma conexão 
+                              com o banco de dados MySQL utilizando o nome d...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ... dados MySQL utilizando o nome de usuário
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ... dados MySQL utilizando o nome de usuário
+                                                  
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21      * @return uma conexão 
+                                 com o banco de dados
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21      * @return uma conexão 
+                                 com o banco de dados
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char �\expandafter (U+4F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26         //Cria a conexão 
+                               com o banco de dados
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26         //Cria a conexão 
+                               com o banco de dados
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+) (../OpenCarShop/src/opencarshop/util/Utilidades.java)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 96.
+
+(c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
+(../OpenCarShop/src/OpenCarShop.sql
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 16.
+ [47]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 111.
+ [48]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 205.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 205.
+ [49]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 297.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 297.
+ [50]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 391.
+ [51]))
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 13.
- [35]
+ [52]
 \openout2 = `docs/diagramas.aux'.
 
- (./docs/diagramas.tex
+
+(./docs/diagramas.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
 
-<./images/casodeuso.jpg, id=1935, 1391.1975pt x 638.385pt>
+<./images/casodeuso.jpg, id=3549, 1391.1975pt x 638.385pt>
 File: ./images/casodeuso.jpg Graphic file (type jpg)
 
 <use ./images/casodeuso.jpg>
@@ -3116,7 +4529,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
- [36
+ [53
 
 
 
@@ -3124,7 +4537,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
 
-<./images/classeanalise.png, id=1941, 1488.31032pt x 1233.10687pt>
+<./images/classeanalise.png, id=3555, 1488.31032pt x 1233.10687pt>
 File: ./images/classeanalise.png Graphic file (type png)
 
 <use ./images/classeanalise.png>
@@ -3134,7 +4547,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
- [37
+ [54
 
  <./images/classeanalise.png>]
 Package babel Info: Redefining portuges shorthand "|
@@ -3148,13 +4561,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
- [38
+ [55
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
 
-<./images/entidaderelacionamento.png, id=1954, 1555.8125pt x 1392.20125pt>
+<./images/entidaderelacionamento.png, id=3568, 1555.8125pt x 1392.20125pt>
 File: ./images/entidaderelacionamento.png Graphic file (type png)
 
 <use ./images/entidaderelacionamento.png>
@@ -3165,7 +4578,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
- [39
+ [56
 
  <./images/entidaderelacionamento.png>])
 
@@ -3184,7 +4597,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `documento.out' has not changed.
-(rerunfilecheck)             Checksum: A7F0B96C01437218D4C2382092A9276F;3542.
+(rerunfilecheck)             Checksum: 3E528997C1CE3B42CE03A3D0E287A933;3458.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  )
 (\end occurred inside a group at level 1)
@@ -3192,13 +4609,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24384 strings out of 493013
- 430896 string characters out of 6136993
- 1375991 words of memory out of 5000000
- 25899 multiletter control sequences out of 15000+600000
+ 26625 strings out of 493013
+ 466705 string characters out of 6136993
+ 1435762 words of memory out of 5000000
+ 26540 multiletter control sequences out of 15000+600000
  16054 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,12n,54p,10401b,9948s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,12n,54p,10401b,10114s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
 1.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:
 /texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2
@@ -3208,10 +4625,10 @@ dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2016/texmf-dist/fonts
 lic/cm-super/sfrm1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt080
 0.pfb>
-Output written on documento.pdf (39 pages, 832623 bytes).
+Output written on documento.pdf (56 pages, 954013 bytes).
 PDF statistics:
- 2316 PDF objects out of 2487 (max. 8388607)
- 2233 compressed objects within 23 object streams
- 1590 named destinations out of 1728 (max. 500000)
- 453 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4244 PDF objects out of 4296 (max. 8388607)
+ 4125 compressed objects within 42 object streams
+ 3139 named destinations out of 3580 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 
