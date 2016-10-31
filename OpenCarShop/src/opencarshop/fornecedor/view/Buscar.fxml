@@ -25,7 +25,7 @@
       
       <Label layoutX="844.0" layoutY="78.0" text="Razão Social:" />
       <Label layoutX="675.0" layoutY="134.0" text="Descrição:" />
-      <TextField fx:id="pf_descricaoCadastro" layoutX="675.0" layoutY="151.0" promptText="Descrição" />
+      <TextField fx:id="tf_descricaoCadastro" layoutX="675.0" layoutY="151.0" promptText="Descrição" />
       <Label layoutX="846.0" layoutY="134.0" text="Email:" />
       <Label layoutX="678.0" layoutY="191.0" text="Telefone 1:" />
       <Label layoutX="847.0" layoutY="191.0" text="Telefone 2:" />
