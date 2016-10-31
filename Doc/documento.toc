@@ -19,33 +19,37 @@
 \contentsline {section}{\numberline {2}Plano de Projeto}{11}{section.2}
 \contentsline {subsection}{\numberline {2.1}Motiva\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.1}
 \contentsline {section}{\numberline {3}Casos de Uso}{12}{section.3}
-\contentsline {section}{\numberline {4}Arquitetura}{16}{section.4}
-\contentsline {section}{\numberline {5}C\IeC {\'o}digos}{17}{section.5}
-\contentsline {subsection}{\numberline {5.1}Pacote Cliente}{17}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Model}{17}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}View}{19}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Controller}{21}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Pacote Fornecedor}{23}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Model}{23}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}View}{25}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Controller}{26}{subsubsection.5.2.3}
-\contentsline {subsection}{\numberline {5.3}Pacote Funcion\IeC {\'a}rio}{28}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Model}{28}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}View}{32}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Controller}{33}{subsubsection.5.3.3}
-\contentsline {subsection}{\numberline {5.4}Pacote Servi\IeC {\c c}o}{36}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Model}{36}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}View}{38}{subsubsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.3}Controller}{39}{subsubsection.5.4.3}
-\contentsline {subsection}{\numberline {5.5}Pacote Veiculo}{41}{subsection.5.5}
-\contentsline {subsubsection}{\numberline {5.5.1}Model}{41}{subsubsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.2}View}{43}{subsubsection.5.5.2}
-\contentsline {subsubsection}{\numberline {5.5.3}Controller}{45}{subsubsection.5.5.3}
-\contentsline {subsection}{\numberline {5.6}Pacote Utilidades}{46}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Outros}{47}{subsection.5.7}
-\contentsline {subsection}{\numberline {5.8}SQL}{47}{subsection.5.8}
-\contentsline {section}{\numberline {6}Diagramas}{53}{section.6}
-\contentsline {subsection}{\numberline {6.1}Diagrama de Casos de Uso}{53}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Diagrama de Classes - Analise}{54}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Diagrama de Classes - Projeto}{55}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Diagrama Entidade Relacionamento}{56}{subsection.6.4}
+\contentsline {section}{\numberline {4}Arquitetura}{15}{section.4}
+\contentsline {section}{\numberline {5}C\IeC {\'o}digos}{16}{section.5}
+\contentsline {subsection}{\numberline {5.1}Pacote Cliente}{16}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Model}{16}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}View}{18}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Controller}{20}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {5.2}Pacote Fornecedor}{22}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Model}{22}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}View}{24}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Controller}{25}{subsubsection.5.2.3}
+\contentsline {subsection}{\numberline {5.3}Pacote Funcion\IeC {\'a}rio}{27}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Model}{27}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}View}{31}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Controller}{32}{subsubsection.5.3.3}
+\contentsline {subsection}{\numberline {5.4}Pacote Pe\IeC {\c c}a}{35}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Model}{35}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}View}{44}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Controller}{47}{subsubsection.5.4.3}
+\contentsline {subsection}{\numberline {5.5}Pacote Servi\IeC {\c c}o}{55}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Model}{55}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}View}{57}{subsubsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.3}Controller}{58}{subsubsection.5.5.3}
+\contentsline {subsection}{\numberline {5.6}Pacote Veiculo}{60}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Model}{60}{subsubsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.2}View}{62}{subsubsection.5.6.2}
+\contentsline {subsubsection}{\numberline {5.6.3}Controller}{63}{subsubsection.5.6.3}
+\contentsline {subsection}{\numberline {5.7}Pacote Utilidades}{65}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}Outros}{66}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}SQL}{71}{subsection.5.9}
+\contentsline {section}{\numberline {6}Diagramas}{77}{section.6}
+\contentsline {subsection}{\numberline {6.1}Diagrama de Casos de Uso}{77}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Diagrama de Classes - Analise}{78}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Diagrama de Classes - Projeto}{79}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Diagrama Entidade Relacionamento}{80}{subsection.6.4}
