@@ -151,7 +151,7 @@ public Fornecedor getFornecedor(String cnpj)
     
     public Boolean alteraFornecedor(Fornecedor fornecedor) throws SQLException
     {
-        String query = "UPDATE Fornecedor SET cnpj=?, razao=?, email=?, telefone1=?, telefone2=?, descricao =?, ativo=? WHERE cnpj=?";
+        String query = "UPDATE Fornecedor SET cnpj=?, razaoSocial=?, email=?, telefone1=?, telefone2=?, descricao =?, ativo=? WHERE cnpj=?";
         
         ConexaoMySQL c = new ConexaoMySQL();
         Connection conn = null;
@@ -162,12 +162,12 @@ public Fornecedor getFornecedor(String cnpj)
      
             stmt.setString(1, fornecedor.getCnpj());
             stmt.setString(2, fornecedor.getRazaoSocial());
-            stmt.setString(4, fornecedor.getEmail());
-            stmt.setString(5, fornecedor.getTelefone1());
-            stmt.setString(6, fornecedor.getTelefone2());
-            stmt.setString(7, fornecedor.getDescricao());
-            stmt.setBoolean(8, fornecedor.getAtivo());
-            stmt.setString(9, fornecedor.getCnpj());
+            stmt.setString(3, fornecedor.getEmail());
+            stmt.setString(4, fornecedor.getTelefone1());
+            stmt.setString(5, fornecedor.getTelefone2());
+            stmt.setString(6, fornecedor.getDescricao());
+            stmt.setBoolean(7, fornecedor.getAtivo());
+            stmt.setString(8, fornecedor.getCnpj());
             stmt.execute();
             conn.close();
             return true;

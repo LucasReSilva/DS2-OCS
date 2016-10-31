@@ -6,11 +6,11 @@ import java.sql.DriverManager;
 public class ConexaoMySQL {
 
     //Nome do usuário do mysql
-    private final String USERNAME = "desenvolvimento";
+    private final String USERNAME = "root";
     //Senha do mysql
-    private final String PASSWORD = "ds123";
+    private final String PASSWORD = "keomas123456";
     //Dados de caminho, porta e nome da base de dados que irá ser feita a conexão
-    private final String DATABASE_URL = "jdbc:mysql://tharlysson.com:3306/opencarshop";
+    private final String DATABASE_URL = "jdbc:mysql://localhost/opencarshop";
 
     /**
      * Cria uma conexão com o banco de dados MySQL utilizando o nome de usuário

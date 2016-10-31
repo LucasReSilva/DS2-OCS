@@ -154,7 +154,7 @@ public class VeiculoController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         try {
             carregaTabelaVeiculo();
-            tbl_veiculo.getSelectionModel().selectedItemProperty().addListener(
+         tbl_veiculo.getSelectionModel().selectedItemProperty().addListener(
                     (observable, oldValue, newValue) -> selecionarItemTabelaVeiculo(newValue));
         } catch (Exception ex) {
             //Logger.getLogger(FuncionarioController.class.getName()).log(Level.SEVERE, null, ex);
