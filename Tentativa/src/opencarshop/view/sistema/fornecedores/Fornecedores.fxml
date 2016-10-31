@@ -6,9 +6,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="opencarshop.controller.sistema.fornecedores.FornecedoresController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.controller.sistema.fornecedores.FornecedoresController">
    <children>
-      <Label layoutX="229.0" layoutY="209.0" text="home fornecedores" />
+      <Button layoutX="504.0" layoutY="159.0" mnemonicParsing="false" text="Cadastrar" />
+      <Button layoutX="506.0" layoutY="210.0" mnemonicParsing="false" text="Atualizar" />
+      <Button layoutX="510.0" layoutY="261.0" mnemonicParsing="false" text="Inativar" />
+      <TableView prefHeight="343.0" prefWidth="448.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="CNPJ" />
+          <TableColumn prefWidth="75.0" text="Razao Social" />
+            <TableColumn prefWidth="75.0" text="Email" />
+            <TableColumn prefWidth="75.0" text="Telefone" />
+            <TableColumn prefWidth="75.0" text="Telefone 2" />
+            <TableColumn prefWidth="75.0" text="Descrição" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
