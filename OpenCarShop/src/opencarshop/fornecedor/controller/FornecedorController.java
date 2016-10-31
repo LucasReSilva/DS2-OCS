@@ -9,6 +9,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
@@ -23,17 +24,12 @@ import opencarshop.util.Utilidades;
 
 public class FornecedorController implements Initializable {
 
-    /**
+       /**
      * Initializes the controller class.
      */
-    // TELA DE AUTENTICACAO
-    @FXML
-    private Label labelErro;
-    @FXML
-    private TextField tf_cpf;
-    @FXML
-    private Hyperlink cadastroLink;
-
+   
+    
+    
     // TELA DE CADASTRO
     @FXML
     private TextField tf_cnpjCadastro;
@@ -41,13 +37,15 @@ public class FornecedorController implements Initializable {
     private TextField tf_razaoCadastro;
     @FXML
     private TextField tf_descricaoCadastro;
-
+    
+  
+    
     @FXML
     private ComboBox<String> cb_tipoCadastro;
     @FXML
     private TextField tf_emailCadastro;
     @FXML
-    private TextField tf_telefone1Cadastro;
+    private TextField tf_telefone1Cadastro;   
     @FXML
     private TextField tf_telefone2Cadastro;
     @FXML
@@ -64,10 +62,13 @@ public class FornecedorController implements Initializable {
     private TextField tf_numeroCadastro;
     @FXML
     private TextField tf_complementoCadastro;
-
+    @FXML
+    private CheckBox cb_ativo;
+    @FXML
+    private Label confirmaAlteracao;
     @FXML
     private Label resultadoCadastro;
-
+    
     // TABELA Fornecedor
     @FXML
     private TableColumn<Fornecedor, String> col_cnpj;
@@ -81,62 +82,19 @@ public class FornecedorController implements Initializable {
     private TableColumn<Fornecedor, String> col_telefone2;
     @FXML
     private TableColumn<Fornecedor, String> col_descricao;
+    
+    
     @FXML
     private TableView<Fornecedor> tbl_fornecedor;
-
-    /*  
-    @FXML
-    private void autenticar(ActionEvent event) 
-    {
-        Funcionario funcionario;
-        FuncionarioDAO func = new FuncionarioDAO();
-        funcionario = func.getFuncionario(tf_cpf.getText());
-        
-        if(funcionario.getCpf() != null)
-        {
-            if(funcionario.getSenha().equals(pf_senha.getText()))
-            {
-                Parent root = null;
-                try 
-                {
-                    root = FXMLLoader.load(getClass().getResource("/opencarshop/TelaPrincipal.fxml"));
-                    Scene scene = new Scene(root);
-                    Stage nStage = new Stage();
-                    nStage.setScene(scene);
-                    //nStage.setMaximized(true);
-                    nStage.setMaxHeight(768);
-                    nStage.setMaxWidth(1024);
-                    nStage.setTitle("OpenCarShop");
-                    nStage.setResizable(false);
-                    nStage.show();
-                    Stage stage = (Stage) cadastroLink.getScene().getWindow();
-                    stage.close();
-                } 
-                catch (IOException e) 
-                {
-                    e.printStackTrace();
-                }
-            }
-            else
-            {
-                labelErro.setText("Login ou senha errado!!!");
-            }
-        }
-        else
-        {
-            labelErro.setText("Login ou senha errado!!!");
-        }
-    }
-     */
+    
     @FXML
     private void cadastrar(ActionEvent event) throws ParseException {
-
-        Fornecedor fornecedor = new Fornecedor();
-        Endereco end = new Endereco();
-
-        FornecedorDAO f = new FornecedorDAO();
+    
+        Fornecedor  fornecedor    = new Fornecedor();
+        Endereco     end     = new Endereco();
+        FornecedorDAO f     = new FornecedorDAO();
         Utilidades u = new Utilidades();
-
+      
         // OBJETO FORNECEDOR
         fornecedor.setCnpj(tf_cnpjCadastro.getText());
         fornecedor.setRazaoSocial(tf_razaoCadastro.getText());
@@ -144,7 +102,7 @@ public class FornecedorController implements Initializable {
         fornecedor.setTelefone1(tf_telefone1Cadastro.getText());
         fornecedor.setTelefone2(tf_telefone2Cadastro.getText());
         fornecedor.setDescricao(tf_descricaoCadastro.getText());
-
+        fornecedor.setAtivo(true);
         // OBJETO ENDERECO
         end.setCEP(tf_cepCadastro.getText());
         end.setEstado(tf_estadoCadastro.getText());
@@ -155,19 +113,21 @@ public class FornecedorController implements Initializable {
         end.setComplemento(tf_complementoCadastro.getText());
         end.setTipo(cb_tipoCadastro.getValue().charAt(0));
 
-        if (f.cadastraFornecedor(fornecedor, end)) {
+        
+        
+        if(f.cadastraFornecedor(fornecedor, end))
+        {
             resultadoCadastro.setText("Cadastrado com sucesso!!");
-        } else {
+        }
+        else
+        {
             resultadoCadastro.setText("Erro ao cadastrar!! Tente novamente.");
         }
     }
-
-    @FXML
-    private void buscar(ActionEvent event) throws Exception {
-
-    }
-
-    private void carregaTabelaFornecedor() throws Exception {
+      
+    
+    private void carregaTabelaFornecedor() throws Exception
+    {
         col_cnpj.setCellValueFactory(new PropertyValueFactory<>("cnpj"));
         col_razaoSocial.setCellValueFactory(new PropertyValueFactory<>("razaoSocial"));
         col_email.setCellValueFactory(new PropertyValueFactory<>("email"));
@@ -181,15 +141,51 @@ public class FornecedorController implements Initializable {
         observableListFornecedor = FXCollections.observableArrayList(listaFornecedor);
         tbl_fornecedor.setItems(observableListFornecedor);
     }
-
+    
+     @FXML
+    private void alterarCadastro(ActionEvent event) throws Exception {
+        Fornecedor  fornecedor    = new Fornecedor();
+        fornecedor.setCnpj(tf_cnpjCadastro.getText());
+        fornecedor.setRazaoSocial(tf_razaoCadastro.getText());
+        fornecedor.setEmail(tf_emailCadastro.getText());
+        fornecedor.setTelefone1(tf_telefone1Cadastro.getText());
+        fornecedor.setTelefone2(tf_telefone2Cadastro.getText());
+        fornecedor.setDescricao(tf_descricaoCadastro.getText());
+        fornecedor.setAtivo(cb_ativo.isSelected());
+        
+        FornecedorDAO f     = new FornecedorDAO();
+        if(f.alteraFornecedor(fornecedor))
+        {
+            confirmaAlteracao.setText("Alteração realizada com sucesso!!");
+        }else
+        {
+            confirmaAlteracao.setText("Erro ao realizar a alteração!!");
+        }
+    }
+    
+    public void selecionarItemTablelaFornecedor(Fornecedor fornecedor){
+        if (fornecedor.getCnpj() != null) {
+              tf_cnpjCadastro.setText(fornecedor.getCnpj());
+              tf_razaoCadastro.setText(fornecedor.getRazaoSocial());
+              tf_emailCadastro.setText(fornecedor.getEmail());
+              tf_telefone1Cadastro.setText(fornecedor.getTelefone1());
+              tf_telefone2Cadastro.setText(fornecedor.getTelefone2());
+              tf_descricaoCadastro.setText(fornecedor.getDescricao());
+              cb_ativo.setSelected(fornecedor.getAtivo());
+              
+        } 
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
             carregaTabelaFornecedor();
+            tbl_fornecedor.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> selecionarItemTablelaFornecedor(newValue));
         } catch (Exception ex) {
-            //Logger.getLogger(FuncionarioController.class.getName()).log(Level.SEVERE, null, ex);
+         
         }
-
+        
     }
-
+    
 }
