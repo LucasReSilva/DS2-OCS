@@ -6,17 +6,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.veiculo.controller.VeiculoController">
-   <children>
-      <TableView prefHeight="650.0" prefWidth="650.0">
-        <columns>
-          <TableColumn id="col_nome" prefWidth="75.0" text="Nome" />
-          <TableColumn id="col_cargo" prefWidth="75.0" text="Cargo" />
-            <TableColumn id="col_telefone" prefWidth="75.0" text="Telefone" />
-            <TableColumn id="col_email" prefWidth="75.0" text="Email" />
-        </columns>
-      </TableView>
-      <TextField id="tf_nome" layoutX="656.0" layoutY="29.0" prefHeight="25.0" prefWidth="286.0" promptText="Nome" />
-      <Button id="btn_buscar" layoutX="958.0" layoutY="29.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
-   </children>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1201.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="opencarshop.veiculo.controller.VeiculoController">
+  <children>
+    <TableView layoutX="-11.0" layoutY="0.0" prefHeight="650.0" prefWidth="602.0">
+      <columns>
+        <TableColumn id="col_modelo" prefWidth="75.0" text="Modelo" />
+        <TableColumn id="col_ano" prefWidth="75.0" text="Ano" />
+        <TableColumn id="col_versao" prefWidth="75.0" text="Versão" />
+        <TableColumn id="col_qntd" prefWidth="75.0" text="Quantidade" />
+        <TableColumn id="col_valor" prefWidth="75.0" text="Valor" />
+        <TableColumn id="col_vidrosEletricos" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="Vidros Elétricos" />
+        <TableColumn id="col_travasEletricas" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="Travas Elétricas" />
+        <TableColumn id="col_ar" maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Ar Condicionado" />
+        <TableColumn id="col_farolNeblina" maxWidth="5000.0" minWidth="10.0" prefWidth="91.0" text="Farol Neblina" />
+        <TableColumn id="col_altoFalantes" maxWidth="5000.0" minWidth="10.0" prefWidth="84.0" text="Alto Falantes" />
+      </columns>
+    </TableView>
+    <TextField id="tf_modelo" layoutX="624.0" layoutY="29.0" prefHeight="25.0" prefWidth="286.0" promptText="Modelo" />
+    <Button id="btn_buscar" layoutX="767.0" layoutY="212.0" mnemonicParsing="false" text="Buscar" />
+  </children>
 </AnchorPane>
