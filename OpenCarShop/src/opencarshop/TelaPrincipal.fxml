@@ -32,7 +32,7 @@
                           <items>
                             <MenuItem mnemonicParsing="false" text="Vender" />
                               <SeparatorMenuItem mnemonicParsing="false" />
-                              <MenuItem mnemonicParsing="false" onAction="#cadastrarPeca" text="Cadastrar" />
+                              <MenuItem mnemonicParsing="false" onAction="#cadastrarPeca" text="Gerenciar" />
                           </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Veiculo">

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.19)  30 OCT 2016 23:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.19)  31 OCT 2016 01:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1566,57 +1566,57 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 126.
  [6]
-Overfull \hbox (31.54846pt too wide) in paragraph at lines 137--170
-[][]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 317.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 317.
+ [7]
+Underfull \hbox (badness 1342) in paragraph at lines 410--411
+[]|\T1/cmr/m/n/12 14 - Se-le-ci-ona op-чуo ^^Pim-pri-mir co-
  []
 
-
-Overfull \hbox (58.8585pt too wide) in paragraph at lines 172--205
-[][]
- []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
+(babel)             in language  on input line 415.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
-[7]
+(babel)             in language  on input line 415.
+[8]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 485.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 370.
+(babel)             in language  on input line 492.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 495.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 377.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 377.
- [8]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 380.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 382.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 437.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 495.
  [9]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 482.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 482.
+(babel)             in language  on input line 502.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 504.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 553.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 553.
  [10]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 523.
+(babel)             in language  on input line 598.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 598.
+ [11]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 534.
- [11])
+(babel)             in language  on input line 645.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 655.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 655.
+ [12])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
- [12]
+ [13]
 \openout2 = `docs/plano.aux'.
 
  (./docs/plano.tex
@@ -1629,7 +1629,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
- [13
+ [14
 
 
 ]
@@ -1644,7 +1644,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 11.
 
-[14
+[15
 
 
 ]
@@ -1658,7 +1658,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
- [15
+ [16
 
 
 ]
@@ -1693,7 +1693,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
- [16
+ [17
 
 
 ]
@@ -1999,7 +1999,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
-[17])
+[18])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
 
@@ -2008,12 +2008,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 81.
-[18]
+[19]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 174.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 174.
- [19])
+ [20])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining portuges shorthand "|
@@ -2024,7 +2024,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 45.
 
-[20])
+[21])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
  (../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
@@ -2032,7 +2032,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 41.
- [21]
+ [22]
 
 ! Package inputenc Error: Unicode char У\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2173,7 +2173,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
- [22]
+ [23]
 
 ! Package inputenc Error: Unicode char У\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2240,7 +2240,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 55.
- [23])
+ [24])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 38.
 
@@ -2276,7 +2276,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
-[24]
+[25]
 
 ! Package inputenc Error: Unicode char У\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2390,7 +2390,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
- [25]
+ [26]
 
 ! Package inputenc Error: Unicode char У\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2457,7 +2457,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
- [26])
+ [27])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 51.
 
@@ -2520,7 +2520,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
-[27]
+[28]
 
 ! Package inputenc Error: Unicode char У\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2661,7 +2661,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 36.
-[28])
+[29])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
@@ -2674,7 +2674,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 75.
 
-[29])
+[30])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
  (../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
@@ -2763,7 +2763,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
-[30]
+[31]
 
 ! Package inputenc Error: Unicode char У\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -2884,7 +2884,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 75.
- [31] (../OpenCarShop/src/opencarshop/funcionario/model/Funcionario.java)
+ [32] (../OpenCarShop/src/opencarshop/funcionario/model/Funcionario.java)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining portuges shorthand "|
@@ -2892,7 +2892,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 78.
 
-[32] (../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
+[33] (../OpenCarShop/src/opencarshop/funcionario/view/Cadastrar.fxml
 
 ! Package inputenc Error: Unicode char У\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -3005,7 +3005,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 75.
-[33]
+[34]
 
 ! Package inputenc Error: Unicode char У\expandafter (U+4F1)
 (inputenc)                not set up for use with LaTeX.
@@ -3096,7 +3096,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 13.
- [34]
+ [35]
 \openout2 = `docs/diagramas.aux'.
 
  (./docs/diagramas.tex
@@ -3105,7 +3105,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
 
-<./images/casodeuso.jpg, id=1927, 1391.1975pt x 638.385pt>
+<./images/casodeuso.jpg, id=1931, 1391.1975pt x 638.385pt>
 File: ./images/casodeuso.jpg Graphic file (type jpg)
 
 <use ./images/casodeuso.jpg>
@@ -3115,7 +3115,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
- [35
+ [36
 
 
 
@@ -3123,7 +3123,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
 
-<./images/classeanalise.png, id=1934, 1488.31032pt x 1233.10687pt>
+<./images/classeanalise.png, id=1938, 1488.31032pt x 1233.10687pt>
 File: ./images/classeanalise.png Graphic file (type png)
 
 <use ./images/classeanalise.png>
@@ -3133,7 +3133,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
- [36
+ [37
 
  <./images/classeanalise.png>]
 Package babel Info: Redefining portuges shorthand "|
@@ -3147,13 +3147,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
- [37
+ [38
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
 
-<./images/entidaderelacionamento.png, id=1947, 1555.8125pt x 1392.20125pt>
+<./images/entidaderelacionamento.png, id=1951, 1555.8125pt x 1392.20125pt>
 File: ./images/entidaderelacionamento.png Graphic file (type png)
 
 <use ./images/entidaderelacionamento.png>
@@ -3164,7 +3164,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
- [38
+ [39
 
  <./images/entidaderelacionamento.png>])
 
@@ -3191,8 +3191,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24380 strings out of 493013
- 430868 string characters out of 6136993
+ 24381 strings out of 493013
+ 430875 string characters out of 6136993
  1375991 words of memory out of 5000000
  25899 multiletter control sequences out of 15000+600000
  16054 words of font info for 48 fonts, out of 8000000 for 9000
@@ -3207,10 +3207,10 @@ dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2016/texmf-dist/fonts
 lic/cm-super/sfrm1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt080
 0.pfb>
-Output written on documento.pdf (38 pages, 828224 bytes).
+Output written on documento.pdf (39 pages, 830375 bytes).
 PDF statistics:
- 2309 PDF objects out of 2487 (max. 8388607)
- 2227 compressed objects within 23 object streams
- 1586 named destinations out of 1728 (max. 500000)
+ 2313 PDF objects out of 2487 (max. 8388607)
+ 2230 compressed objects within 23 object streams
+ 1587 named destinations out of 1728 (max. 500000)
  453 words of extra memory for PDF output out of 10000 (max. 10000000)
 
