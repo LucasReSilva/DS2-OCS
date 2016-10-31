@@ -8,8 +8,11 @@ package opencarshop.fornecedor.model;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import opencarshop.Endereco;
 import opencarshop.util.ConexaoMySQL;
 import opencarshop.util.Utilidades;
@@ -46,6 +49,7 @@ public Fornecedor getFornecedor(String cnpj)
                 fornecedor.setTelefone1(resultado.getString("telefone1"));
                 fornecedor.setTelefone2(resultado.getString("telefone2"));
                  fornecedor.setDescricao(resultado.getString("descricao"));
+                 fornecedor.setAtivo(resultado.getBoolean("ativo"));
             }
             
             conn.close();
@@ -67,7 +71,7 @@ public Fornecedor getFornecedor(String cnpj)
         PreparedStatement stmtFornecedor = null;
         
         String queryEnd = "INSERT INTO Endereco (cep, estado, cidade, bairro, rua, numero, complemento,tipo) VALUES (?,?,?,?,?,?,?,?)";
-        String queryFornecedor = "INSERT INTO Fornecedor (cnpj, razaoSocial, email, telefone1, telefone2, descricao, endereco) VALUES (?,?,?,?,?,?,(select LAST_INSERT_ID()))";
+        String queryFornecedor = "INSERT INTO Fornecedor (cnpj, razaoSocial, email, telefone1, telefone2, descricao, endereco, ativo) VALUES (?,?,?,?,?,?,(select LAST_INSERT_ID()),?)";
        
         
         try
@@ -95,6 +99,7 @@ public Fornecedor getFornecedor(String cnpj)
             stmtFornecedor.setString(4, fornecedor.getTelefone1());
             stmtFornecedor.setString(5, fornecedor.getTelefone2());
             stmtFornecedor.setString(6, fornecedor.getDescricao());
+            stmtFornecedor.setBoolean(7, true);
             
 
           
@@ -134,7 +139,7 @@ public Fornecedor getFornecedor(String cnpj)
                 fornecedor.setTelefone1(resultado.getString("telefone1"));
                 fornecedor.setTelefone2(resultado.getString("telefone2"));
                 fornecedor.setDescricao(resultado.getString("descricao"));
-                
+                fornecedor.setAtivo(resultado.getBoolean("ativo"));
                 retorno.add(fornecedor);
             }
         } catch (Exception e) {
@@ -142,6 +147,35 @@ public Fornecedor getFornecedor(String cnpj)
         }
         conn.close();
         return retorno;
+    }
+    
+    public Boolean alteraFornecedor(Fornecedor fornecedor) throws SQLException
+    {
+        String query = "UPDATE Fornecedor SET cnpj=?, razao=?, email=?, telefone1=?, telefone2=?, descricao =?, ativo=? WHERE cnpj=?";
+        
+        ConexaoMySQL c = new ConexaoMySQL();
+        Connection conn = null;
+        try {
+            conn = c.conectar();
+            PreparedStatement stmt = conn.prepareStatement(query);
+        
+     
+            stmt.setString(1, fornecedor.getCnpj());
+            stmt.setString(2, fornecedor.getRazaoSocial());
+            stmt.setString(4, fornecedor.getEmail());
+            stmt.setString(5, fornecedor.getTelefone1());
+            stmt.setString(6, fornecedor.getTelefone2());
+            stmt.setString(7, fornecedor.getDescricao());
+            stmt.setBoolean(8, fornecedor.getAtivo());
+            stmt.setString(9, fornecedor.getCnpj());
+            stmt.execute();
+            conn.close();
+            return true;
+        } catch (Exception ex) {
+            
+            Logger.getLogger(FornecedorDAO.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
     }
 }
 

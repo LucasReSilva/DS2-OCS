@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.*?>
-<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.collections.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.fornecedor.controller.FornecedorController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.fornecedor.controller.FornecedorController">
    <children>
-      <Button layoutX="504.0" layoutY="159.0" mnemonicParsing="false" text="Cadastrar" />
-      <Button layoutX="506.0" layoutY="210.0" mnemonicParsing="false" text="Atualizar" />
-      <Button layoutX="510.0" layoutY="261.0" mnemonicParsing="false" text="Inativar" />
-      <TableView prefHeight="343.0" prefWidth="448.0">
+      <TableView fx:id="tbl_fornecedor" prefHeight="650.0" prefWidth="650.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="CNPJ" />
-          <TableColumn prefWidth="75.0" text="Razao Social" />
-            <TableColumn prefWidth="75.0" text="Email" />
-            <TableColumn prefWidth="75.0" text="Telefone" />
-            <TableColumn prefWidth="75.0" text="Telefone 2" />
-            <TableColumn prefWidth="75.0" text="Descrição" />
+         <TableColumn fx:id="col_cnpj" prefWidth="75.0" text="CNPJ" />
+          <TableColumn fx:id="col_razaoSocial" prefWidth="75.0" text="Razao Social" />
+            <TableColumn fx:id="col_email" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="col_telefone1" prefWidth="75.0" text="Telefone" />
+            <TableColumn fx:id="col_telefone2" prefWidth="75.0" text="Telefone 2" />
+            <TableColumn fx:id="col_descricao" prefWidth="75.0" text="Descrição" />
         </columns>
       </TableView>
+      <TextField fx:id="tf_razaoCadastro" layoutX="846.0" layoutY="95.0" prefWidth="150.0" promptText="Razão Social" />
+      <TextField fx:id="tf_emailCadastro" layoutX="846.0" layoutY="151.0" promptText="Email" />
+      <TextField fx:id="tf_telefone1Cadastro" layoutX="675.0" layoutY="208.0" promptText="Telefone 1" />
+      <TextField fx:id="tf_telefone2Cadastro" layoutX="846.0" layoutY="208.0" promptText="Telefone 2" />
+      
+      <Label layoutX="844.0" layoutY="78.0" text="Razão Social:" />
+      <Label layoutX="675.0" layoutY="134.0" text="Descrição:" />
+      <TextField fx:id="pf_descricaoCadastro" layoutX="675.0" layoutY="151.0" promptText="Descrição" />
+      <Label layoutX="846.0" layoutY="134.0" text="Email:" />
+      <Label layoutX="678.0" layoutY="191.0" text="Telefone 1:" />
+      <Label layoutX="847.0" layoutY="191.0" text="Telefone 2:" />
+      
+      <CheckBox fx:id="cb_ativo" layoutX="903.0" layoutY="266.0" mnemonicParsing="false" text="Ativo" />
+      <Button fx:id="btn_alterarCadastro" layoutX="782.0" layoutY="359.0" mnemonicParsing="false" onAction="#alterarCadastro" text="Salvar Alterações" />
+      <TextField fx:id="tf_cnpjCadastro" editable="false" layoutX="675.0" layoutY="95.0" promptText="CNPJ"/>
+      <Label layoutX="675.0" layoutY="78.0" text="CNPJ:" />
+      <Label fx:id="confirmaAlteracao" alignment="CENTER" contentDisplay="CENTER" layoutX="736.0" layoutY="325.0" prefHeight="17.0" prefWidth="199.0" textAlignment="CENTER" />
    </children>
 </AnchorPane>
