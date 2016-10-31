@@ -69,13 +69,13 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 	
 	%CDU1
 	\par
-	\textbf{Nome:} Autenticar Funcionário 
+	\textbf{Nome:} Autenticar Funcionário. 
 	\par
-	\textbf{Descrição:} Autenticação dos funcionários para uso do sistema
+	\textbf{Descrição:} Autenticação dos funcionários para uso do sistema.
 	\par 
-	\textbf{Identificador:} CDU01
+	\textbf{Identificador:} CDU01.
 	\par
-	\textbf{Ator Primário:} Funcionário	
+	\textbf{Ator Primário:} Funcionário.	
 	\par
 	\ldots
 	\par
@@ -104,7 +104,7 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 		\hline 
 		Funcionário & Sistema \\ 
 		\hline 
-		1- Inserir cpf e senha  &  \\ 
+		1 - Inserir cpf e senha  &  \\ 
 		\hline 
 		& 
 		
@@ -121,11 +121,11 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 
 	%CDU2
 	\par
-	\textbf{Nome:} Cadastrar Cliente
+	\textbf{Nome:} Cadastrar Cliente.
 	\par
-	\textbf{Descrição:} Funcionário cadastra dados do cliente no sistema
+	\textbf{Descrição:} Funcionário cadastra dados do cliente no sistema.
 	\par 
-	\textbf{Identificador:} CDU02
+	\textbf{Identificador:} CDU02.
 	\par
 	\textbf{Ator Primário:} Funcionário	
 	\par
@@ -138,66 +138,83 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 		\hline 
 		Funcionário & Sistema \\ 
 		\hline 	
-		1-Selecionar opção de cadastrar cliente &  \\ 
+		1 - Selecionar opção de cadastrar cliente &  \\ 
 		\hline 
 		& 
 		
-		2 - Valida dados inseridos 
+		2 - Exibir formulário de cadastro 
+		\\ 
+		\hline 
+		3- Preencher dados de cadastro
+		& 		
+
+		\\ 
+		\hline 
+		4 - Selecionar opção de confirmar cadastro.
+		& 
+		
+		\\ 
+		\hline 
+		& 	
+		
+		5 - Salvar cadastro. 	
 		\\ 
 		\hline 
 		& 
 		
-		3 - Exibe opções disponíveis
-		\\ 
-		\hline 
-		& 
-		
-		3 - Exibe opções disponíveis
-		\\ 
-		\hline 
-		& 
-		
-		3 - Exibe opções disponíveis
-		\\ 
-		\hline 
-		& 
-		
-		3 - Exibe opções disponíveis
+		6 - Exibir Mensagem “Cadastro Realizado”.
 		\\ 		
 		\hline 
 	\end{tabular} 
 	\vspace{12px}
 	\par
-	\textbf{Fluxo Alternativo}(Login ou senha incorreto, funcionário inexistente ou inativado)\par
+	\textbf{Fluxo Alternativo}(Cliente já cadastrado )\par
 	\begin{tabular}{|c|c|}
 		\hline 
 		Funcionário & Sistema \\ 
-		\hline 
-		1- Inserir cpf e senha  &  \\ 
+		\hline 	
+		1 - Selecionar opção de cadastrar cliente &  \\ 
 		\hline 
 		& 
 		
-		2 - Valida dados inseridos 
+		2 - Exibir formulário de cadastro 
+		\\ 
+		\hline 
+		3- Preencher dados de cadastro
+		& 		
+		
+		\\ 
+		\hline 
+		4 - Selecionar opção de confirmar cadastro.
+		& 
+		
+		\\ 
+		\hline 
+		& 	
+		
+		5 - Retornar Mensagem “Usuário já cadastrado.”	
 		\\ 
 		\hline 
 		& 
 		
-		3 - Exibe mensagem de falha		
-		\\ 
+		6 - Exibir opção de atualizar dados  ou Sair.
+		\\ 		
 		\hline 
-	\end{tabular} 
+	\end{tabular}
 	\vspace{12px}
 
 	%CDU3
 	\par
-	\textbf{Nome:} Autenticar Funcionário 
+	\textbf{Nome:} Orçar Serviços.
 	\par
-	\textbf{Descrição:} Autenticação dos funcionários para uso do sistema
+	\textbf{Descrição:} Gerar orçamento de um serviço. 
 	\par 
-	\textbf{Identificador:} CDU01
+	\textbf{Identificador:} CDU03
 	\par
 	\textbf{Ator Primário:} Funcionário	
 	\par
+	\textbf{Precondição:} Funcionário deve estar autenticado no sistema.
+	\par	
 	\ldots
 	\par
 	\textbf{Fluxo principal}\par
