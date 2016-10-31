@@ -14,8 +14,9 @@
 \contentsline {subsubsection}{\numberline {1.6.4}Restri\IeC {\c c}\IeC {\~o}es Gerais}{6}{subsubsection.1.6.4}
 \contentsline {subsubsection}{\numberline {1.6.5}Suposi\IeC {\c c}\IeC {\~o}es e Depend\IeC {\^e}ncias}{7}{subsubsection.1.6.5}
 \contentsline {subsection}{\numberline {1.7}Requisitos espec\IeC {\'\i }ficos}{7}{subsection.1.7}
-\contentsline {subsubsection}{\numberline {1.7.1}Requisitos Funcionais}{7}{subsubsection.1.7.1}
-\contentsline {subsubsection}{\numberline {1.7.2}Requisitos N\IeC {\~a}o Funcionais}{10}{subsubsection.1.7.2}
+\contentsline {subsubsection}{\numberline {1.7.1}Prioridade}{7}{subsubsection.1.7.1}
+\contentsline {subsubsection}{\numberline {1.7.2}Requisitos Funcionais}{7}{subsubsection.1.7.2}
+\contentsline {subsubsection}{\numberline {1.7.3}Requisitos N\IeC {\~a}o Funcionais}{10}{subsubsection.1.7.3}
 \contentsline {section}{\numberline {2}Plano de Projeto}{11}{section.2}
 \contentsline {subsection}{\numberline {2.1}Motiva\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.1}
 \contentsline {section}{\numberline {3}Casos de Uso}{12}{section.3}

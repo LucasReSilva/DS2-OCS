@@ -64,7 +64,8 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 	
 	
 	\subsubsection{Funções do Produto}
-	A seguir, detalha-se cinco das mais importantes funcionalidades do sistema. É apresentado os casos de usos de interação do ator principal, o Funcionário, e os fluxos principais e alternativos. Os demais casos de usos se encontram na seção de diagramas:
+	\par
+	O sistema deve gerenciar, empregados, vendas, estoque e serviços de um concessionaria. 
 	
 	\subsubsection{Características do Usuário}
 	
@@ -91,9 +92,14 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 	
 \subsection{Requisitos específicos}
 
-\subsubsection{Requisitos Funcionais}
-\ldots
+\subsubsection{Prioridade}
+	\begin{itemize}
+		\item 1: Prioridade alta.
+		\item 2: Prioridade media.
+		\item 3: Prioridade baixa.
+	\end{itemize}
 
+\subsubsection{Requisitos Funcionais}
 \par
 Os requisitos listados abaixo, são funcionalidades que o funcionário pode interagir com o sistema.
 
@@ -116,10 +122,10 @@ Descrição: O sistema deve autenticar os funcionários, por meio de cpf e senha
 \item Cadastrar Cliente (Pr.: 1):\par
 O sistema deve permitir ao funcionário cadastrar clientes.\par
 
-\item Inativar Cliente (Pr.: 1):\par
+\item Inativar Cliente (Pr.: 3):\par
 O sistema deve permitir ao funcionário inativar cadastro de clientes.\par
 
-\item Atualizar Cliente (Pr.: 1):\par
+\item Atualizar Cliente (Pr.: 2):\par
 O sistema deve permitir ao funcionário atualizar cadastro de clientes.\par
 
 \item Listar Cliente (Pr.: 1):\par
@@ -128,10 +134,10 @@ O sistema deve listar os clientes para o funcionário.\par
 \item Cadastrar Funcionário (Pr.: 1):\par
 Descrição: O sistema deve permitir ao gerente cadastrar funcionários.\par
 
-\item  Atualizar Funcionário (Pr.: 1):\par
+\item  Atualizar Funcionário (Pr.: 2):\par
 O sistema deve permitir ao gerente atualizar os dados dos funcionários.\par
 
-\item  Inativar Funcionário (Pr.: 1):\par
+\item  Inativar Funcionário (Pr.: 3):\par
 O sistema deve permitir ao gerente a inativação de funcionários..\par
 
 \item Listar Funcionário. (Pr.: 1):\par
@@ -140,7 +146,7 @@ Descrição: O sistema deve permitir listar os funcionários pelo gerente.\par
 \item Cadastrar Serviço (Pr.: 1):\par
 O sistema deve permitir ao funcionário cadastrar serviços.\par
 
-\item Atualizar Serviço (Pr.: 1):\par
+\item Atualizar Serviço (Pr.: 2):\par
 O sistema deve permitir ao funcionário atualizar serviços.\par
 
 \item Listar Serviço (Pr.: 1):\par
@@ -152,10 +158,10 @@ O sistema deve permitir ao funcionário finalizar ordens de serviços.\par
 \item  Cadastrar Fornecedor (Pr.: 1):\par
 O sistema deve permitir ao gerente cadastrar fornecedores.\par
 
-\item Atualizar Fornecedor (Pr.: 1):\par
+\item Atualizar Fornecedor (Pr.: 2):\par
 O sistema deve permitir ao gerente atualizar fornecedores.\par
 
-\item Inativar Fornecedor (Pr.: 1):\par
+\item Inativar Fornecedor (Pr.: 3):\par
 O sistema deve permitir ao gerente inativar fornecedores.\par
 
 \item Listar Fornecedor (Pr.: 1):\par
@@ -173,13 +179,13 @@ O sistema deve permitir ao funcionário atualizar a quantidade de itens de uma d
 \item Cadastrar Peça (Pr.: 1):\par
 O sistema deve permitir ao funcionário cadastrar  peças.\par
 
-\item Atualizar Peça (Pr.: 1):\par
+\item Atualizar Peça (Pr.: 2):\par
 O sistema deve permitir ao funcionário atualizar dados da peças.\par
 
 \item  Atualizar Estoque de Peça (Pr.: 1):\par
 O sistema deve permitir ao funcionário atualizar a quantidade de itens de uma determinada peça no estoque.\par
 
-\item  Inativar Peça (Pr.: 1):\par
+\item  Inativar Peça (Pr.: 3):\par
 O sistema deve permitir ao funcionário a inativação de peças.\par
 
 \item  Listar Peças (Pr.: 1):\par
@@ -206,13 +212,13 @@ O sistema deve armazenar os pagamentos das vendas de peças.\par
 \item Pagamento de Contratação de Serviços (Pr.: 1):\par
 O sistema deve armazenar o pagamento da contratação de serviços. .\par
 
-\item  Gerar Comprovante de Pagamento da venda de peças  (Pr.: 1):\par
+\item  Gerar Comprovante de Pagamento da venda de peças  (Pr.: 2):\par
 O sistema deve gerar um comprovante de pagamento pela venda de peças.\par
 
-\item Gerar Comprovante de Pagamento da venda de veículos  (Pr.: 1):\par
+\item Gerar Comprovante de Pagamento da venda de veículos  (Pr.: 2):\par
 O sistema deve gerar um comprovante de pagamento pela venda de veículos.\par
 
-\item  Gerar Comprovante de Pagamento de Contratação de serviço (Pr.: 1):\par
+\item  Gerar Comprovante de Pagamento de Contratação de serviço (Pr.: 2):\par
 O sistema deve efetuar a exclusão de fornecedores.\par
 
 \item Gerar Comprovante de Pagamento de Contratação de serviço (Pr.: 1):\par
