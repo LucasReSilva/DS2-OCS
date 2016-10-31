@@ -63,19 +63,21 @@ public class ClienteDAO {
             e.printStackTrace();
             return false;
         }
-    }
-
-    public List<Cliente> getAllCliente() throws Exception {
+    } 
+    
+    
+    
+    public List<Cliente> getAllCliente() throws Exception
+    {
         String query = "SELECT * FROM Cliente";
         List<Cliente> retorno = new ArrayList<>();
         Utilidades u = new Utilidades();
-        ConexaoMySQL c = new ConexaoMySQL();
-        Connection conn = null;
         conn = c.conectar();
         try {
             PreparedStatement stmt = conn.prepareStatement(query);
             ResultSet resultado = stmt.executeQuery();
             while (resultado.next()) {
+                System.out.println(resultado.getString("nome"));
                 Cliente cliente = new Cliente();
                 cliente.setCpf(resultado.getString("cpf"));
                 cliente.setNome(resultado.getString("nome"));
@@ -87,8 +89,8 @@ public class ClienteDAO {
 
                 retorno.add(cliente);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+       } catch (SQLException ex) {
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         conn.close();
         return retorno;

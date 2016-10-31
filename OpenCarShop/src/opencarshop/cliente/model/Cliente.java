@@ -12,6 +12,10 @@ public class Cliente {
     private String telefone2;
     private Boolean ativo;
 
+    public Cliente() {
+
+    }
+
     public String getCpf() {
         return cpf;
     }
@@ -67,4 +71,10 @@ public class Cliente {
     public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
     }
+
+    @Override
+    public String toString() {
+        return this.nome;
+    }
+
 }

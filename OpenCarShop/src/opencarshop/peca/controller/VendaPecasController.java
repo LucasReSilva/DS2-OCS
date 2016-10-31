@@ -45,14 +45,16 @@ public class VendaPecasController implements Initializable {
     @FXML
     private TableColumn<VendaPeca, LocalDate> tableColumnVendaData;
     @FXML
-    private TableColumn<VendaPeca, String> tableColumnVendaPrecoTotal;
+    private TableColumn<VendaPeca, String> tableColumnVendaValorTotal;
+    @FXML
+    private TableColumn<VendaPeca, String> tableColumnVendaNomeCliente;
 
     @FXML
     private TableView<ItemPeca> tableViewPecasVendidas;
     @FXML
-    private TableColumn<ItemPeca, String> tableColumnNomePeca;
+    private TableColumn<ItemPeca, Peca> tableColumnNomePeca;
     @FXML
-    private TableColumn<ItemPeca, Double> tableColumnPrecoPeca;
+    private TableColumn<ItemPeca, Double> tableColumnValorPeca;
     @FXML
     private TableColumn<ItemPeca, Integer> tableColumnQuantidadePeca;
 
@@ -91,17 +93,12 @@ public class VendaPecasController implements Initializable {
         // Listen acionado diante de quaisquer alterações na seleção de itens do TableView
         tableViewVendas.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> selecionarItemTableViewVendas(newValue));
-
     }
 
-    public void mostrarItemTable(VendaPeca venda) {
-        for (ItemPeca i : venda.getItemsVendidos()) {
-            tableColumnNomePeca.setCellValueFactory(new PropertyValueFactory<>("nome"));
-            tableColumnPrecoPeca.setCellValueFactory(new PropertyValueFactory<>("valor"));
-            tableColumnQuantidadePeca.setCellValueFactory(new PropertyValueFactory<>("quantidadeVenda"));
-            System.out.println(i.getPeca().getNome());
-
-        }
+    public void mostrarItemTable(ItemPeca peca) {
+        tableColumnNomePeca.setCellValueFactory(new PropertyValueFactory<>("peca"));
+        tableColumnValorPeca.setCellValueFactory(new PropertyValueFactory<>("valor"));
+        tableColumnQuantidadePeca.setCellValueFactory(new PropertyValueFactory<>("quantidadeVenda"));
     }
 
     public void selecionarItemTableViewVendas(VendaPeca venda) {
@@ -118,7 +115,11 @@ public class VendaPecasController implements Initializable {
             labelVendaPago.setText(pago);
             labelVendaCliente.setText(venda.getCliente().getNome());
 
-            mostrarItemTable(venda);
+            for (ItemPeca i : venda.getItemsVendidos()) {
+                //tableViewPecasVendidas.getSelectionModel().selectedItemProperty().addListener(
+                //(observable, oldValue, newValue) -> mostrarItemTable(i));
+                mostrarItemTable(i);
+            }
 
         } else {
             labelVendaCodigo.setText("");
@@ -132,7 +133,8 @@ public class VendaPecasController implements Initializable {
     public void carregarTableViewVendas() {
         tableColumnVendaCodigo.setCellValueFactory(new PropertyValueFactory<>("id"));
         tableColumnVendaData.setCellValueFactory(new PropertyValueFactory<>("dataVenda"));
-        tableColumnVendaPrecoTotal.setCellValueFactory(new PropertyValueFactory<>("valor"));
+        tableColumnVendaValorTotal.setCellValueFactory(new PropertyValueFactory<>("valor"));
+        tableColumnVendaNomeCliente.setCellValueFactory(new PropertyValueFactory<>("cliente"));
 
         listVendas = vendaDAO.listar();
 
