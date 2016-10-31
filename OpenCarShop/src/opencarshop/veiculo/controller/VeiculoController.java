@@ -18,6 +18,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import opencarshop.veiculo.model.Veiculo;
 import opencarshop.veiculo.model.VeiculoDA;
 
+
 public class VeiculoController implements Initializable {
     
     //Variavéis  
@@ -122,7 +123,7 @@ public class VeiculoController implements Initializable {
         col_modelo.setCellValueFactory(new PropertyValueFactory<>("modelo"));
         col_versao.setCellValueFactory(new PropertyValueFactory<>("versao"));
         col_ano.setCellValueFactory(new PropertyValueFactory<>("ano"));
-        col_qntd.setCellValueFactory(new PropertyValueFactory<>("qntd"));
+        col_qntd.setCellValueFactory(new PropertyValueFactory<>("quantidade"));
         col_valor.setCellValueFactory(new PropertyValueFactory<>("valor"));
         col_vidrosEletricos.setCellValueFactory(new PropertyValueFactory<>("vidrosEletricos"));
         col_travasEletricas.setCellValueFactory(new PropertyValueFactory<>("travasEletricas"));
@@ -155,12 +156,12 @@ public class VeiculoController implements Initializable {
     
         @Override
     public void initialize(URL url, ResourceBundle rb) {
-        try {
+       try {
             carregaTabelaVeiculo();
             tbl_veiculo.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> selecionarItemTabelaVeiculo(newValue));
         } catch (Exception ex) {
             //Logger.getLogger(FuncionarioController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+    };
 }

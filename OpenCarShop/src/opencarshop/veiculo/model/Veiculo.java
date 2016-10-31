@@ -12,6 +12,7 @@ public class Veiculo {
     private boolean opcionalFarolNeblina;    
     private boolean opcionalAltoFalantes;
     
+    
     public Veiculo(){
         
     }

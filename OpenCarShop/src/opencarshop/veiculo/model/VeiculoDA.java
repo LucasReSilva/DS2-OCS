@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import opencarshop.util.ConexaoMySQL;
 
+
 public class VeiculoDA {
     
     public List<Veiculo> getAllVeiculo() throws Exception
