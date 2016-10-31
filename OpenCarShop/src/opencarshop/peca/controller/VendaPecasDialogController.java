@@ -79,7 +79,7 @@ public class VendaPecasDialogController implements Initializable{
          
         carregarComboBoxClientes();
         carregarComboBoxPecas();
-        tableColumnItemDeVendaPeca.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        tableColumnItemDeVendaPeca.setCellValueFactory(new PropertyValueFactory<>("peca"));
         tableColumnItemDeVendaQuantidade.setCellValueFactory(new PropertyValueFactory<>("quantidadeVendida"));
         tableColumnItemDeVendaValor.setCellValueFactory(new PropertyValueFactory<>("valor"));
     }
@@ -89,10 +89,14 @@ public class VendaPecasDialogController implements Initializable{
         
         try {
             listClientes = clienteDAO.getAllCliente();
+            for (Cliente c : listClientes) {
+                System.out.println(c.getNome());                 
+            }
+            
+            
         } catch (Exception ex) {
             Logger.getLogger(VendaPecasDialogController.class.getName()).log(Level.SEVERE, null, ex);
         }
-            System.out.println(listClientes.size());
             observableListClientes = FXCollections.observableArrayList(listClientes);
             comboBoxVendaCliente.setItems(observableListClientes);
             System.out.println(comboBoxVendaCliente.getItems());

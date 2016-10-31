@@ -15,9 +15,10 @@
                <children>
                   <TableView fx:id="tableViewVendas" layoutX="28.0" layoutY="29.0" prefHeight="398.0" prefWidth="275.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn fx:id="tableColumnVendaCodigo" prefWidth="79.0" text="Código" />
-                      <TableColumn fx:id="tableColumnVendaData" prefWidth="82.0" text="Data" />
-                        <TableColumn fx:id="tableColumnVendaPrecoTotal" prefWidth="111.0" text="Preco Total" />
+                      <TableColumn fx:id="tableColumnVendaCodigo" prefWidth="61.0" text="Código" />
+                      <TableColumn fx:id="tableColumnVendaData" prefWidth="63.0" text="Data" />
+                        <TableColumn fx:id="tableColumnVendaValorTotal" prefWidth="66.0" text="Valor Total" />
+                        <TableColumn fx:id="tableColumnVendaNomeCliente" prefWidth="98.0" text="Nome do Cliente" />
                     </columns>
                   </TableView>
                </children>
@@ -60,7 +61,7 @@
                     <columns>
                       <TableColumn fx:id="tableColumnNomePeca" prefWidth="75.0" text="Peca" />
                       <TableColumn fx:id="tableColumnQuantidadePeca" prefWidth="75.0" text="Quantidade" />
-                        <TableColumn fx:id="tableColumnPrecoPeca" prefWidth="75.0" text="Preco" />
+                        <TableColumn fx:id="tableColumnValorPeca" prefWidth="75.0" text="Preco" />
                     </columns>
                   </TableView>
                </children>
