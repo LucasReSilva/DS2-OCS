@@ -110,6 +110,13 @@ public class FuncionarioController implements Initializable {
     private TableView<Funcionario> tbl_funcionario;
     
     
+    static Stage stageAnterior;
+
+    public static void setPrevStage(Stage stage){
+         FuncionarioController.stageAnterior = stage;
+    }
+    
+    
     @FXML
     private void autenticar(ActionEvent event) 
     {
@@ -134,8 +141,11 @@ public class FuncionarioController implements Initializable {
                     nStage.setTitle("OpenCarShop");
                     nStage.setResizable(false);
                     nStage.show();
-                    Stage stage = (Stage) cadastroLink.getScene().getWindow();
-                    stage.close();
+                    //Stage stage = (Stage) cadastroLink.getScene().getWindow();
+                    
+                    
+                    stageAnterior.close();
+                    //stage.close();
                 } 
                 catch (IOException e) 
                 {
