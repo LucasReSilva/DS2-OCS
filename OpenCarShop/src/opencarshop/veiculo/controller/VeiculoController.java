@@ -18,88 +18,85 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import opencarshop.veiculo.model.Veiculo;
 import opencarshop.veiculo.model.VeiculoDA;
 
-
 public class VeiculoController implements Initializable {
-    
+
     //Variavéis  
-     @FXML
+    @FXML
     private Label lb_result;
-     
+
     @FXML
     private TextField tf_modelo;
-    
+
     @FXML
     private TextField tf_ano;
-    
+
     @FXML
     private TextField tf_versao;
-    
+
     @FXML
     private TextField tf_qntd;
-    
+
     @FXML
     private TextField tf_valor;
-    
+
     @FXML
     private CheckBox cb_VidrosEletricos;
-    
+
     @FXML
     private CheckBox cb_TravasEletricas;
-    
+
     @FXML
     private CheckBox cb_Ar;
-    
+
     @FXML
     private CheckBox cb_FarolNeblina;
-    
+
     @FXML
     private CheckBox cb_AltoFalante;
-    
+
     //TABELA VEICULO
     @FXML
     private TableColumn<Veiculo, String> col_modelo;
-    
+
     @FXML
     private TableColumn<Veiculo, String> col_ano;
-        
+
     @FXML
     private TableColumn<Veiculo, String> col_versao;
-            
+
     @FXML
     private TableColumn<Veiculo, String> col_qntd;
-    
+
     @FXML
     private TableColumn<Veiculo, String> col_valor;
-                
+
     @FXML
     private TableColumn<Veiculo, String> col_vidrosEletricos;
-                    
+
     @FXML
     private TableColumn<Veiculo, String> col_travasEletricas;
-                        
+
     @FXML
     private TableColumn<Veiculo, String> col_ar;
-                            
+
     @FXML
     private TableColumn<Veiculo, String> col_farolNeblina;
-                                
+
     @FXML
     private TableColumn<Veiculo, String> col_altoFalantes;
-    
+
     // tabela
-    
     @FXML
     private TableView<Veiculo> tbl_veiculo;
-                                    
-    
+
     @FXML
-    private void cadastrarVeiculo(ActionEvent event){
-        
+    private void cadastrarVeiculo(ActionEvent event) {
+
         //instanciando objeto
         Veiculo veiculo = new Veiculo();
         //instancia objeto para inserção de objeto cadastrado no banco
-        VeiculoDA veiculoDao = new VeiculoDA();    
-        
+        VeiculoDA veiculoDao = new VeiculoDA();
+
         veiculo.setModelo(tf_modelo.getText());
         veiculo.setAno(Integer.parseInt((tf_ano.getText())));
         veiculo.setVersao(tf_versao.getText());
@@ -110,16 +107,15 @@ public class VeiculoController implements Initializable {
         veiculo.setOpcionalFarolNeblina(Boolean.parseBoolean(cb_FarolNeblina.getText()));
         veiculo.setOpcionalTravasEletricas(Boolean.parseBoolean(cb_TravasEletricas.getText()));
         veiculo.setOpcionalVidrosEletricos(Boolean.parseBoolean(cb_VidrosEletricos.getText()));
-        
-        if(veiculoDao.insertVeiculo(veiculo)){
+
+        if (veiculoDao.insertVeiculo(veiculo)) {
             lb_result.setText("Veículo cadastrado com sucesso");
-        }else{
+        } else {
             lb_result.setText("Erro ao Cadastrar!! tente novamente.");
-        }        
+        }
     }
-    
-    private void carregaTabelaVeiculo() throws Exception
-    {
+
+    private void carregaTabelaVeiculo() throws Exception {
         col_modelo.setCellValueFactory(new PropertyValueFactory<>("modelo"));
         col_versao.setCellValueFactory(new PropertyValueFactory<>("versao"));
         col_ano.setCellValueFactory(new PropertyValueFactory<>("ano"));
@@ -130,7 +126,6 @@ public class VeiculoController implements Initializable {
         col_ar.setCellValueFactory(new PropertyValueFactory<>("ar"));
         col_farolNeblina.setCellValueFactory(new PropertyValueFactory<>("farolNeblina"));
         col_altoFalantes.setCellValueFactory(new PropertyValueFactory<>("altoFalantes"));
-        
 
         VeiculoDA veiculoDAO = new VeiculoDA();
         List<Veiculo> listaVeiculo = veiculoDAO.getAllVeiculo();
@@ -139,29 +134,31 @@ public class VeiculoController implements Initializable {
         observableListVeiculo = FXCollections.observableArrayList(listaVeiculo);
         tbl_veiculo.setItems(observableListVeiculo);
     }
-    public void selecionarItemTabelaVeiculo(Veiculo veiculo){
+
+    public void selecionarItemTabelaVeiculo(Veiculo veiculo) {
         if (veiculo.getModelo() != null) {
-              tf_modelo.setText(veiculo.getModelo());
-              tf_versao.setText(veiculo.getVersao());
-              tf_ano.setText(String.valueOf(veiculo.getAno()));
-              tf_valor.setText(String.valueOf(veiculo.getValor()));
-              tf_qntd.setText(String.valueOf(veiculo.getQuantidade()));
-              cb_AltoFalante.setText(String.valueOf(veiculo.isOpcionalAltoFalantes()));
-              cb_Ar.setText(String.valueOf(veiculo.isOpcionalAr()));
-              cb_FarolNeblina.setText(String.valueOf(veiculo.isOpcionalFarolNeblina()));
-              cb_TravasEletricas.setText(String.valueOf(veiculo.isOpcionalTravasEletricas()));
-              cb_VidrosEletricos.setText(String.valueOf(veiculo.isOpcionalVidrosEletricos()));
-        } 
+            tf_modelo.setText(veiculo.getModelo());
+            tf_versao.setText(veiculo.getVersao());
+            tf_ano.setText(String.valueOf(veiculo.getAno()));
+            tf_valor.setText(String.valueOf(veiculo.getValor()));
+            tf_qntd.setText(String.valueOf(veiculo.getQuantidade()));
+            cb_AltoFalante.setText(String.valueOf(veiculo.isOpcionalAltoFalantes()));
+            cb_Ar.setText(String.valueOf(veiculo.isOpcionalAr()));
+            cb_FarolNeblina.setText(String.valueOf(veiculo.isOpcionalFarolNeblina()));
+            cb_TravasEletricas.setText(String.valueOf(veiculo.isOpcionalTravasEletricas()));
+            cb_VidrosEletricos.setText(String.valueOf(veiculo.isOpcionalVidrosEletricos()));
+        }
     }
-    
-        @Override
+
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
-       try {
+        try {
             carregaTabelaVeiculo();
             tbl_veiculo.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> selecionarItemTabelaVeiculo(newValue));
+                    (observable, oldValue, newValue) -> selecionarItemTabelaVeiculo(newValue));
         } catch (Exception ex) {
             //Logger.getLogger(FuncionarioController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    };
+    }
+;
 }

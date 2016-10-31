@@ -23,11 +23,9 @@ import opencarshop.util.Utilidades;
 
 public class FornecedorController implements Initializable {
 
-       /**
+    /**
      * Initializes the controller class.
      */
-   
-    
     // TELA DE AUTENTICACAO
     @FXML
     private Label labelErro;
@@ -35,7 +33,7 @@ public class FornecedorController implements Initializable {
     private TextField tf_cpf;
     @FXML
     private Hyperlink cadastroLink;
-    
+
     // TELA DE CADASTRO
     @FXML
     private TextField tf_cnpjCadastro;
@@ -43,15 +41,13 @@ public class FornecedorController implements Initializable {
     private TextField tf_razaoCadastro;
     @FXML
     private TextField tf_descricaoCadastro;
-    
-  
-    
+
     @FXML
     private ComboBox<String> cb_tipoCadastro;
     @FXML
     private TextField tf_emailCadastro;
     @FXML
-    private TextField tf_telefone1Cadastro;   
+    private TextField tf_telefone1Cadastro;
     @FXML
     private TextField tf_telefone2Cadastro;
     @FXML
@@ -68,12 +64,10 @@ public class FornecedorController implements Initializable {
     private TextField tf_numeroCadastro;
     @FXML
     private TextField tf_complementoCadastro;
-    
- 
-   
+
     @FXML
     private Label resultadoCadastro;
-    
+
     // TABELA Fornecedor
     @FXML
     private TableColumn<Fornecedor, String> col_cnpj;
@@ -89,8 +83,8 @@ public class FornecedorController implements Initializable {
     private TableColumn<Fornecedor, String> col_descricao;
     @FXML
     private TableView<Fornecedor> tbl_fornecedor;
-    
-  /*  
+
+    /*  
     @FXML
     private void autenticar(ActionEvent event) 
     {
@@ -133,16 +127,16 @@ public class FornecedorController implements Initializable {
             labelErro.setText("Login ou senha errado!!!");
         }
     }
-    */
+     */
     @FXML
     private void cadastrar(ActionEvent event) throws ParseException {
-    
-        Fornecedor  fornecedor    = new Fornecedor();
-        Endereco     end     = new Endereco();
-        
-        FornecedorDAO f     = new FornecedorDAO();
+
+        Fornecedor fornecedor = new Fornecedor();
+        Endereco end = new Endereco();
+
+        FornecedorDAO f = new FornecedorDAO();
         Utilidades u = new Utilidades();
-      
+
         // OBJETO FORNECEDOR
         fornecedor.setCnpj(tf_cnpjCadastro.getText());
         fornecedor.setRazaoSocial(tf_razaoCadastro.getText());
@@ -161,27 +155,19 @@ public class FornecedorController implements Initializable {
         end.setComplemento(tf_complementoCadastro.getText());
         end.setTipo(cb_tipoCadastro.getValue().charAt(0));
 
-        
-        
-        if(f.cadastraFornecedor(fornecedor, end))
-        {
+        if (f.cadastraFornecedor(fornecedor, end)) {
             resultadoCadastro.setText("Cadastrado com sucesso!!");
-        }
-        else
-        {
+        } else {
             resultadoCadastro.setText("Erro ao cadastrar!! Tente novamente.");
         }
     }
-    
+
     @FXML
     private void buscar(ActionEvent event) throws Exception {
 
-        
     }
-    
-    
-    private void carregaTabelaFornecedor() throws Exception
-    {
+
+    private void carregaTabelaFornecedor() throws Exception {
         col_cnpj.setCellValueFactory(new PropertyValueFactory<>("cnpj"));
         col_razaoSocial.setCellValueFactory(new PropertyValueFactory<>("razaoSocial"));
         col_email.setCellValueFactory(new PropertyValueFactory<>("email"));
@@ -195,7 +181,7 @@ public class FornecedorController implements Initializable {
         observableListFornecedor = FXCollections.observableArrayList(listaFornecedor);
         tbl_fornecedor.setItems(observableListFornecedor);
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
@@ -203,7 +189,7 @@ public class FornecedorController implements Initializable {
         } catch (Exception ex) {
             //Logger.getLogger(FuncionarioController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
     }
-    
+
 }

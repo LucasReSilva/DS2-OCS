@@ -24,7 +24,7 @@ public class CadastroPecaDialog implements Initializable {
     private TextField textFieldPecaPreco;
     @FXML
     private TextField textFieldPecaQuantidade;
-    
+
     @FXML
     private Button buttonConfirmar;
     @FXML
@@ -75,7 +75,7 @@ public class CadastroPecaDialog implements Initializable {
         peca.setValor(preco);
         int quantidade = Integer.parseInt(textFieldPecaQuantidade.getText());
         peca.setQuantidade(quantidade);
- 
+
         buttonConfirmarClicked = true;
         dialogStage.close();
     }

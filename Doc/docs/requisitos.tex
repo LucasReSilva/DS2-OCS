@@ -476,7 +476,7 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 		\hline 
 		& 
 		
-		8 - Salvar Peças.
+		8 - Salvar alterações.
 		\\ 
 		\hline 
 	\end{tabular} 
@@ -486,25 +486,32 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 	
 	\begin{itemize}
 	\item[] Gerente: Responsável pela gestão da concessionária, tem acesso as todas   funcionalidades  do sistema Open Car Shop.
-	\item[] Funcionario: Responsável pelo atendimento ao cliente, geração de orçamento de serviços e vendas.
+	\item[] Funcionário: Responsável pelo atendimento ao cliente, geração de orçamento de serviços e vendas.
 	\end{itemize}
 
 	\subsubsection{Restrições Gerais}
 	\par
-	O sistema deve ter conexão com o banco de dados para o funcionário se autenticar e poder utilizar os recursos do sistema. Para que isso seja possível, será necessário, no mínimo, uma conexão local com o banco de dados.
+	O sistema deve ter no mínimo conexão com o banco de dados para que o funcionário se autenticar e poder utilizar os recursos do sistema. 
+	\par
+	Somente o gerente pode realizar o cadastro, atualização  e solicitar listagem de funcionários e também realizar cadastro de fornecedor.
+	\par
+	Apenas funcionários com contratos ativos podem ter acesso às funcionalidades do sistema.
+
 	
 	\subsubsection{Suposições e Dependências}
 		\begin{itemize}
-			\item Ao orçar um serviço, supõem sempre que há algum funcionário mecânico disponível para fazer o serviço. A única dependência que o orçamento tem é em relação a quantidade de peças que o serviço necessita.		
+			\item Ao gerar uma ordem  de serviço, supõe-se que sempre há algum funcionário mecânico disponível para fazer o serviço.
+			\item Existe dependência que uma venda possui em relação a quantidade de peças solicitadas.			
 		\end{itemize}
 	
 	
 \subsection{Requisitos específicos}
 
 \subsubsection{Requisitos Funcionais}
+\ldots
 
 \par
-Os requisitos RF01 ao RF29 são funcionalidades que o funcionário pode interagir com o sistema. Esses requisitos estão descritos no diagrama de Casos de Usos no Apêndice. Enquanto que os demais representam outras funcionalidades do sistema.
+Os requisitos listados abaixo, são funcionalidades que o funcionário pode interagir com o sistema.
 
 \begin{enumerate}[
 	label=RF\arabic{*}, 
@@ -519,125 +526,125 @@ Os requisitos RF01 ao RF29 são funcionalidades que o funcionário pode interagi
 %\item Exclusão de fornecedores. (Pr.: 1)\par
 %O sistema deve efetuar a exclusão de fornecedores.\par
 
-\item Exclusão de fornecedores. (Pr.: 1)\par
+\item Autenticar Funcionário (Pr.: 1):\par
+Descrição: O sistema deve autenticar os funcionários, por meio de cpf e senha, de forma a não permitir acesso não autorizado.\par
+
+\item Cadastrar Cliente (Pr.: 1):\par
+O sistema deve permitir ao funcionário cadastrar clientes.\par
+
+\item Inativar Cliente (Pr.: 1):\par
+O sistema deve permitir ao funcionário inativar cadastro de clientes.\par
+
+\item Atualizar Cliente (Pr.: 1):\par
+O sistema deve permitir ao funcionário atualizar cadastro de clientes.\par
+
+\item Listar Cliente (Pr.: 1):\par
+O sistema deve listar os clientes para o funcionário.\par
+
+\item Cadastrar Funcionário (Pr.: 1):\par
+Descrição: O sistema deve permitir ao gerente cadastrar funcionários.\par
+
+\item  Atualizar Funcionário (Pr.: 1):\par
+O sistema deve permitir ao gerente atualizar os dados dos funcionários.\par
+
+\item  Inativar Funcionário (Pr.: 1):\par
+O sistema deve permitir ao gerente a inativação de funcionários..\par
+
+\item Listar Funcionário. (Pr.: 1):\par
+Descrição: O sistema deve permitir listar os funcionários pelo gerente.\par
+
+\item Cadastrar Serviço (Pr.: 1):\par
+O sistema deve permitir ao funcionário cadastrar serviços.\par
+
+\item Atualizar Serviço (Pr.: 1):\par
+O sistema deve permitir ao funcionário atualizar serviços.\par
+
+\item Listar Serviço (Pr.: 1):\par
+O sistema deve listar os Serviços para o funcionário.\par
+
+\item Finalizar  Ordem de Serviço (Pr.: 1):\par
+O sistema deve permitir ao funcionário finalizar ordens de serviços.\par
+
+\item  Cadastrar Fornecedor (Pr.: 1):\par
+O sistema deve permitir ao gerente cadastrar fornecedores.\par
+
+\item Atualizar Fornecedor (Pr.: 1):\par
+O sistema deve permitir ao gerente atualizar fornecedores.\par
+
+\item Inativar Fornecedor (Pr.: 1):\par
+O sistema deve permitir ao gerente inativar fornecedores.\par
+
+\item Listar Fornecedor (Pr.: 1):\par
+O sistema deve listar os Fornecedores para o gerente.\par
+
+\item Cadastrar Veículo (Pr.: 1):\par
+Descrição: O sistema deve permitir ao funcionário cadastrar veículos.\par
+
+\item Listar Veículos (Pr.: 1):\par
+O sistema deve permitir ao funcionário listar os veículos.\par
+
+\item Atualizar Estoque de Veículos (Pr.: 1):\par
+O sistema deve permitir ao funcionário atualizar a quantidade de itens de uma determinada peça no estoque.\par
+
+\item Cadastrar Peça (Pr.: 1):\par
+O sistema deve permitir ao funcionário cadastrar  peças.\par
+
+\item Atualizar Peça (Pr.: 1):\par
+O sistema deve permitir ao funcionário atualizar dados da peças.\par
+
+\item  Atualizar Estoque de Peça (Pr.: 1):\par
+O sistema deve permitir ao funcionário atualizar a quantidade de itens de uma determinada peça no estoque.\par
+
+\item  Inativar Peça (Pr.: 1):\par
+O sistema deve permitir ao funcionário a inativação de peças.\par
+
+\item  Listar Peças (Pr.: 1):\par
+O sistema deve permitir ao funcionário listar as peças..\par
+
+\item Orçar serviços (Pr.: 1):\par
+O sistema deve permitir ao funcionário gerar um orçamento de serviços solicitado  pelo cliente.\par
+
+\item Vender Peça (Pr.: 1):\par
+O sistema deve permitir ao funcionário realizar a venda de  itens de peça para um cliente.\par
+
+\item Vender Veículo (Pr.: 1):\par
+O sistema deve permitir ao funcionário realizar a venda de veículos para um cliente.\par
+
+\item Autorizar Serviço (Pr.: 1):\par
+O sistema deve permitir ao funcionário registrar a contratação de serviços a partir de um orçamento de serviços válido.\par
+
+\item Pagamento de Venda de Veículos (Pr.: 1):\par
+O sistema deve armazenar os pagamentos das vendas de veículos. \par
+
+\item Pagamento de Venda de Peças (Pr.: 1):\par
+O sistema deve armazenar os pagamentos das vendas de peças.\par
+
+\item Pagamento de Contratação de Serviços (Pr.: 1):\par
+O sistema deve armazenar o pagamento da contratação de serviços. .\par
+
+\item  Gerar Comprovante de Pagamento da venda de peças  (Pr.: 1):\par
+O sistema deve gerar um comprovante de pagamento pela venda de peças.\par
+
+\item Gerar Comprovante de Pagamento da venda de veículos  (Pr.: 1):\par
+O sistema deve gerar um comprovante de pagamento pela venda de veículos.\par
+
+\item  Gerar Comprovante de Pagamento de Contratação de serviço (Pr.: 1):\par
 O sistema deve efetuar a exclusão de fornecedores.\par
 
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
+\item Gerar Comprovante de Pagamento de Contratação de serviço (Pr.: 1):\par
+O sistema deve gerar um comprovante de pagamento pela venda de peças, veículos ou contratação de serviços.\par
 
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
+\item Verificar disponibilidade (Pr.: 1):\par
+O sistema deve verificar se a peça está disponível no estoque antes da venda.\par
 
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
+\item Atualizar Estoque (Pr.: 1):\par
+O sistema deve atualizar a quantidade de peças e de veículos após concretizar vendas.\par
 
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
+\item Relatório de Faturamento (Pr.: 1):\par
+O sistema deve exibir relatório de quantidade de vendas solicitado pelo gerente.\par
 
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
-
-\item Exclusão de fornecedores. (Pr.: 1)\par
-O sistema deve efetuar a exclusão de fornecedores.\par
+\item Relatório de Cliente (Pr.: 1):\par
+O sistema deve exibir histórico de compra de clientes solicitado pelo funcionário. \par
 
 
 \end{enumerate}
@@ -651,6 +658,19 @@ O sistema deve efetuar a exclusão de fornecedores.\par
 	ref=(RNF\arabic{*}),
 	leftmargin=1.5em,
 	itemindent=4.5em]
-\item (Pr.: 1): O sistema deve retornar as consultas em, no máximo, 6 segundos, em 90\% dos casos.
-\item (Pr.: 1): O sistema deve retornar as consultas em, no máximo, 6 segundos, em 90\% dos casos.
+	
+	\item Integridade (Pr.: 1):\par
+	O sistema deve permitir apenas usuários com privilégios de gerente visualizar informações de contrato dos funcionários.\par
+	
+	\item Tempo de Resposta (Pr.: 1):\par
+	O tempo de processamento para todas as requisições devem ser de 2 segundos para  90% dos casos.  \par
+	
+	\item Usuários Simultâneos (Pr.: 1):\par
+	O sistema deverá suportar processamento multiusuários, até 50 usuários poderão utilizar o sistema simultaneamente. \par
+	
+	\item Interface gráfica (Pr.: 1):\par
+	Para um teste com 20 usuários, o tempo para o 90% desses usuários aprender a utilizar o sistema deve durar no máximo 3 dias.  \par
+	
+	\item Portabilidade (Pr.: 1):\par
+	O sistema deverá ser independente de plataforma de sistema operacional. \par
 \end{enumerate}

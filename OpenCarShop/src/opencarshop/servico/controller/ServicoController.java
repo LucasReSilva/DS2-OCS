@@ -24,29 +24,26 @@ public class ServicoController implements Initializable {
     /**
      * Initializes the controller class.
      */
-        
-
-   //Variavéis  
+    //Variavéis  
     @FXML
-    private TextField tfdescricao;    
-    
+    private TextField tfdescricao;
+
     @FXML
     private TextField tfvalor;
-    
+
     @FXML
     private CheckBox chkValue;
-    
+
     @FXML
     private TextField tfid;
-    
+
     @FXML
-    private Label  labelErroServ;
-    
+    private Label labelErroServ;
+
     @FXML
     private Label confirmaAtualizacao;
 
 //Colunas da tabela listar serviços
-    
     @FXML
     private TableColumn<Servico, String> col_descricao;
     @FXML
@@ -56,103 +53,94 @@ public class ServicoController implements Initializable {
     @FXML
     private TableView<Servico> tbl_servico;
 
-    
-  //metodos
-    
-    @FXML    
-    public void cadastraServico(ActionEvent event){
+    //metodos
+    @FXML
+    public void cadastraServico(ActionEvent event) {
         //istancia objeto serviço para configuraçao de atributos
-        Servico servico; 
+        Servico servico;
         //instacia objeto para inserção de objeto cadasrtado no banco
         ServicoDAO servDao = new ServicoDAO();
 
-        String descri=tfdescricao.getText();
+        String descri = tfdescricao.getText();
         String valor = tfvalor.getText();
 
         //Testando valores do cadastro
-
-        if ((descri.length() > (int)45) || ("".equals(descri))  ){
+        if ((descri.length() > (int) 45) || ("".equals(descri))) {
             labelErroServ.setText("Descrição deve ter até 45 caracteres");
 
         }
-        if (Pattern.matches("[a-zA-Z]+",valor) == true) {
-                labelErroServ.setText("por favor insira apenas numeros e virgula/ponto");
+        if (Pattern.matches("[a-zA-Z]+", valor) == true) {
+            labelErroServ.setText("por favor insira apenas numeros e virgula/ponto");
         }
 
         //passando para double
         valor = valor.replace(",", ".");
         Double valorDouble = Double.parseDouble(valor);
 
-
         //Criando objeto serviço
-        servico =new Servico(descri,valorDouble,chkValue.isSelected());
+        servico = new Servico(descri, valorDouble, chkValue.isSelected());
 
-        if( !servDao.insertServico(servico)){
+        if (!servDao.insertServico(servico)) {
 
             labelErroServ.setText("Serviço cadastrado...retornando ");
 
         }
     }
- 
 
     @FXML
-    private void carregaTabelaServico() throws Exception{
+    private void carregaTabelaServico() throws Exception {
 
         col_descricao.setCellValueFactory(new PropertyValueFactory<>("descricao"));
         col_valor.setCellValueFactory(new PropertyValueFactory<>("valorP"));
-        col_tpvalor.setCellValueFactory(new PropertyValueFactory<>("valorF"));    
+        col_tpvalor.setCellValueFactory(new PropertyValueFactory<>("valorF"));
 
-            ServicoDAO serv = new ServicoDAO();
-            List<Servico> listaServico = serv.getAllServicos();
-            ObservableList<Servico> observableListServico;
+        ServicoDAO serv = new ServicoDAO();
+        List<Servico> listaServico = serv.getAllServicos();
+        ObservableList<Servico> observableListServico;
 
-            observableListServico = FXCollections.observableArrayList(listaServico);
-            tbl_servico.setItems(observableListServico);
+        observableListServico = FXCollections.observableArrayList(listaServico);
+        tbl_servico.setItems(observableListServico);
     }
 
     @FXML
-    public void alterarServico(ActionEvent event) throws SQLException
-    {
+    public void alterarServico(ActionEvent event) throws SQLException {
         Servico srv = new Servico();
-        
+
         srv.setId(Integer.valueOf(tfid.getText()));
         srv.setDescricao(tfdescricao.getText());
         srv.setValorPadrao(Double.valueOf(tfvalor.getText()));
         srv.setValorFixo(chkValue.isSelected());
-        
+
         ServicoDAO s = new ServicoDAO();
-        
-        if(s.alteraServico(srv))
-        {
+
+        if (s.alteraServico(srv)) {
             confirmaAtualizacao.setText("Alteração realizada com sucesso!!");
-        }
-        else
-        {
+        } else {
             confirmaAtualizacao.setText("Erro ao realizar a alteração!!");
         }
-        
+
     }
 
-    public void selecionarItemTablelaServico(Servico servico){
+    public void selecionarItemTablelaServico(Servico servico) {
         if (servico.getDescricao() != null) {
-              tfdescricao.setText(servico.getDescricao());
-              tfvalor.setText(String.valueOf(servico.getValorPadrao()));
-              chkValue.setSelected(servico.getValorFixo());
-              tfid.setText(String.valueOf(servico.getId()));
-        } 
+            tfdescricao.setText(servico.getDescricao());
+            tfvalor.setText(String.valueOf(servico.getValorPadrao()));
+            chkValue.setSelected(servico.getValorFixo());
+            tfid.setText(String.valueOf(servico.getId()));
+        }
     }
 
-@Override
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
             //System.out.println("Chamou");
             carregaTabelaServico();
             tbl_servico.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> selecionarItemTablelaServico(newValue));
+                    (observable, oldValue, newValue) -> selecionarItemTablelaServico(newValue));
         } catch (Exception ex) {
-            
+
         }
-        
+
     }
 
 }

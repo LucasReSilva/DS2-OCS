@@ -1,6 +1,7 @@
 package opencarshop;
 
 public class Endereco {
+
     private String CEP;
     private String estado;
     private String cidade;
@@ -73,6 +74,5 @@ public class Endereco {
     public void setComplemento(String complemento) {
         this.complemento = complemento;
     }
-  
-    
+
 }

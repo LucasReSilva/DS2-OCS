@@ -9,71 +9,73 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.TelaPrincipalController">
-   <children>
-      <StackPane prefHeight="740.0" prefWidth="1024.0">
-         <children>
-            <BorderPane prefHeight="200.0" prefWidth="200.0">
-               <top>
-                  <MenuBar prefWidth="25.0" BorderPane.alignment="CENTER">
-                    <menus>
-                        <Menu mnemonicParsing="false" text="Cliente">
-                          <items>
-                            <MenuItem mnemonicParsing="false" onAction="#cadastrarCliente" text="Cadastrar" />
-                              <MenuItem mnemonicParsing="false" onAction="#listarCliente" text="Listar" />
-                          </items>
-                        </Menu>
-                        <Menu mnemonicParsing="false" text="Serviço">
-                           <items>
-                              <MenuItem mnemonicParsing="false" onAction="#cadastrarServico" text="Cadastrar" />
-                              <MenuItem mnemonicParsing="false" onAction="#listarServico" text="Listar" />
-                           </items>
-                        </Menu>
-                        <Menu mnemonicParsing="false" text="Peça">
-                          <items>
-                            <MenuItem mnemonicParsing="false" text="Vender" />
-                              <SeparatorMenuItem mnemonicParsing="false" />
-                              <MenuItem mnemonicParsing="false" onAction="#cadastrarPeca" text="Gerenciar" />
-                          </items>
-                        </Menu>
-                        <Menu mnemonicParsing="false" text="Veiculo">
-                           <items>
-                              <MenuItem mnemonicParsing="false" text="Vender" />
-                              <SeparatorMenuItem mnemonicParsing="false" />
-                              <MenuItem mnemonicParsing="false" onAction="#cadastrarVeiculo" text="Cadastrar" />
-                              <MenuItem mnemonicParsing="false" onAction="#listarVeiculo" text="Listar" />
-                           </items>
-                        </Menu>
-                      <Menu mnemonicParsing="false" text="Funcionário">
-                        <items>
-                          <MenuItem mnemonicParsing="false" onAction="#cadastrarFuncionario" text="Cadastrar" />
-                              <MenuItem mnemonicParsing="false" onAction="#listarFuncionario" text="Listar" />
-                        </items>
-                      </Menu>
-                        <Menu mnemonicParsing="false" text="Fornecedor">
-                           <items>
-                              <MenuItem mnemonicParsing="false" onAction="#cadastrarFornecedor" text="Cadastrar" />
-                              <MenuItem mnemonicParsing="false" onAction="#listarFornecedor" text="Listar" />
-                           </items>
-                        </Menu>
-                    </menus>
-                  </MenuBar>
-               </top>
-               <center>
-                  <StackPane fx:id="acContent" prefHeight="646.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
-               </center>
-               <bottom>
-                  <ToolBar prefHeight="14.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
-                    <items>
-                        <Text id="tx_info" fx:id="tx_info" strokeType="OUTSIDE" strokeWidth="0.0" text="OpenCarShop">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Text>
-                    </items>
-                  </ToolBar>
-               </bottom>
-            </BorderPane>
-         </children>
-      </StackPane>
-   </children>
+    <children>
+        <StackPane prefHeight="740.0" prefWidth="1024.0">
+            <children>
+                <BorderPane prefHeight="200.0" prefWidth="200.0">
+                    <top>
+                        <MenuBar prefWidth="25.0" BorderPane.alignment="CENTER">
+                            <menus>
+                                <Menu mnemonicParsing="false" text="Cliente">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#cadastrarCliente" text="Cadastrar" />
+                                        <MenuItem mnemonicParsing="false" onAction="#listarCliente" text="Listar" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Serviço">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#cadastrarServico" text="Cadastrar" />
+                                        <MenuItem mnemonicParsing="false" onAction="#listarServico" text="Listar" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Peça">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#venderPeca" text="Vender" />
+                                        <SeparatorMenuItem mnemonicParsing="false" />
+                                        <MenuItem mnemonicParsing="false" onAction="#cadastrarPeca" text="Gerenciar" />
+                                        <SeparatorMenuItem mnemonicParsing="false" />
+                                        <MenuItem mnemonicParsing="false" onAction="#relatorioVendaPecaMes" text="Relatório Venda/Mes" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Veiculo">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" text="Vender" />
+                                        <SeparatorMenuItem mnemonicParsing="false" />
+                                        <MenuItem mnemonicParsing="false" onAction="#cadastrarVeiculo" text="Cadastrar" />
+                                        <MenuItem mnemonicParsing="false" onAction="#listarVeiculo" text="Listar" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Funcionário">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#cadastrarFuncionario" text="Cadastrar" />
+                                        <MenuItem mnemonicParsing="false" onAction="#listarFuncionario" text="Listar" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Fornecedor">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#cadastrarFornecedor" text="Cadastrar" />
+                                        <MenuItem mnemonicParsing="false" onAction="#listarFornecedor" text="Listar" />
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                    </top>
+                    <center>
+                        <StackPane fx:id="acContent" prefHeight="646.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
+                    </center>
+                    <bottom>
+                        <ToolBar prefHeight="14.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+                            <items>
+                                <Text id="tx_info" fx:id="tx_info" strokeType="OUTSIDE" strokeWidth="0.0" text="OpenCarShop">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Text>
+                            </items>
+                        </ToolBar>
+                    </bottom>
+                </BorderPane>
+            </children>
+        </StackPane>
+    </children>
 </AnchorPane>

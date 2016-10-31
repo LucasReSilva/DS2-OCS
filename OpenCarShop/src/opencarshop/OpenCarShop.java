@@ -8,13 +8,13 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class OpenCarShop extends Application {
-    
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("funcionario/view/Autenticar.fxml"));
-        
+
         Scene scene = new Scene(root);
-        
+
         stage.setScene(scene);
         stage.getIcons().add(new Image("recursos/icones/account-circle-white.png"));
         stage.setTitle("Autenticação");
@@ -27,5 +27,5 @@ public class OpenCarShop extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }

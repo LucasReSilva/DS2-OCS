@@ -30,13 +30,12 @@ import opencarshop.peca.model.PecaDAO;
 import opencarshop.util.ConexaoMySQL;
 import opencarshop.peca.model.Peca;
 
-
 /**
  *
  * @author Dimitri
  */
-public class CadastroPeca implements Initializable{
-    
+public class CadastroPeca implements Initializable {
+
     @FXML
     private TableView<Peca> tableViewPecas;
     @FXML
@@ -57,43 +56,33 @@ public class CadastroPeca implements Initializable{
     private Button buttonAlterar;
     @FXML
     private Button buttonInativar;
-    
+
     private List<Peca> listPecas;
     private ObservableList<Peca> observableListPecas;
-    
-     //Atributos para manipulação de Banco de Dados
-    private final ConexaoMySQL database = new ConexaoMySQL();
-     
-    private Connection connection;
 
+    //Atributos para manipulação de Banco de Dados
     private final PecaDAO pecaDAO = new PecaDAO();
-    
-  
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        try {
-            connection = database.conectar();
-        } catch (Exception ex) {
-            Logger.getLogger(CadastroPeca.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        pecaDAO.setConnection(connection);
+
         carregarTableViewPeca();
         // Listen acionado diante de quaisquer alterações na seleção de itens do TableView
         tableViewPecas.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> selecionarItemTableViewPecas(newValue));
     }
-    
+
     public void carregarTableViewPeca() {
-            tableColumnPecaNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
-            tableColumnPecaQuantidade.setCellValueFactory(new PropertyValueFactory<>("quantidade"));
+        tableColumnPecaNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        tableColumnPecaQuantidade.setCellValueFactory(new PropertyValueFactory<>("quantidade"));
 
-            listPecas = pecaDAO.listar();
+        listPecas = pecaDAO.listar();
 
-            observableListPecas= FXCollections.observableArrayList(listPecas);
-            tableViewPecas.setItems(observableListPecas);
+        observableListPecas = FXCollections.observableArrayList(listPecas);
+        tableViewPecas.setItems(observableListPecas);
     }
-           
-    public void selecionarItemTableViewPecas(Peca peca){
+
+    public void selecionarItemTableViewPecas(Peca peca) {
         if (peca != null) {
             String cdPeca = String.valueOf(peca.getId());
             labelPecaCodigo.setText(cdPeca);
@@ -102,15 +91,15 @@ public class CadastroPeca implements Initializable{
             labelPecaPreco.setText(preco);
             String quantidade = String.valueOf(peca.getQuantidade());
             labelPecaQuantidade.setText(quantidade);
-           
+
         } else {
-          labelPecaCodigo.setText("");
+            labelPecaCodigo.setText("");
             labelPecaNome.setText("");
             labelPecaPreco.setText("");
             labelPecaQuantidade.setText("");
         }
     }
-   
+
     @FXML
     public void handleButtonInserir() throws IOException {
         Peca peca = new Peca();
@@ -121,8 +110,7 @@ public class CadastroPeca implements Initializable{
             carregarTableViewPeca();
         }
     }
-    
-    
+
     @FXML
     public void handleButtonAlterar() throws IOException {
         Peca peca = tableViewPecas.getSelectionModel().getSelectedItem();
@@ -138,8 +126,8 @@ public class CadastroPeca implements Initializable{
             alert.show();
         }
     }
-    
-        @FXML
+
+    @FXML
     public void handleButtonInativar() throws IOException {
         Peca peca = tableViewPecas.getSelectionModel().getSelectedItem();
         if (peca != null) {
@@ -151,10 +139,7 @@ public class CadastroPeca implements Initializable{
             alert.show();
         }
     }
-    
-    
-    
-    
+
     public boolean showCadastroPecaDialog(Peca peca) throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(CadastroPecaDialog.class.getResource("/opencarshop/peca/view/CadastroPecaDialog.fxml"));
@@ -177,8 +162,5 @@ public class CadastroPeca implements Initializable{
         return controller.isButtonConfirmarClicked();
 
     }
-    
-    
-    
 
 }

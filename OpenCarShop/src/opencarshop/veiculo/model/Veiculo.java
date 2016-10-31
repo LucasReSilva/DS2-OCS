@@ -1,6 +1,7 @@
 package opencarshop.veiculo.model;
 
 public class Veiculo {
+
     private String modelo;
     private String versao;
     private int ano;
@@ -9,12 +10,11 @@ public class Veiculo {
     private boolean opcionalVidrosEletricos;
     private boolean opcionalTravasEletricas;
     private boolean opcionalAr;
-    private boolean opcionalFarolNeblina;    
+    private boolean opcionalFarolNeblina;
     private boolean opcionalAltoFalantes;
-    
-    
-    public Veiculo(){
-        
+
+    public Veiculo() {
+
     }
 
     public String getModelo() {
@@ -96,9 +96,5 @@ public class Veiculo {
     public void setOpcionalAltoFalantes(boolean opcionalAltoFalantes) {
         this.opcionalAltoFalantes = opcionalAltoFalantes;
     }
-        
-    
-    
-    
-    
+
 }

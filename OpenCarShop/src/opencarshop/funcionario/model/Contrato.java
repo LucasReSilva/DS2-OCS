@@ -4,8 +4,9 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class Contrato {
+
     private Character cargo;
-    private Double  salario;
+    private Double salario;
     private LocalDate dataInicio;
     private LocalDate dataTermino;
 
@@ -17,11 +18,11 @@ public class Contrato {
         this.cargo = cargo;
     }
 
-    public Double  getSalario() {
+    public Double getSalario() {
         return salario;
     }
 
-    public void setSalario(Double  salario) {
+    public void setSalario(Double salario) {
         this.salario = salario;
     }
 
@@ -40,5 +41,5 @@ public class Contrato {
     public void setDataTermino(LocalDate dataTermino) {
         this.dataTermino = dataTermino;
     }
-    
+
 }

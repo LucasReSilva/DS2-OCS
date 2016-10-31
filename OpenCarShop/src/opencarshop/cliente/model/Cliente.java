@@ -3,6 +3,7 @@ package opencarshop.cliente.model;
 import java.time.LocalDate;
 
 public class Cliente {
+
     private String cpf;
     private String nome;
     private LocalDate dataNascimento;
@@ -66,6 +67,4 @@ public class Cliente {
     public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
     }
-
-    
 }

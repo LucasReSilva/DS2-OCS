@@ -3,6 +3,7 @@ package opencarshop.funcionario.model;
 import java.time.LocalDate;
 
 public class Funcionario {
+
     private String cpf;
     private String nome;
     private String senha;

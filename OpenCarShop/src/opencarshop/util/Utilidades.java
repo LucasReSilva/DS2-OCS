@@ -8,15 +8,15 @@ import java.util.Date;
 import javafx.scene.control.DatePicker;
 
 public class Utilidades {
-    
-     /**
+
+    /**
      * Converte LocalDate para Date
      *
      * @param datePicker
      * @return date
      */
     public Date toDate(LocalDate datePicker) {
-        if(datePicker == null){
+        if (datePicker == null) {
             return null;
         }
         LocalDate ld = datePicker;
@@ -37,5 +37,5 @@ public class Utilidades {
         LocalDate localDate = LocalDateTime.ofInstant(instant, ZoneId.systemDefault()).toLocalDate();
         return localDate;
     }
-    
+
 }

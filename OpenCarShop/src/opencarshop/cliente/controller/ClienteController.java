@@ -25,6 +25,7 @@ import opencarshop.cliente.model.ClienteDAO;
 import opencarshop.util.Utilidades;
 
 public class ClienteController implements Initializable {
+
     // TELA DE CADASTRO
     @FXML
     private TextField tf_cpfCadastro;
@@ -35,11 +36,10 @@ public class ClienteController implements Initializable {
     @FXML
     private TextField tf_emailCadastro;
     @FXML
-    private TextField tf_telefone1Cadastro;   
+    private TextField tf_telefone1Cadastro;
     @FXML
     private TextField tf_telefone2Cadastro;
-    
-    
+
     @FXML
     private ComboBox<String> cb_tipoCadastro;
     @FXML
@@ -56,12 +56,10 @@ public class ClienteController implements Initializable {
     private TextField tf_numeroCadastro;
     @FXML
     private TextField tf_complementoCadastro;
-    
-   
+
     @FXML
     private Label resultadoCadastro;
-    
-    
+
     // TABELA CLIENTE
     @FXML
     private TableColumn<Cliente, String> col_nome;
@@ -73,27 +71,23 @@ public class ClienteController implements Initializable {
     private TableColumn<Cliente, String> col_telefone2;
     @FXML
     private TableColumn<Cliente, String> col_email;
-    
+
     @FXML
     private TableView<Cliente> tbl_cliente;
-    
-    
 
-    
     @FXML
     private CheckBox cb_ativo;
-    
+
     @FXML
     private Label confirmaAlteracao;
-    
-    
+
     @FXML
     private void cadastrar(ActionEvent event) throws ParseException {
         //cb_cargoCadastro.setItems(cargos);
-        Cliente      cli     = new Cliente();
-        Endereco     end     = new Endereco();
-        ClienteDAO     c     = new ClienteDAO();
-      
+        Cliente cli = new Cliente();
+        Endereco end = new Endereco();
+        ClienteDAO c = new ClienteDAO();
+
         // OBJETO FUNCIONARIO
         cli.setCpf(tf_cpfCadastro.getText());
         cli.setNome(tf_nomeCadastro.getText());
@@ -113,19 +107,16 @@ public class ClienteController implements Initializable {
         end.setComplemento(tf_complementoCadastro.getText());
         end.setTipo(cb_tipoCadastro.getValue().charAt(0));
 
-        
-        if(c.cadastraCliente(cli, end))
-        {
+        if (c.cadastraCliente(cli, end)) {
             resultadoCadastro.setText("Cadastrado com sucesso!!");
-        }
-        else
-        {
+        } else {
             resultadoCadastro.setText("Erro ao cadastrar!! Tente novamente.");
         }
     }
+
     @FXML
     private void alterarCadastro(ActionEvent event) throws Exception {
-        Cliente  cli    = new Cliente();
+        Cliente cli = new Cliente();
         cli.setCpf(tf_cpfCadastro.getText());
         cli.setNome(tf_nomeCadastro.getText());
         cli.setDataNascimento(dp_dataNascimentoCadastro.getValue());
@@ -133,19 +124,16 @@ public class ClienteController implements Initializable {
         cli.setTelefone1(tf_telefone1Cadastro.getText());
         cli.setTelefone2(tf_telefone2Cadastro.getText());
         cli.setAtivo(cb_ativo.isSelected());
-        
-        ClienteDAO f     = new ClienteDAO();
-        if(f.alteraCliente(cli))
-        {
+
+        ClienteDAO f = new ClienteDAO();
+        if (f.alteraCliente(cli)) {
             confirmaAlteracao.setText("Alteração realizada com sucesso!!");
-        }else
-        {
+        } else {
             confirmaAlteracao.setText("Erro ao realizar a alteração!!");
         }
     }
 
-    private void carregaTabelaCliente() throws Exception
-    {
+    private void carregaTabelaCliente() throws Exception {
         col_nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
         col_cpf.setCellValueFactory(new PropertyValueFactory<>("cpf"));
         col_telefone1.setCellValueFactory(new PropertyValueFactory<>("telefone1"));
@@ -159,27 +147,29 @@ public class ClienteController implements Initializable {
         observableListFuncionatio = FXCollections.observableArrayList(listaCliente);
         tbl_cliente.setItems(observableListFuncionatio);
     }
-    public void selecionarItemTablelaCliente(Cliente cliente){
+
+    public void selecionarItemTablelaCliente(Cliente cliente) {
         if (cliente.getCpf() != null) {
-              tf_cpfCadastro.setText(cliente.getCpf());
-              tf_nomeCadastro.setText(cliente.getNome());
-              tf_emailCadastro.setText(cliente.getEmail());
-              tf_telefone1Cadastro.setText(cliente.getTelefone1());
-              tf_telefone2Cadastro.setText(cliente.getTelefone2());
-              dp_dataNascimentoCadastro.setValue(cliente.getDataNascimento());
-              cb_ativo.setSelected(cliente.getAtivo());
-              
-        } 
+            tf_cpfCadastro.setText(cliente.getCpf());
+            tf_nomeCadastro.setText(cliente.getNome());
+            tf_emailCadastro.setText(cliente.getEmail());
+            tf_telefone1Cadastro.setText(cliente.getTelefone1());
+            tf_telefone2Cadastro.setText(cliente.getTelefone2());
+            dp_dataNascimentoCadastro.setValue(cliente.getDataNascimento());
+            cb_ativo.setSelected(cliente.getAtivo());
+
+        }
     }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
             carregaTabelaCliente();
             tbl_cliente.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> selecionarItemTablelaCliente(newValue));
+                    (observable, oldValue, newValue) -> selecionarItemTablelaCliente(newValue));
         } catch (Exception ex) {
             //Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    } 
-    
+    }
+
 }

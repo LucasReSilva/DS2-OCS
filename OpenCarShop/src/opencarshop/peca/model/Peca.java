@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class Peca implements Serializable {
 
- 
     private int id;
     private String nome;
     private double valor;
@@ -12,10 +11,10 @@ public class Peca implements Serializable {
     private boolean ativa;
 
     public Peca() {
-        
+
     }
 
-    public Peca(int id, String nome, double preco, int quantidade , boolean ativa) {
+    public Peca(int id, String nome, double preco, int quantidade, boolean ativa) {
         this.id = id;
         this.nome = nome;
         this.valor = preco;
@@ -59,8 +58,8 @@ public class Peca implements Serializable {
     public String toString() {
         return this.nome;
     }
-    
-       /**
+
+    /**
      * @return the ativa
      */
     public boolean isAtiva() {
@@ -73,5 +72,5 @@ public class Peca implements Serializable {
     public void setAtiva(boolean ativa) {
         this.ativa = ativa;
     }
-    
+
 }
