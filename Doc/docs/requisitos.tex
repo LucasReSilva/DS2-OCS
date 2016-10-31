@@ -7,14 +7,13 @@ O objetivo deste documento é detalhar a descrição de requisitos do software O
 
 
 
-
 \subsection{Escopo do Produto}
 \par
 O OpenCarShop é um sistema de gestão que controlará os setores de venda de veículos, estoque, realização de orçamentos de serviços de uma concessionária de veículos de única marca. 
 \par
 Uma base de dados de veiculos, pecas, servicos, clientes e funcionários deve ser produzida e atualizada a medida que os usuários do sistema, os funcionários, alterem e adicionem tais dados durante a utilização do sistema.
 \par
-Os funcionários que irão interagir com o software o farão através de seus desktops. O software necessita de conexão com o servidor de dados para que os funcionários se autentiquem no sistema e manipularem os dados.
+Os funcionários que irão interagir com o software o farão através de seus desktops. O software necessita de conexão com o servidor de dados para que os funcionários se autentiquem no sistema e manipularem os dados. 
 
 
 
@@ -52,6 +51,7 @@ Os funcionários que irão interagir com o software o farão através de seus de
 O restante deste documento inclui dois capítulos e um apêndice. O Segundo capítulo apresenta uma  descrição geral do sistema, ou seja,  uma  perspectiva funcional e objetivos do mesmo, descrição de seus usuários,   restrições e dependências  para utilização e desenvolvimento do sistema. 
 \par
 O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funcionais e não funcionais que devem  ser implementados.
+ ser implementados.
 
 
 \subsection{Descrição Geral}
@@ -65,7 +65,284 @@ O Terceiro capítulo detalha os requisitos: especifica todos os requisitos funci
 	
 	\subsubsection{Funções do Produto}
 	A seguir, detalha-se cinco das mais importantes funcionalidades do sistema. É apresentado os casos de usos de interação do ator principal, o Funcionário, e os fluxos principais e alternativos. Os demais casos de usos se encontram na seção de diagramas:
+	\vspace{12px}
 	
+	%CDU1
+	\par
+	\textbf{Nome:} Autenticar Funcionário 
+	\par
+	\textbf{Descrição:} Autenticação dos funcionários para uso do sistema
+	\par 
+	\textbf{Identificador:} CDU01
+	\par
+	\textbf{Ator Primário:} Funcionário	
+	\par
+	\ldots
+	\par
+	\textbf{Fluxo principal}\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe opções disponíveis
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+	\par
+	\textbf{Fluxo Alternativo}(Login ou senha incorreto, funcionário inexistente ou inativado)\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+				
+		3 - Exibe mensagem de falha		
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+
+	%CDU2
+	\par
+	\textbf{Nome:} Cadastrar Cliente
+	\par
+	\textbf{Descrição:} Funcionário cadastra dados do cliente no sistema
+	\par 
+	\textbf{Identificador:} CDU02
+	\par
+	\textbf{Ator Primário:} Funcionário	
+	\par
+	\textbf{Precondição:} Funcionário deve estar autenticado no sistema.
+	\par
+	\ldots
+	\par
+	\textbf{Fluxo principal}\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 	
+		1-Selecionar opção de cadastrar cliente &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe opções disponíveis
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe opções disponíveis
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe opções disponíveis
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe opções disponíveis
+		\\ 		
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+	\par
+	\textbf{Fluxo Alternativo}(Login ou senha incorreto, funcionário inexistente ou inativado)\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe mensagem de falha		
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+
+	%CDU3
+	\par
+	\textbf{Nome:} Autenticar Funcionário 
+	\par
+	\textbf{Descrição:} Autenticação dos funcionários para uso do sistema
+	\par 
+	\textbf{Identificador:} CDU01
+	\par
+	\textbf{Ator Primário:} Funcionário	
+	\par
+	\ldots
+	\par
+	\textbf{Fluxo principal}\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe opções disponíveis
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+	\par
+	\textbf{Fluxo Alternativo}(Login ou senha incorreto, funcionário inexistente ou inativado)\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe mensagem de falha		
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+
+	%CDU4
+	\par
+	\textbf{Nome:} Autenticar Funcionário 
+	\par
+	\textbf{Descrição:} Autenticação dos funcionários para uso do sistema
+	\par 
+	\textbf{Identificador:} CDU01
+	\par
+	\textbf{Ator Primário:} Funcionário	
+	\par
+	\ldots
+	\par
+	\textbf{Fluxo principal}\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe opções disponíveis
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+	\par
+	\textbf{Fluxo Alternativo}(Login ou senha incorreto, funcionário inexistente ou inativado)\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe mensagem de falha		
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+
+	%CDU5
+	\par
+	\textbf{Nome:} Autenticar Funcionário 
+	\par
+	\textbf{Descrição:} Autenticação dos funcionários para uso do sistema
+	\par 
+	\textbf{Identificador:} CDU01
+	\par
+	\textbf{Ator Primário:} Funcionário	
+	\par
+	\ldots
+	\par
+	\textbf{Fluxo principal}\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe opções disponíveis
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
+	\par
+	\textbf{Fluxo Alternativo}(Login ou senha incorreto, funcionário inexistente ou inativado)\par
+	\begin{tabular}{|c|c|}
+		\hline 
+		Funcionário & Sistema \\ 
+		\hline 
+		1- Inserir cpf e senha  &  \\ 
+		\hline 
+		& 
+		
+		2 - Valida dados inseridos 
+		\\ 
+		\hline 
+		& 
+		
+		3 - Exibe mensagem de falha		
+		\\ 
+		\hline 
+	\end{tabular} 
+	\vspace{12px}
 	
 	\subsubsection{Características do Usuário}
 	
