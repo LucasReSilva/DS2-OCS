@@ -1,10 +1,14 @@
 package opencarshop.servico.model;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import opencarshop.util.ConexaoMySQL;
 import opencarshop.util.Utilidades;
 
@@ -18,19 +22,15 @@ public class ServicoDAO {
         Connection conn = null;
         PreparedStatement stmt = null;
         boolean retorno=true; 
-        String query = "INSERT INTO `opencarshop`.`Servico` (`descrição`, `valorPadrão`, `valorFixo`) VALUES (?, ?, ?)";
+        String query = "INSERT INTO Servico (descrição, valorPadrão, valorFixo) VALUES (?, ?, ?)";
         
         try{
             conn = c.conectar();
             stmt = conn.prepareStatement(query);
-            stmt.setString(1,servico.getDescrição());
-            stmt.setDouble(2,servico.getValorPadrão());
-            stmt.setBoolean(3,servico.isValorFixo());
-            
-            
+            stmt.setString(1,servico.getDescricao());
+            stmt.setDouble(2,servico.getValorPadrao());
+            stmt.setBoolean(3,servico.getValorFixo());
             retorno = stmt.execute();
-        
-        
         }
         catch(Exception e)
         {
@@ -55,13 +55,13 @@ public class ServicoDAO {
             ResultSet resultado = stmt.executeQuery();
             while(resultado.next()){
                 Servico servico = new Servico();
-                servico.setDescrição(resultado.getString("descrição"));
-                servico.setValorP(resultado.getDouble("valorPadrão"));
+                servico.setDescricao(resultado.getString("descrição"));
+                servico.setValorPadrao(resultado.getDouble("valorPadrão"));
+                servico.setValorFixo(resultado.getBoolean("valorFixo"));
                 servico.setValorF(resultado.getBoolean("valorFixo"));
+                servico.setValorP(resultado.getDouble("valorPadrão"));
+                servico.setId(resultado.getInt("id"));
                 retorno.add(servico);
-            
-            
-            
             }
         }
         catch(Exception e){
@@ -71,5 +71,31 @@ public class ServicoDAO {
         conn.close();
         return retorno;
     }
+    
+    public Boolean alteraServico(Servico srv) throws SQLException
+    {
+        String query = "UPDATE Servico SET descrição=?, valorPadrão=?, valorFixo=? WHERE id=?";
+        
+        ConexaoMySQL c = new ConexaoMySQL();
+        Connection conn = null;
+        try {
+            conn = c.conectar();
+            PreparedStatement stmt = conn.prepareStatement(query);
+        
+     
+            stmt.setString(1, srv.getDescricao());
+            stmt.setDouble(2, srv.getValorPadrao());
+            stmt.setBoolean(3, srv.getValorFixo());
+            stmt.setInt(4, srv.getId());
+            
+            stmt.execute();
+            conn.close();
+            return true;
+        } catch (Exception ex) {
+            
+            Logger.getLogger(ServicoDAO.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+    }    
     
 }
