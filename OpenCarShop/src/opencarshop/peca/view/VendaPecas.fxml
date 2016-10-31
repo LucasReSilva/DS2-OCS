@@ -9,15 +9,15 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencarshop.peca.controller.VendaPecasController">
    <children>
-      <SplitPane dividerPositions="0.46488294314381273" layoutX="73.0" layoutY="21.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.46153846153846156" layoutX="73.0" layoutY="21.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="269.0">
                <children>
                   <TableView fx:id="tableViewVendas" layoutX="28.0" layoutY="29.0" prefHeight="398.0" prefWidth="275.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn fx:id="tableColumnVendaCodigo" prefWidth="53.0" text="Código" />
-                      <TableColumn fx:id="tableColumnVendaData" prefWidth="97.0" text="Data" />
-                        <TableColumn fx:id="tableColumnVendaCliente" prefWidth="124.0" text="Cliente" />
+                      <TableColumn fx:id="tableColumnVendaCodigo" prefWidth="79.0" text="Código" />
+                      <TableColumn fx:id="tableColumnVendaData" prefWidth="82.0" text="Data" />
+                        <TableColumn fx:id="tableColumnVendaPrecoTotal" prefWidth="111.0" text="Preco Total" />
                     </columns>
                   </TableView>
                </children>
@@ -29,7 +29,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <GridPane layoutX="27.0" layoutY="72.0" prefHeight="150.0" prefWidth="264.0">
+                  <GridPane layoutX="25.0" layoutY="62.0" prefHeight="146.0" prefWidth="251.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.0" minWidth="10.0" prefWidth="84.0" />
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="180.0" />
@@ -54,13 +54,15 @@
                         <Label fx:id="labelVendaCliente" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                      </children>
                   </GridPane>
-                  <Group AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
-                     <children>
-                        <Button fx:id="buttonRemover" layoutX="233.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleButtonRemover" prefHeight="25.0" prefWidth="65.0" text="Remover" />
-                        <Button fx:id="buttonInserir" layoutX="83.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="25.0" prefWidth="65.0" text="Inserir" />
-                        <Button fx:id="buttonAlterar" layoutX="158.0" layoutY="323.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Alterar" visible="false" />
-                     </children>
-                  </Group>
+                  <Group AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+                  <Button fx:id="buttonInserir" layoutX="100.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="25.0" prefWidth="65.0" text="Inserir" />
+                  <TableView layoutX="22.0" layoutY="219.0" prefHeight="102.0" prefWidth="257.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnNomePeca" prefWidth="75.0" text="Peca" />
+                      <TableColumn fx:id="tableColumnQuantidadePeca" prefWidth="75.0" text="Quantidade" />
+                        <TableColumn fx:id="tableColumnPrecoPeca" prefWidth="75.0" text="Preco" />
+                    </columns>
+                  </TableView>
                </children>
             </AnchorPane>
         </items>

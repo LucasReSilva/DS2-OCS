@@ -1,133 +1,88 @@
 package opencarshop.peca.model;
 
 import java.io.Serializable;
-import java.sql.Date;
-import java.util.List;
 
 public class ItemPeca implements Serializable {
-
-    private int cdVenda;
-    private Date data;
-    private double valor;
-    private boolean pago;
-    private String formaPagamento;
-    private List<ItemPeca> itensDeVenda;
-    private int quantidade;
-    private int cdCliente;
-    private String nomeCliente;
     
-
+    private int id;
+    private int quantidadeVendida;
+    private double valor;
+    private Peca peca;
+    private VendaPeca vendaPeca;
+    
     public ItemPeca() {
-       
         
     }
-
-    public ItemPeca(int cdvenda, Date data, double valor, boolean pago ,int cdCliente ,String nomeCliente, int quantidade, String formaPagamento) {
-        this.cdVenda = cdvenda;
-        this.data = data;
-        this.valor = valor;
-        this.pago = pago;
-        this.formaPagamento = formaPagamento;
-        this.cdCliente = cdCliente;
-        this.nomeCliente = nomeCliente;
-        this.quantidade = quantidade;
-    }
-    
-        /**
-     * @return the quantidade
+        
+    /**
+     * @return the id
      */
-    public int getQuantidade() {
-        return quantidade;
+    public int getId() {
+        return id;
     }
 
     /**
-     * @param quantidade the quantidade to set
+     * @param id the id to set
      */
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getCdVenda() {
-        return cdVenda;
+    /**
+     * @return the quantidadeVendida
+     */
+    public int getQuantidadeVendida() {
+        return quantidadeVendida;
     }
 
-    public void setCdVenda(int cdVenda) {
-        this.cdVenda = cdVenda;
+    /**
+     * @param quantidadeVendida the quantidadeVendida to set
+     */
+    public void setQuantidadeVendida(int quantidadeVendida) {
+        this.quantidadeVendida = quantidadeVendida;
     }
 
-    public Date getData() {
-        return data;
-    }
-
-    public void setData(Date data) {
-        this.data = data;
-    }
-
+    /**
+     * @return the valor
+     */
     public double getValor() {
         return valor;
     }
 
+    /**
+     * @param valor the valor to set
+     */
     public void setValor(double valor) {
         this.valor = valor;
     }
 
-    public boolean getPago() {
-        return pago;
-    }
-
-    public void setPago(boolean pago) {
-        this.pago = pago;
-    }
-
-    public List<ItemPeca> getItensDeVenda() {
-        return itensDeVenda;
-    }
-
-    public void setItensDeVenda(List<ItemPeca> itensDeVenda) {
-        this.itensDeVenda = itensDeVenda;
-    }
-
-    public int getCdCliente() {
-        return cdCliente;
-    }
-
-    public void setCdCliente(int cdCliente) {
-        this.cdCliente = cdCliente;
-    }
-    
-    
     /**
-     * @return the nomeCliente
+     * @return the peca
      */
-    public String getNomeCliente() {
-        return nomeCliente;
+    public Peca getPeca() {
+        return peca;
     }
 
     /**
-     * @param nomeCliente the nomeCliente to set
+     * @param peca the peca to set
      */
-    public void setNomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
-    }
-    
-    
-    /**
-     * @return the formaPagamento
-     */
-    public String getFormaPagamento() {
-        return formaPagamento;
+    public void setPeca(Peca peca) {
+        this.peca = peca;
     }
 
     /**
-     * @param formaPagamento the formaPagamento to set
+     * @return the vendaPeca
      */
-    public void setFormaPagamento(String formaPagamento) {
-        this.formaPagamento = formaPagamento;
+    public VendaPeca getVendaPeca() {
+        return vendaPeca;
     }
 
-
-    public boolean size() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    /**
+     * @param vendaPeca the vendaPeca to set
+     */
+    public void setVendaPeca(VendaPeca vendaPeca) {
+        this.vendaPeca = vendaPeca;
     }
-    
+
+   
 }

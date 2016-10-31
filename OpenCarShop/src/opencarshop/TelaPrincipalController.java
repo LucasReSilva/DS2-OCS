@@ -200,6 +200,39 @@ public class TelaPrincipalController implements Initializable {
         acContent.getChildren().add(root);
     }
     
+    @FXML
+    private void venderPeca(ActionEvent event){
+        System.out.println("Vender Peca");
+        tx_info.setText("Vender Peça");
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/peca/view/VendaPecas.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);
+    
+    }
+    @FXML
+    private void relatorioVendaPecaMes(ActionEvent event){
+        System.out.println("Relatorio Peca/Mes");
+        tx_info.setText("Relatorio Peca/Mes");
+        
+                FXMLLoader fxmlLoader = new FXMLLoader();
+        try {
+            fxmlLoader.load(getClass().getResource("/opencarshop/peca/view/GraficosVendasPorMes.fxml").openStream());
+        } catch (IOException e) {
+            
+        }
+        AnchorPane root = fxmlLoader.getRoot();
+        acContent.getChildren().clear();
+        acContent.getChildren().add(root);    
+    }
+    
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

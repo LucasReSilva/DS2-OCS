@@ -1,32 +1,22 @@
 package opencarshop.cliente.model;
 
+import java.time.LocalDate;
+
 public class Cliente {
-
-
-    private int cdCliente;
-    private String nome;
     private String cpf;
-    private String telefone;
+    private String nome;
+    private LocalDate dataNascimento;
     private String email;
-    private String data_nascimento;
+    private String telefone1;
+    private String telefone2;
+    private Boolean ativo;
 
-    public Cliente(){
+    public String getCpf() {
+        return cpf;
     }
-    
-    public Cliente(int cdCliente, String nome, String cpf, String email, String data_nascimento) {
-        this.cdCliente = cdCliente;
-        this.nome = nome;
+
+    public void setCpf(String cpf) {
         this.cpf = cpf;
-        this.email = email;
-        this.data_nascimento = data_nascimento;
-    }
-
-    public int getCdCliente() {
-        return cdCliente;
-    }
-
-    public void setCdCliente(int cdCliente) {
-        this.cdCliente = cdCliente;
     }
 
     public String getNome() {
@@ -37,51 +27,45 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getCpf() {
-        return cpf;
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-    
-    public String getTelefone() {
-        return telefone;
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-        /**
-     * @return the email
-     */
     public String getEmail() {
         return email;
     }
 
-    /**
-     * @param email the email to set
-     */
     public void setEmail(String email) {
         this.email = email;
     }
 
-    /**
-     * @return the data_nascimento
-     */
-    public String getData_nascimento() {
-        return data_nascimento;
+    public String getTelefone1() {
+        return telefone1;
     }
 
-    /**
-     * @param data_nascimento the data_nascimento to set
-     */
-    public void setData_nascimento(String data_nascimento) {
-        this.data_nascimento = data_nascimento;
+    public void setTelefone1(String telefone1) {
+        this.telefone1 = telefone1;
     }
+
+    public String getTelefone2() {
+        return telefone2;
+    }
+
+    public void setTelefone2(String telefone2) {
+        this.telefone2 = telefone2;
+    }
+
+    public Boolean getAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
+    }
+
     
-    @Override
-    public String toString() {
-        return this.nome;
-    }
 }

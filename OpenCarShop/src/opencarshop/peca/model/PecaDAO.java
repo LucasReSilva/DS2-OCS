@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import opencarshop.util.ConexaoMySQL;
 
 /**
  *
@@ -20,7 +21,17 @@ import java.util.logging.Logger;
  */
 public class PecaDAO {
     
-    private Connection connection;
+    private Connection connection; 
+    private final ConexaoMySQL database = new ConexaoMySQL();
+    
+    
+    public PecaDAO(){
+        try {
+            connection = database.conectar();
+        } catch (Exception ex) {
+            Logger.getLogger(PecaDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     public Connection getConnection() {
         return connection;

@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class Peca implements Serializable {
 
- 
     private int id;
     private String nome;
     private double valor;

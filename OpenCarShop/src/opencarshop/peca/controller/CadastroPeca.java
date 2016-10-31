@@ -62,21 +62,14 @@ public class CadastroPeca implements Initializable{
     private ObservableList<Peca> observableListPecas;
     
      //Atributos para manipulação de Banco de Dados
-    private final ConexaoMySQL database = new ConexaoMySQL();
-     
-    private Connection connection;
+   
 
     private final PecaDAO pecaDAO = new PecaDAO();
     
   
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        try {
-            connection = database.conectar();
-        } catch (Exception ex) {
-            Logger.getLogger(CadastroPeca.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        pecaDAO.setConnection(connection);
+    
         carregarTableViewPeca();
         // Listen acionado diante de quaisquer alterações na seleção de itens do TableView
         tableViewPecas.getSelectionModel().selectedItemProperty().addListener(
@@ -177,8 +170,6 @@ public class CadastroPeca implements Initializable{
         return controller.isButtonConfirmarClicked();
 
     }
-    
-    
-    
+     
 
 }
